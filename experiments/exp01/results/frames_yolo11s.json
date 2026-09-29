@@ -1,0 +1,4972 @@
+[
+  {
+    "frame_id": 0,
+    "timestamp_sec": 0.0,
+    "person_count": 2,
+    "inference_ms": 111.95,
+    "total_frame_ms": 124.0,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          263.07,
+          110.72,
+          508.48,
+          521.63
+        ],
+        "confidence": 0.8814,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.46,
+          80.04,
+          301.93,
+          559.66
+        ],
+        "confidence": 0.88,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 1,
+    "timestamp_sec": 0.033,
+    "person_count": 2,
+    "inference_ms": 109.44,
+    "total_frame_ms": 118.99,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          252.43,
+          118.33,
+          502.71,
+          523.91
+        ],
+        "confidence": 0.8887,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.4,
+          105.47,
+          288.79,
+          564.82
+        ],
+        "confidence": 0.8555,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 2,
+    "timestamp_sec": 0.067,
+    "person_count": 2,
+    "inference_ms": 174.07,
+    "total_frame_ms": 186.6,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          241.68,
+          118.22,
+          496.76,
+          523.74
+        ],
+        "confidence": 0.9038,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.42,
+          80.3,
+          283.18,
+          565.75
+        ],
+        "confidence": 0.8904,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 3,
+    "timestamp_sec": 0.1,
+    "person_count": 2,
+    "inference_ms": 141.86,
+    "total_frame_ms": 151.98,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          233.63,
+          119.26,
+          481.7,
+          526.34
+        ],
+        "confidence": 0.8867,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.26,
+          112.27,
+          261.05,
+          563.0
+        ],
+        "confidence": 0.8647,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 4,
+    "timestamp_sec": 0.133,
+    "person_count": 2,
+    "inference_ms": 123.85,
+    "total_frame_ms": 131.92,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          223.93,
+          119.87,
+          474.38,
+          525.64
+        ],
+        "confidence": 0.8996,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.4,
+          102.59,
+          256.57,
+          564.04
+        ],
+        "confidence": 0.8616,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 5,
+    "timestamp_sec": 0.167,
+    "person_count": 2,
+    "inference_ms": 98.41,
+    "total_frame_ms": 107.3,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          214.95,
+          120.94,
+          466.6,
+          525.81
+        ],
+        "confidence": 0.9097,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.39,
+          111.88,
+          248.07,
+          564.12
+        ],
+        "confidence": 0.8543,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 6,
+    "timestamp_sec": 0.2,
+    "person_count": 2,
+    "inference_ms": 99.05,
+    "total_frame_ms": 108.88,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          208.22,
+          123.12,
+          459.93,
+          527.8
+        ],
+        "confidence": 0.892,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.23,
+          117.22,
+          247.55,
+          565.79
+        ],
+        "confidence": 0.8737,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 7,
+    "timestamp_sec": 0.233,
+    "person_count": 2,
+    "inference_ms": 103.84,
+    "total_frame_ms": 111.79,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          198.97,
+          124.34,
+          449.71,
+          529.74
+        ],
+        "confidence": 0.8823,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.18,
+          120.25,
+          233.56,
+          565.11
+        ],
+        "confidence": 0.8651,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 8,
+    "timestamp_sec": 0.267,
+    "person_count": 2,
+    "inference_ms": 106.92,
+    "total_frame_ms": 117.3,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          191.15,
+          126.38,
+          440.55,
+          529.55
+        ],
+        "confidence": 0.8968,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.38,
+          119.81,
+          220.53,
+          566.13
+        ],
+        "confidence": 0.8565,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 9,
+    "timestamp_sec": 0.3,
+    "person_count": 3,
+    "inference_ms": 121.85,
+    "total_frame_ms": 130.67,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          180.9,
+          126.42,
+          434.94,
+          533.01
+        ],
+        "confidence": 0.9061,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.29,
+          121.94,
+          214.46,
+          568.64
+        ],
+        "confidence": 0.87,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1121.38,
+          414.85,
+          1279.06,
+          547.44
+        ],
+        "confidence": 0.5964,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 10,
+    "timestamp_sec": 0.333,
+    "person_count": 3,
+    "inference_ms": 110.38,
+    "total_frame_ms": 119.57,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          172.83,
+          125.7,
+          426.68,
+          533.77
+        ],
+        "confidence": 0.904,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.33,
+          125.53,
+          207.05,
+          569.78
+        ],
+        "confidence": 0.8773,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1163.59,
+          411.35,
+          1279.19,
+          546.26
+        ],
+        "confidence": 0.5142,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 11,
+    "timestamp_sec": 0.367,
+    "person_count": 2,
+    "inference_ms": 110.53,
+    "total_frame_ms": 117.99,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          165.3,
+          129.18,
+          415.73,
+          536.71
+        ],
+        "confidence": 0.8995,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.15,
+          130.64,
+          200.8,
+          573.12
+        ],
+        "confidence": 0.8646,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 12,
+    "timestamp_sec": 0.4,
+    "person_count": 2,
+    "inference_ms": 109.0,
+    "total_frame_ms": 117.34,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          155.59,
+          133.22,
+          407.48,
+          538.47
+        ],
+        "confidence": 0.903,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.18,
+          137.0,
+          190.14,
+          574.56
+        ],
+        "confidence": 0.8596,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 13,
+    "timestamp_sec": 0.433,
+    "person_count": 3,
+    "inference_ms": 97.78,
+    "total_frame_ms": 106.21,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          147.8,
+          131.49,
+          399.9,
+          539.7
+        ],
+        "confidence": 0.8896,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.26,
+          192.85,
+          188.7,
+          578.09
+        ],
+        "confidence": 0.8682,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1114.2,
+          325.71,
+          1279.15,
+          554.04
+        ],
+        "confidence": 0.6221,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 14,
+    "timestamp_sec": 0.467,
+    "person_count": 3,
+    "inference_ms": 106.46,
+    "total_frame_ms": 115.22,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          142.0,
+          135.23,
+          396.14,
+          543.25
+        ],
+        "confidence": 0.8714,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.28,
+          196.59,
+          188.86,
+          580.0
+        ],
+        "confidence": 0.8556,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1118.36,
+          317.99,
+          1279.17,
+          557.32
+        ],
+        "confidence": 0.6471,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 15,
+    "timestamp_sec": 0.5,
+    "person_count": 3,
+    "inference_ms": 100.9,
+    "total_frame_ms": 107.66,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          135.0,
+          141.15,
+          385.54,
+          546.94
+        ],
+        "confidence": 0.8656,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.29,
+          196.67,
+          174.7,
+          582.87
+        ],
+        "confidence": 0.8276,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1102.88,
+          310.24,
+          1279.27,
+          559.58
+        ],
+        "confidence": 0.708,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 16,
+    "timestamp_sec": 0.533,
+    "person_count": 3,
+    "inference_ms": 99.45,
+    "total_frame_ms": 106.54,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          126.31,
+          138.83,
+          379.16,
+          550.79
+        ],
+        "confidence": 0.8766,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.36,
+          166.45,
+          172.72,
+          588.84
+        ],
+        "confidence": 0.7322,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1121.4,
+          319.97,
+          1279.19,
+          564.22
+        ],
+        "confidence": 0.6209,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 17,
+    "timestamp_sec": 0.567,
+    "person_count": 3,
+    "inference_ms": 110.98,
+    "total_frame_ms": 118.8,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          119.89,
+          146.74,
+          372.84,
+          553.69
+        ],
+        "confidence": 0.8875,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.32,
+          218.24,
+          165.42,
+          590.93
+        ],
+        "confidence": 0.8084,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1092.93,
+          251.56,
+          1279.45,
+          568.78
+        ],
+        "confidence": 0.6598,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 18,
+    "timestamp_sec": 0.6,
+    "person_count": 3,
+    "inference_ms": 115.56,
+    "total_frame_ms": 122.61,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          114.73,
+          146.48,
+          366.72,
+          556.93
+        ],
+        "confidence": 0.8989,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.32,
+          227.06,
+          156.79,
+          595.2
+        ],
+        "confidence": 0.7649,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1086.86,
+          240.08,
+          1279.47,
+          572.13
+        ],
+        "confidence": 0.7462,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 19,
+    "timestamp_sec": 0.633,
+    "person_count": 3,
+    "inference_ms": 109.59,
+    "total_frame_ms": 115.92,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          105.94,
+          153.11,
+          355.33,
+          560.8
+        ],
+        "confidence": 0.9029,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1058.54,
+          237.01,
+          1279.49,
+          573.89
+        ],
+        "confidence": 0.7917,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.28,
+          236.59,
+          141.25,
+          597.45
+        ],
+        "confidence": 0.5826,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 20,
+    "timestamp_sec": 0.667,
+    "person_count": 3,
+    "inference_ms": 100.82,
+    "total_frame_ms": 107.51,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          102.24,
+          158.45,
+          350.44,
+          563.77
+        ],
+        "confidence": 0.8918,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1046.95,
+          245.18,
+          1279.47,
+          577.39
+        ],
+        "confidence": 0.8217,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.25,
+          244.61,
+          116.18,
+          595.54
+        ],
+        "confidence": 0.6196,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 21,
+    "timestamp_sec": 0.7,
+    "person_count": 3,
+    "inference_ms": 95.62,
+    "total_frame_ms": 102.24,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          93.43,
+          158.72,
+          345.18,
+          567.25
+        ],
+        "confidence": 0.9037,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1060.14,
+          238.48,
+          1279.5,
+          582.3
+        ],
+        "confidence": 0.8371,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.16,
+          250.92,
+          90.11,
+          595.43
+        ],
+        "confidence": 0.5918,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 22,
+    "timestamp_sec": 0.733,
+    "person_count": 3,
+    "inference_ms": 102.3,
+    "total_frame_ms": 110.34,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          87.6,
+          165.57,
+          338.47,
+          572.04
+        ],
+        "confidence": 0.8928,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1041.82,
+          226.51,
+          1279.51,
+          588.94
+        ],
+        "confidence": 0.8178,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.27,
+          266.41,
+          128.83,
+          607.59
+        ],
+        "confidence": 0.7778,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 23,
+    "timestamp_sec": 0.767,
+    "person_count": 3,
+    "inference_ms": 102.71,
+    "total_frame_ms": 110.41,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          84.65,
+          165.76,
+          334.15,
+          575.73
+        ],
+        "confidence": 0.8787,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1030.92,
+          231.24,
+          1279.44,
+          590.33
+        ],
+        "confidence": 0.8424,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.12,
+          278.51,
+          123.42,
+          608.18
+        ],
+        "confidence": 0.6578,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 24,
+    "timestamp_sec": 0.8,
+    "person_count": 3,
+    "inference_ms": 106.59,
+    "total_frame_ms": 114.54,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          80.0,
+          173.35,
+          328.93,
+          580.07
+        ],
+        "confidence": 0.8795,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1025.07,
+          242.53,
+          1279.44,
+          594.89
+        ],
+        "confidence": 0.8178,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.11,
+          287.81,
+          117.54,
+          609.65
+        ],
+        "confidence": 0.6396,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 25,
+    "timestamp_sec": 0.833,
+    "person_count": 3,
+    "inference_ms": 104.27,
+    "total_frame_ms": 113.14,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          78.12,
+          176.87,
+          323.23,
+          587.04
+        ],
+        "confidence": 0.8476,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1017.99,
+          184.01,
+          1279.4,
+          602.17
+        ],
+        "confidence": 0.8311,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.09,
+          293.01,
+          111.49,
+          614.13
+        ],
+        "confidence": 0.5868,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 26,
+    "timestamp_sec": 0.867,
+    "person_count": 2,
+    "inference_ms": 103.85,
+    "total_frame_ms": 110.17,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          70.53,
+          179.96,
+          321.03,
+          589.95
+        ],
+        "confidence": 0.8728,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1019.4,
+          187.13,
+          1279.42,
+          605.84
+        ],
+        "confidence": 0.817,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 27,
+    "timestamp_sec": 0.9,
+    "person_count": 2,
+    "inference_ms": 117.38,
+    "total_frame_ms": 124.34,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          1010.1,
+          185.43,
+          1279.48,
+          608.29
+        ],
+        "confidence": 0.8706,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          67.93,
+          188.39,
+          316.73,
+          594.11
+        ],
+        "confidence": 0.8496,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 28,
+    "timestamp_sec": 0.933,
+    "person_count": 2,
+    "inference_ms": 97.53,
+    "total_frame_ms": 105.0,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          61.13,
+          192.77,
+          313.87,
+          599.18
+        ],
+        "confidence": 0.8706,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1012.2,
+          188.6,
+          1279.47,
+          613.36
+        ],
+        "confidence": 0.8657,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 29,
+    "timestamp_sec": 0.967,
+    "person_count": 2,
+    "inference_ms": 96.71,
+    "total_frame_ms": 104.01,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          1006.7,
+          192.14,
+          1279.42,
+          618.7
+        ],
+        "confidence": 0.8816,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          59.98,
+          197.47,
+          311.2,
+          604.48
+        ],
+        "confidence": 0.8381,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 30,
+    "timestamp_sec": 1.0,
+    "person_count": 2,
+    "inference_ms": 100.72,
+    "total_frame_ms": 108.22,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          54.41,
+          202.02,
+          309.16,
+          608.12
+        ],
+        "confidence": 0.8898,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1029.67,
+          196.03,
+          1279.47,
+          624.8
+        ],
+        "confidence": 0.86,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 31,
+    "timestamp_sec": 1.033,
+    "person_count": 2,
+    "inference_ms": 104.73,
+    "total_frame_ms": 112.31,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          53.07,
+          205.68,
+          306.12,
+          612.24
+        ],
+        "confidence": 0.8887,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1038.76,
+          201.56,
+          1279.46,
+          627.69
+        ],
+        "confidence": 0.8538,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 32,
+    "timestamp_sec": 1.067,
+    "person_count": 2,
+    "inference_ms": 99.87,
+    "total_frame_ms": 107.93,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          51.72,
+          209.46,
+          304.91,
+          616.43
+        ],
+        "confidence": 0.8776,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1020.53,
+          203.63,
+          1279.47,
+          634.65
+        ],
+        "confidence": 0.8409,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 33,
+    "timestamp_sec": 1.1,
+    "person_count": 2,
+    "inference_ms": 100.88,
+    "total_frame_ms": 108.52,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          49.45,
+          212.09,
+          302.12,
+          622.24
+        ],
+        "confidence": 0.8888,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1018.84,
+          206.87,
+          1279.48,
+          639.49
+        ],
+        "confidence": 0.8419,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 34,
+    "timestamp_sec": 1.133,
+    "person_count": 2,
+    "inference_ms": 112.14,
+    "total_frame_ms": 119.51,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          49.27,
+          222.27,
+          301.51,
+          626.72
+        ],
+        "confidence": 0.9052,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          997.73,
+          211.22,
+          1279.43,
+          641.46
+        ],
+        "confidence": 0.8712,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 35,
+    "timestamp_sec": 1.167,
+    "person_count": 2,
+    "inference_ms": 108.68,
+    "total_frame_ms": 115.44,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          45.4,
+          224.68,
+          300.44,
+          631.43
+        ],
+        "confidence": 0.9089,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1003.96,
+          217.85,
+          1279.43,
+          646.85
+        ],
+        "confidence": 0.8697,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 36,
+    "timestamp_sec": 1.2,
+    "person_count": 2,
+    "inference_ms": 99.13,
+    "total_frame_ms": 105.71,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          46.37,
+          228.67,
+          301.0,
+          636.61
+        ],
+        "confidence": 0.91,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1031.61,
+          223.71,
+          1279.57,
+          650.36
+        ],
+        "confidence": 0.8711,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 37,
+    "timestamp_sec": 1.233,
+    "person_count": 2,
+    "inference_ms": 90.29,
+    "total_frame_ms": 97.16,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          47.2,
+          236.31,
+          300.79,
+          641.79
+        ],
+        "confidence": 0.9028,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1005.0,
+          226.73,
+          1279.54,
+          655.68
+        ],
+        "confidence": 0.8274,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 38,
+    "timestamp_sec": 1.267,
+    "person_count": 2,
+    "inference_ms": 109.68,
+    "total_frame_ms": 116.42,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          47.03,
+          236.67,
+          301.44,
+          647.27
+        ],
+        "confidence": 0.9024,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1032.16,
+          231.09,
+          1279.55,
+          659.28
+        ],
+        "confidence": 0.8323,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 39,
+    "timestamp_sec": 1.3,
+    "person_count": 2,
+    "inference_ms": 116.49,
+    "total_frame_ms": 124.21,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          989.75,
+          236.68,
+          1279.52,
+          667.56
+        ],
+        "confidence": 0.8938,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          46.4,
+          246.53,
+          300.9,
+          652.19
+        ],
+        "confidence": 0.8897,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 40,
+    "timestamp_sec": 1.333,
+    "person_count": 2,
+    "inference_ms": 104.51,
+    "total_frame_ms": 111.71,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          47.1,
+          252.0,
+          300.14,
+          655.5
+        ],
+        "confidence": 0.9036,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          990.76,
+          241.4,
+          1279.49,
+          671.87
+        ],
+        "confidence": 0.8815,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 41,
+    "timestamp_sec": 1.367,
+    "person_count": 2,
+    "inference_ms": 104.24,
+    "total_frame_ms": 111.61,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          48.61,
+          256.35,
+          301.57,
+          660.81
+        ],
+        "confidence": 0.8951,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          996.59,
+          248.42,
+          1279.47,
+          678.19
+        ],
+        "confidence": 0.8898,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 42,
+    "timestamp_sec": 1.4,
+    "person_count": 2,
+    "inference_ms": 108.21,
+    "total_frame_ms": 116.02,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          991.68,
+          253.59,
+          1279.45,
+          683.24
+        ],
+        "confidence": 0.9017,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          49.12,
+          261.76,
+          303.12,
+          666.33
+        ],
+        "confidence": 0.8954,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 43,
+    "timestamp_sec": 1.433,
+    "person_count": 2,
+    "inference_ms": 96.6,
+    "total_frame_ms": 103.36,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          51.06,
+          266.49,
+          304.27,
+          670.3
+        ],
+        "confidence": 0.8953,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1000.24,
+          257.75,
+          1279.45,
+          687.76
+        ],
+        "confidence": 0.8923,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 44,
+    "timestamp_sec": 1.467,
+    "person_count": 2,
+    "inference_ms": 92.44,
+    "total_frame_ms": 99.27,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          52.22,
+          267.64,
+          306.38,
+          676.33
+        ],
+        "confidence": 0.8922,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1035.32,
+          265.68,
+          1279.46,
+          691.17
+        ],
+        "confidence": 0.8578,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 45,
+    "timestamp_sec": 1.5,
+    "person_count": 2,
+    "inference_ms": 102.57,
+    "total_frame_ms": 109.87,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          54.21,
+          272.66,
+          307.54,
+          682.22
+        ],
+        "confidence": 0.8869,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1028.35,
+          268.86,
+          1279.48,
+          698.85
+        ],
+        "confidence": 0.8294,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 46,
+    "timestamp_sec": 1.533,
+    "person_count": 2,
+    "inference_ms": 111.73,
+    "total_frame_ms": 119.27,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          59.55,
+          273.82,
+          309.98,
+          682.13
+        ],
+        "confidence": 0.8648,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1016.4,
+          276.36,
+          1279.53,
+          702.08
+        ],
+        "confidence": 0.8288,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 47,
+    "timestamp_sec": 1.567,
+    "person_count": 2,
+    "inference_ms": 104.16,
+    "total_frame_ms": 111.89,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          60.64,
+          286.66,
+          311.73,
+          690.93
+        ],
+        "confidence": 0.8766,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1017.09,
+          280.77,
+          1279.54,
+          705.23
+        ],
+        "confidence": 0.8366,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 48,
+    "timestamp_sec": 1.6,
+    "person_count": 2,
+    "inference_ms": 104.16,
+    "total_frame_ms": 110.94,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          66.04,
+          284.12,
+          314.8,
+          690.37
+        ],
+        "confidence": 0.878,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1014.31,
+          285.96,
+          1279.48,
+          710.79
+        ],
+        "confidence": 0.8436,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 49,
+    "timestamp_sec": 1.633,
+    "person_count": 2,
+    "inference_ms": 103.31,
+    "total_frame_ms": 110.12,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          69.54,
+          291.41,
+          320.28,
+          692.83
+        ],
+        "confidence": 0.8692,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1018.82,
+          294.47,
+          1279.56,
+          714.27
+        ],
+        "confidence": 0.8288,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 50,
+    "timestamp_sec": 1.667,
+    "person_count": 2,
+    "inference_ms": 102.6,
+    "total_frame_ms": 109.38,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          75.86,
+          291.04,
+          325.75,
+          700.66
+        ],
+        "confidence": 0.8721,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1044.68,
+          300.1,
+          1279.52,
+          714.92
+        ],
+        "confidence": 0.8036,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 51,
+    "timestamp_sec": 1.7,
+    "person_count": 2,
+    "inference_ms": 101.18,
+    "total_frame_ms": 107.88,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          78.86,
+          299.0,
+          328.81,
+          706.91
+        ],
+        "confidence": 0.8798,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1071.37,
+          355.6,
+          1279.49,
+          717.51
+        ],
+        "confidence": 0.7787,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 52,
+    "timestamp_sec": 1.733,
+    "person_count": 3,
+    "inference_ms": 97.45,
+    "total_frame_ms": 104.57,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          85.4,
+          306.58,
+          337.49,
+          712.99
+        ],
+        "confidence": 0.8802,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1051.57,
+          359.95,
+          1279.52,
+          719.99
+        ],
+        "confidence": 0.7272,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.0,
+          415.56,
+          43.22,
+          717.01
+        ],
+        "confidence": 0.655,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 53,
+    "timestamp_sec": 1.767,
+    "person_count": 3,
+    "inference_ms": 108.47,
+    "total_frame_ms": 115.1,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          88.16,
+          309.45,
+          340.12,
+          715.22
+        ],
+        "confidence": 0.905,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1032.12,
+          369.17,
+          1279.51,
+          720.0
+        ],
+        "confidence": 0.7723,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.12,
+          409.83,
+          63.04,
+          717.75
+        ],
+        "confidence": 0.7052,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 54,
+    "timestamp_sec": 1.8,
+    "person_count": 3,
+    "inference_ms": 105.45,
+    "total_frame_ms": 113.12,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          95.03,
+          317.11,
+          346.2,
+          715.32
+        ],
+        "confidence": 0.9069,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1036.31,
+          377.81,
+          1279.43,
+          719.42
+        ],
+        "confidence": 0.8397,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.11,
+          404.76,
+          54.84,
+          715.86
+        ],
+        "confidence": 0.7471,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 55,
+    "timestamp_sec": 1.833,
+    "person_count": 3,
+    "inference_ms": 97.49,
+    "total_frame_ms": 104.73,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          101.29,
+          315.93,
+          352.48,
+          716.05
+        ],
+        "confidence": 0.9042,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1041.85,
+          381.76,
+          1279.43,
+          719.66
+        ],
+        "confidence": 0.8736,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.13,
+          406.09,
+          60.3,
+          715.8
+        ],
+        "confidence": 0.7553,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 56,
+    "timestamp_sec": 1.867,
+    "person_count": 3,
+    "inference_ms": 102.36,
+    "total_frame_ms": 110.81,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          105.37,
+          320.96,
+          355.29,
+          716.76
+        ],
+        "confidence": 0.8988,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1046.23,
+          375.79,
+          1279.42,
+          718.79
+        ],
+        "confidence": 0.808,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.14,
+          405.0,
+          63.57,
+          716.21
+        ],
+        "confidence": 0.7714,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 57,
+    "timestamp_sec": 1.9,
+    "person_count": 3,
+    "inference_ms": 114.29,
+    "total_frame_ms": 122.66,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          113.74,
+          323.57,
+          367.77,
+          717.89
+        ],
+        "confidence": 0.9065,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1054.46,
+          417.28,
+          1279.47,
+          716.95
+        ],
+        "confidence": 0.8713,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.1,
+          399.52,
+          70.74,
+          716.24
+        ],
+        "confidence": 0.8285,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 58,
+    "timestamp_sec": 1.933,
+    "person_count": 3,
+    "inference_ms": 95.33,
+    "total_frame_ms": 108.5,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          119.64,
+          323.99,
+          372.62,
+          716.63
+        ],
+        "confidence": 0.8965,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.1,
+          401.53,
+          78.16,
+          716.09
+        ],
+        "confidence": 0.8472,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1060.0,
+          427.98,
+          1279.42,
+          716.11
+        ],
+        "confidence": 0.7216,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 59,
+    "timestamp_sec": 1.967,
+    "person_count": 2,
+    "inference_ms": 88.63,
+    "total_frame_ms": 96.4,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          128.44,
+          330.99,
+          377.98,
+          716.79
+        ],
+        "confidence": 0.8827,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.13,
+          350.52,
+          82.61,
+          716.84
+        ],
+        "confidence": 0.8248,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 60,
+    "timestamp_sec": 2.0,
+    "person_count": 2,
+    "inference_ms": 102.96,
+    "total_frame_ms": 110.12,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          134.25,
+          329.11,
+          385.62,
+          716.37
+        ],
+        "confidence": 0.87,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.09,
+          364.83,
+          89.56,
+          717.05
+        ],
+        "confidence": 0.7518,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 61,
+    "timestamp_sec": 2.033,
+    "person_count": 3,
+    "inference_ms": 100.5,
+    "total_frame_ms": 109.33,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          141.63,
+          332.83,
+          395.67,
+          715.12
+        ],
+        "confidence": 0.8805,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.1,
+          397.71,
+          98.88,
+          716.49
+        ],
+        "confidence": 0.8178,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1170.86,
+          512.37,
+          1279.63,
+          716.95
+        ],
+        "confidence": 0.5765,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 62,
+    "timestamp_sec": 2.067,
+    "person_count": 3,
+    "inference_ms": 98.2,
+    "total_frame_ms": 104.5,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          149.91,
+          337.45,
+          399.97,
+          715.95
+        ],
+        "confidence": 0.8769,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.11,
+          388.31,
+          106.38,
+          715.88
+        ],
+        "confidence": 0.846,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1180.86,
+          539.46,
+          1279.63,
+          718.12
+        ],
+        "confidence": 0.5805,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 63,
+    "timestamp_sec": 2.1,
+    "person_count": 2,
+    "inference_ms": 106.01,
+    "total_frame_ms": 112.23,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.21,
+          347.1,
+          111.71,
+          717.0
+        ],
+        "confidence": 0.9019,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          155.42,
+          339.33,
+          407.76,
+          715.62
+        ],
+        "confidence": 0.8969,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 64,
+    "timestamp_sec": 2.133,
+    "person_count": 2,
+    "inference_ms": 118.78,
+    "total_frame_ms": 125.27,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.18,
+          344.69,
+          120.51,
+          716.43
+        ],
+        "confidence": 0.8923,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          164.61,
+          342.95,
+          414.69,
+          715.35
+        ],
+        "confidence": 0.89,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 65,
+    "timestamp_sec": 2.167,
+    "person_count": 3,
+    "inference_ms": 105.92,
+    "total_frame_ms": 112.66,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          173.92,
+          347.97,
+          425.51,
+          717.15
+        ],
+        "confidence": 0.9092,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.22,
+          346.04,
+          127.42,
+          716.16
+        ],
+        "confidence": 0.9052,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1208.49,
+          629.57,
+          1279.65,
+          719.06
+        ],
+        "confidence": 0.5176,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 66,
+    "timestamp_sec": 2.2,
+    "person_count": 2,
+    "inference_ms": 99.42,
+    "total_frame_ms": 106.06,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          182.24,
+          350.59,
+          433.07,
+          717.63
+        ],
+        "confidence": 0.9133,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.19,
+          345.59,
+          134.85,
+          716.44
+        ],
+        "confidence": 0.9025,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 67,
+    "timestamp_sec": 2.233,
+    "person_count": 2,
+    "inference_ms": 101.55,
+    "total_frame_ms": 108.6,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.19,
+          346.81,
+          143.61,
+          716.98
+        ],
+        "confidence": 0.9123,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          189.75,
+          349.32,
+          440.31,
+          717.86
+        ],
+        "confidence": 0.9086,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 68,
+    "timestamp_sec": 2.267,
+    "person_count": 2,
+    "inference_ms": 98.32,
+    "total_frame_ms": 104.87,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          199.08,
+          348.39,
+          448.44,
+          716.76
+        ],
+        "confidence": 0.9007,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.22,
+          347.21,
+          152.72,
+          717.56
+        ],
+        "confidence": 0.8951,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 69,
+    "timestamp_sec": 2.3,
+    "person_count": 2,
+    "inference_ms": 97.81,
+    "total_frame_ms": 105.33,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          207.48,
+          349.56,
+          459.4,
+          717.96
+        ],
+        "confidence": 0.9064,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.26,
+          347.07,
+          160.53,
+          717.61
+        ],
+        "confidence": 0.8724,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 70,
+    "timestamp_sec": 2.333,
+    "person_count": 2,
+    "inference_ms": 90.84,
+    "total_frame_ms": 98.36,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          214.83,
+          354.19,
+          467.49,
+          719.13
+        ],
+        "confidence": 0.9109,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.24,
+          339.07,
+          169.26,
+          717.41
+        ],
+        "confidence": 0.8702,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 71,
+    "timestamp_sec": 2.367,
+    "person_count": 2,
+    "inference_ms": 86.63,
+    "total_frame_ms": 95.2,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          224.99,
+          348.67,
+          475.07,
+          718.44
+        ],
+        "confidence": 0.9099,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.31,
+          339.07,
+          176.04,
+          717.76
+        ],
+        "confidence": 0.8754,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 72,
+    "timestamp_sec": 2.4,
+    "person_count": 2,
+    "inference_ms": 107.3,
+    "total_frame_ms": 117.47,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          232.42,
+          345.49,
+          481.75,
+          717.15
+        ],
+        "confidence": 0.9122,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.2,
+          327.06,
+          184.68,
+          716.31
+        ],
+        "confidence": 0.8855,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 73,
+    "timestamp_sec": 2.433,
+    "person_count": 2,
+    "inference_ms": 101.36,
+    "total_frame_ms": 108.17,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          242.08,
+          351.11,
+          495.75,
+          718.49
+        ],
+        "confidence": 0.9171,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.39,
+          318.39,
+          195.15,
+          716.02
+        ],
+        "confidence": 0.8932,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 74,
+    "timestamp_sec": 2.467,
+    "person_count": 2,
+    "inference_ms": 111.55,
+    "total_frame_ms": 119.13,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          252.07,
+          355.81,
+          502.36,
+          718.91
+        ],
+        "confidence": 0.9071,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.19,
+          320.75,
+          204.07,
+          714.81
+        ],
+        "confidence": 0.9015,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 75,
+    "timestamp_sec": 2.5,
+    "person_count": 2,
+    "inference_ms": 93.37,
+    "total_frame_ms": 100.14,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.17,
+          318.29,
+          211.16,
+          713.91
+        ],
+        "confidence": 0.9042,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          261.09,
+          350.55,
+          508.44,
+          718.16
+        ],
+        "confidence": 0.8999,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 76,
+    "timestamp_sec": 2.533,
+    "person_count": 2,
+    "inference_ms": 97.57,
+    "total_frame_ms": 105.66,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.28,
+          318.97,
+          220.89,
+          715.39
+        ],
+        "confidence": 0.9098,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          268.64,
+          349.84,
+          517.26,
+          718.95
+        ],
+        "confidence": 0.8958,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 77,
+    "timestamp_sec": 2.567,
+    "person_count": 2,
+    "inference_ms": 102.54,
+    "total_frame_ms": 110.68,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.37,
+          319.73,
+          229.79,
+          715.81
+        ],
+        "confidence": 0.9067,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          277.2,
+          347.85,
+          527.4,
+          720.0
+        ],
+        "confidence": 0.9,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 78,
+    "timestamp_sec": 2.6,
+    "person_count": 2,
+    "inference_ms": 97.17,
+    "total_frame_ms": 104.93,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.35,
+          319.46,
+          240.71,
+          716.82
+        ],
+        "confidence": 0.915,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          288.75,
+          346.26,
+          538.03,
+          718.13
+        ],
+        "confidence": 0.8969,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 79,
+    "timestamp_sec": 2.633,
+    "person_count": 2,
+    "inference_ms": 112.1,
+    "total_frame_ms": 119.0,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.21,
+          318.2,
+          248.95,
+          717.88
+        ],
+        "confidence": 0.9125,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          295.85,
+          345.1,
+          544.9,
+          718.34
+        ],
+        "confidence": 0.9084,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 80,
+    "timestamp_sec": 2.667,
+    "person_count": 2,
+    "inference_ms": 110.03,
+    "total_frame_ms": 119.86,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          304.73,
+          349.18,
+          556.85,
+          718.27
+        ],
+        "confidence": 0.9143,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.2,
+          316.05,
+          256.3,
+          717.15
+        ],
+        "confidence": 0.9134,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 81,
+    "timestamp_sec": 2.7,
+    "person_count": 2,
+    "inference_ms": 108.49,
+    "total_frame_ms": 115.18,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          312.77,
+          354.06,
+          563.0,
+          719.05
+        ],
+        "confidence": 0.9138,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.28,
+          314.59,
+          264.94,
+          717.15
+        ],
+        "confidence": 0.8978,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 82,
+    "timestamp_sec": 2.733,
+    "person_count": 2,
+    "inference_ms": 95.73,
+    "total_frame_ms": 103.32,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          320.39,
+          346.3,
+          571.15,
+          717.1
+        ],
+        "confidence": 0.9156,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.37,
+          315.44,
+          274.34,
+          715.83
+        ],
+        "confidence": 0.9096,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 83,
+    "timestamp_sec": 2.767,
+    "person_count": 2,
+    "inference_ms": 107.27,
+    "total_frame_ms": 114.71,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          330.21,
+          344.69,
+          578.64,
+          716.89
+        ],
+        "confidence": 0.9046,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.29,
+          311.49,
+          280.06,
+          716.32
+        ],
+        "confidence": 0.8998,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 84,
+    "timestamp_sec": 2.8,
+    "person_count": 2,
+    "inference_ms": 95.93,
+    "total_frame_ms": 103.49,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          338.58,
+          351.42,
+          587.96,
+          717.76
+        ],
+        "confidence": 0.9115,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.27,
+          314.91,
+          289.22,
+          716.74
+        ],
+        "confidence": 0.904,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 85,
+    "timestamp_sec": 2.833,
+    "person_count": 2,
+    "inference_ms": 107.26,
+    "total_frame_ms": 114.25,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          347.93,
+          345.91,
+          598.55,
+          717.26
+        ],
+        "confidence": 0.8992,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.0,
+          323.54,
+          298.17,
+          716.42
+        ],
+        "confidence": 0.8943,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 86,
+    "timestamp_sec": 2.867,
+    "person_count": 2,
+    "inference_ms": 112.48,
+    "total_frame_ms": 120.31,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          353.63,
+          338.46,
+          604.27,
+          716.23
+        ],
+        "confidence": 0.9055,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          1.88,
+          311.76,
+          305.96,
+          717.27
+        ],
+        "confidence": 0.8983,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 87,
+    "timestamp_sec": 2.9,
+    "person_count": 2,
+    "inference_ms": 106.67,
+    "total_frame_ms": 114.0,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          364.08,
+          337.35,
+          613.9,
+          716.56
+        ],
+        "confidence": 0.91,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          7.77,
+          308.49,
+          316.7,
+          717.22
+        ],
+        "confidence": 0.9003,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 88,
+    "timestamp_sec": 2.933,
+    "person_count": 2,
+    "inference_ms": 113.96,
+    "total_frame_ms": 121.13,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          375.39,
+          336.82,
+          624.07,
+          716.17
+        ],
+        "confidence": 0.9093,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          13.68,
+          304.18,
+          325.29,
+          716.71
+        ],
+        "confidence": 0.8943,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 89,
+    "timestamp_sec": 2.967,
+    "person_count": 2,
+    "inference_ms": 113.47,
+    "total_frame_ms": 121.74,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          378.73,
+          334.63,
+          630.19,
+          715.46
+        ],
+        "confidence": 0.9057,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          18.55,
+          303.1,
+          331.74,
+          717.28
+        ],
+        "confidence": 0.8932,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 90,
+    "timestamp_sec": 3.0,
+    "person_count": 2,
+    "inference_ms": 114.18,
+    "total_frame_ms": 121.22,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          387.71,
+          330.3,
+          636.74,
+          716.14
+        ],
+        "confidence": 0.9058,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          25.23,
+          295.87,
+          342.0,
+          717.65
+        ],
+        "confidence": 0.8927,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 91,
+    "timestamp_sec": 3.033,
+    "person_count": 2,
+    "inference_ms": 98.72,
+    "total_frame_ms": 105.96,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          393.59,
+          328.68,
+          644.92,
+          716.26
+        ],
+        "confidence": 0.8963,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          26.99,
+          310.37,
+          348.13,
+          718.06
+        ],
+        "confidence": 0.8871,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 92,
+    "timestamp_sec": 3.067,
+    "person_count": 2,
+    "inference_ms": 90.86,
+    "total_frame_ms": 97.44,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          399.19,
+          323.47,
+          652.88,
+          716.03
+        ],
+        "confidence": 0.9028,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          35.97,
+          308.09,
+          356.99,
+          718.99
+        ],
+        "confidence": 0.8815,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 93,
+    "timestamp_sec": 3.1,
+    "person_count": 3,
+    "inference_ms": 102.34,
+    "total_frame_ms": 109.75,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          404.68,
+          324.1,
+          656.99,
+          718.12
+        ],
+        "confidence": 0.9033,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          45.42,
+          296.58,
+          363.89,
+          717.44
+        ],
+        "confidence": 0.8895,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.27,
+          540.35,
+          98.1,
+          687.95
+        ],
+        "confidence": 0.5871,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 94,
+    "timestamp_sec": 3.133,
+    "person_count": 3,
+    "inference_ms": 92.48,
+    "total_frame_ms": 99.13,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          413.01,
+          321.64,
+          665.48,
+          716.48
+        ],
+        "confidence": 0.9052,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          58.52,
+          291.76,
+          371.57,
+          717.05
+        ],
+        "confidence": 0.8926,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.23,
+          522.17,
+          106.55,
+          682.0
+        ],
+        "confidence": 0.6256,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 95,
+    "timestamp_sec": 3.167,
+    "person_count": 3,
+    "inference_ms": 109.84,
+    "total_frame_ms": 116.61,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          417.19,
+          318.41,
+          668.57,
+          712.67
+        ],
+        "confidence": 0.9017,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          62.16,
+          296.51,
+          377.11,
+          716.35
+        ],
+        "confidence": 0.8867,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.71,
+          518.83,
+          111.49,
+          680.27
+        ],
+        "confidence": 0.5769,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 96,
+    "timestamp_sec": 3.2,
+    "person_count": 3,
+    "inference_ms": 102.57,
+    "total_frame_ms": 110.66,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          423.61,
+          315.83,
+          676.7,
+          712.12
+        ],
+        "confidence": 0.8899,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          69.33,
+          297.36,
+          387.6,
+          716.94
+        ],
+        "confidence": 0.8787,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.26,
+          506.61,
+          117.22,
+          678.08
+        ],
+        "confidence": 0.7013,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 97,
+    "timestamp_sec": 3.233,
+    "person_count": 3,
+    "inference_ms": 100.57,
+    "total_frame_ms": 107.72,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          429.39,
+          308.48,
+          682.83,
+          711.91
+        ],
+        "confidence": 0.9016,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          74.18,
+          288.39,
+          401.15,
+          717.08
+        ],
+        "confidence": 0.8659,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.29,
+          491.09,
+          123.94,
+          711.11
+        ],
+        "confidence": 0.7965,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 98,
+    "timestamp_sec": 3.267,
+    "person_count": 3,
+    "inference_ms": 97.38,
+    "total_frame_ms": 105.52,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          433.81,
+          307.1,
+          687.73,
+          711.32
+        ],
+        "confidence": 0.8981,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          72.92,
+          271.29,
+          395.15,
+          718.64
+        ],
+        "confidence": 0.8117,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.43,
+          484.28,
+          127.25,
+          716.53
+        ],
+        "confidence": 0.7755,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 99,
+    "timestamp_sec": 3.3,
+    "person_count": 3,
+    "inference_ms": 93.31,
+    "total_frame_ms": 99.8,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          440.86,
+          302.61,
+          695.08,
+          708.27
+        ],
+        "confidence": 0.9219,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.43,
+          465.98,
+          135.07,
+          715.4
+        ],
+        "confidence": 0.8376,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          77.4,
+          261.01,
+          421.53,
+          719.73
+        ],
+        "confidence": 0.7606,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 100,
+    "timestamp_sec": 3.333,
+    "person_count": 3,
+    "inference_ms": 98.62,
+    "total_frame_ms": 105.58,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          443.94,
+          296.7,
+          698.07,
+          703.33
+        ],
+        "confidence": 0.9138,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.34,
+          454.63,
+          138.3,
+          713.27
+        ],
+        "confidence": 0.8141,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          83.17,
+          261.85,
+          422.88,
+          717.84
+        ],
+        "confidence": 0.7263,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 101,
+    "timestamp_sec": 3.367,
+    "person_count": 3,
+    "inference_ms": 92.56,
+    "total_frame_ms": 99.98,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          449.61,
+          287.51,
+          701.15,
+          698.74
+        ],
+        "confidence": 0.9037,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.21,
+          443.99,
+          145.11,
+          707.8
+        ],
+        "confidence": 0.8403,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          87.23,
+          256.35,
+          415.86,
+          716.37
+        ],
+        "confidence": 0.7034,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 102,
+    "timestamp_sec": 3.4,
+    "person_count": 3,
+    "inference_ms": 99.62,
+    "total_frame_ms": 105.97,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          453.56,
+          279.41,
+          704.95,
+          695.85
+        ],
+        "confidence": 0.9041,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.25,
+          427.37,
+          145.5,
+          707.67
+        ],
+        "confidence": 0.853,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          92.26,
+          249.57,
+          444.86,
+          719.14
+        ],
+        "confidence": 0.7704,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 103,
+    "timestamp_sec": 3.433,
+    "person_count": 3,
+    "inference_ms": 88.73,
+    "total_frame_ms": 97.24,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          458.75,
+          284.38,
+          708.58,
+          690.8
+        ],
+        "confidence": 0.8913,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.28,
+          419.82,
+          151.07,
+          697.99
+        ],
+        "confidence": 0.8676,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          99.01,
+          254.16,
+          492.53,
+          713.1
+        ],
+        "confidence": 0.6558,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 104,
+    "timestamp_sec": 3.467,
+    "person_count": 3,
+    "inference_ms": 103.6,
+    "total_frame_ms": 112.3,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          460.24,
+          272.74,
+          710.81,
+          686.09
+        ],
+        "confidence": 0.891,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.3,
+          413.07,
+          153.54,
+          695.4
+        ],
+        "confidence": 0.8473,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          91.7,
+          246.17,
+          506.07,
+          718.31
+        ],
+        "confidence": 0.8279,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 105,
+    "timestamp_sec": 3.5,
+    "person_count": 3,
+    "inference_ms": 102.5,
+    "total_frame_ms": 111.5,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          466.13,
+          267.96,
+          717.51,
+          682.21
+        ],
+        "confidence": 0.8952,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.05,
+          410.54,
+          156.28,
+          687.24
+        ],
+        "confidence": 0.8624,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          97.63,
+          241.41,
+          508.38,
+          717.71
+        ],
+        "confidence": 0.8278,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 106,
+    "timestamp_sec": 3.533,
+    "person_count": 3,
+    "inference_ms": 95.91,
+    "total_frame_ms": 103.87,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          467.05,
+          265.48,
+          717.96,
+          677.86
+        ],
+        "confidence": 0.9005,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          100.44,
+          230.77,
+          469.67,
+          713.47
+        ],
+        "confidence": 0.8483,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.1,
+          405.71,
+          159.58,
+          686.09
+        ],
+        "confidence": 0.7892,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 107,
+    "timestamp_sec": 3.567,
+    "person_count": 3,
+    "inference_ms": 96.64,
+    "total_frame_ms": 104.31,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          469.21,
+          259.57,
+          719.88,
+          669.81
+        ],
+        "confidence": 0.8922,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.07,
+          401.37,
+          163.21,
+          682.75
+        ],
+        "confidence": 0.8552,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          103.53,
+          243.91,
+          463.89,
+          706.13
+        ],
+        "confidence": 0.8159,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 108,
+    "timestamp_sec": 3.6,
+    "person_count": 3,
+    "inference_ms": 99.94,
+    "total_frame_ms": 107.92,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          469.19,
+          260.31,
+          720.9,
+          667.65
+        ],
+        "confidence": 0.896,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.45,
+          393.77,
+          163.56,
+          676.38
+        ],
+        "confidence": 0.8676,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          104.42,
+          244.35,
+          482.51,
+          700.08
+        ],
+        "confidence": 0.7188,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 109,
+    "timestamp_sec": 3.633,
+    "person_count": 3,
+    "inference_ms": 107.69,
+    "total_frame_ms": 114.26,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          469.59,
+          255.64,
+          720.54,
+          661.53
+        ],
+        "confidence": 0.8981,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.35,
+          389.1,
+          162.51,
+          670.46
+        ],
+        "confidence": 0.8811,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          104.45,
+          242.26,
+          464.3,
+          695.96
+        ],
+        "confidence": 0.8673,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 110,
+    "timestamp_sec": 3.667,
+    "person_count": 3,
+    "inference_ms": 102.52,
+    "total_frame_ms": 109.42,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          472.68,
+          252.73,
+          722.59,
+          655.25
+        ],
+        "confidence": 0.9028,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.15,
+          383.15,
+          166.3,
+          667.82
+        ],
+        "confidence": 0.8659,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          107.2,
+          241.89,
+          499.99,
+          690.66
+        ],
+        "confidence": 0.8347,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 111,
+    "timestamp_sec": 3.7,
+    "person_count": 3,
+    "inference_ms": 102.9,
+    "total_frame_ms": 109.89,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          472.47,
+          246.2,
+          720.35,
+          651.61
+        ],
+        "confidence": 0.8995,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.43,
+          376.48,
+          164.06,
+          661.99
+        ],
+        "confidence": 0.8404,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          108.04,
+          209.49,
+          511.76,
+          691.18
+        ],
+        "confidence": 0.7021,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 112,
+    "timestamp_sec": 3.733,
+    "person_count": 3,
+    "inference_ms": 113.58,
+    "total_frame_ms": 120.11,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          472.73,
+          239.3,
+          721.78,
+          649.48
+        ],
+        "confidence": 0.8977,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.11,
+          373.46,
+          166.13,
+          656.95
+        ],
+        "confidence": 0.8539,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          105.68,
+          202.63,
+          515.41,
+          686.14
+        ],
+        "confidence": 0.726,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 113,
+    "timestamp_sec": 3.767,
+    "person_count": 3,
+    "inference_ms": 95.71,
+    "total_frame_ms": 102.76,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          472.32,
+          229.86,
+          723.76,
+          646.14
+        ],
+        "confidence": 0.8942,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.15,
+          369.54,
+          165.69,
+          651.66
+        ],
+        "confidence": 0.8428,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          106.44,
+          197.34,
+          517.73,
+          683.5
+        ],
+        "confidence": 0.6936,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 114,
+    "timestamp_sec": 3.8,
+    "person_count": 3,
+    "inference_ms": 101.17,
+    "total_frame_ms": 107.76,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          471.68,
+          224.83,
+          722.35,
+          639.48
+        ],
+        "confidence": 0.9032,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.17,
+          362.3,
+          165.89,
+          645.18
+        ],
+        "confidence": 0.8277,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          107.69,
+          198.35,
+          506.5,
+          677.25
+        ],
+        "confidence": 0.546,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 115,
+    "timestamp_sec": 3.833,
+    "person_count": 3,
+    "inference_ms": 109.69,
+    "total_frame_ms": 116.55,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          471.71,
+          223.51,
+          722.95,
+          633.22
+        ],
+        "confidence": 0.899,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          105.6,
+          195.61,
+          505.25,
+          672.17
+        ],
+        "confidence": 0.8203,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.15,
+          358.28,
+          165.26,
+          640.04
+        ],
+        "confidence": 0.8154,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 116,
+    "timestamp_sec": 3.867,
+    "person_count": 3,
+    "inference_ms": 102.01,
+    "total_frame_ms": 108.95,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          470.07,
+          221.75,
+          721.04,
+          628.58
+        ],
+        "confidence": 0.9085,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          103.75,
+          200.16,
+          492.93,
+          668.48
+        ],
+        "confidence": 0.836,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.36,
+          354.26,
+          163.39,
+          637.27
+        ],
+        "confidence": 0.8289,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 117,
+    "timestamp_sec": 3.9,
+    "person_count": 3,
+    "inference_ms": 87.64,
+    "total_frame_ms": 97.8,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          470.84,
+          210.2,
+          723.91,
+          622.41
+        ],
+        "confidence": 0.8899,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.32,
+          349.12,
+          161.77,
+          628.87
+        ],
+        "confidence": 0.8351,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          106.23,
+          190.64,
+          513.62,
+          660.6
+        ],
+        "confidence": 0.669,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 118,
+    "timestamp_sec": 3.933,
+    "person_count": 3,
+    "inference_ms": 100.35,
+    "total_frame_ms": 106.36,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          469.43,
+          204.81,
+          722.76,
+          618.22
+        ],
+        "confidence": 0.8846,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.53,
+          346.18,
+          160.82,
+          624.28
+        ],
+        "confidence": 0.8417,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          102.52,
+          180.36,
+          513.35,
+          656.83
+        ],
+        "confidence": 0.7558,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 119,
+    "timestamp_sec": 3.967,
+    "person_count": 3,
+    "inference_ms": 101.78,
+    "total_frame_ms": 109.86,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          468.35,
+          204.76,
+          718.72,
+          611.57
+        ],
+        "confidence": 0.8999,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.06,
+          342.08,
+          160.53,
+          620.52
+        ],
+        "confidence": 0.8647,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          97.89,
+          166.29,
+          512.76,
+          652.47
+        ],
+        "confidence": 0.8433,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 120,
+    "timestamp_sec": 4.0,
+    "person_count": 3,
+    "inference_ms": 108.61,
+    "total_frame_ms": 117.74,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          466.48,
+          196.98,
+          717.36,
+          606.69
+        ],
+        "confidence": 0.8859,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          95.21,
+          180.4,
+          512.53,
+          648.18
+        ],
+        "confidence": 0.8794,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.09,
+          338.24,
+          157.95,
+          618.25
+        ],
+        "confidence": 0.8469,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 121,
+    "timestamp_sec": 4.033,
+    "person_count": 3,
+    "inference_ms": 100.77,
+    "total_frame_ms": 107.67,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          460.48,
+          194.64,
+          711.09,
+          603.84
+        ],
+        "confidence": 0.882,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.25,
+          331.12,
+          153.65,
+          611.45
+        ],
+        "confidence": 0.8547,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          95.04,
+          177.37,
+          503.45,
+          642.09
+        ],
+        "confidence": 0.8513,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 122,
+    "timestamp_sec": 4.067,
+    "person_count": 3,
+    "inference_ms": 107.75,
+    "total_frame_ms": 114.45,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          458.05,
+          191.66,
+          708.9,
+          597.11
+        ],
+        "confidence": 0.8858,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.26,
+          327.04,
+          150.84,
+          607.8
+        ],
+        "confidence": 0.863,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          94.78,
+          166.84,
+          497.8,
+          638.22
+        ],
+        "confidence": 0.8098,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 123,
+    "timestamp_sec": 4.1,
+    "person_count": 3,
+    "inference_ms": 107.26,
+    "total_frame_ms": 113.89,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          453.85,
+          189.28,
+          705.0,
+          592.56
+        ],
+        "confidence": 0.8781,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.22,
+          328.04,
+          146.17,
+          604.76
+        ],
+        "confidence": 0.8472,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          91.62,
+          173.53,
+          481.53,
+          632.43
+        ],
+        "confidence": 0.7656,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 124,
+    "timestamp_sec": 4.133,
+    "person_count": 3,
+    "inference_ms": 99.12,
+    "total_frame_ms": 105.75,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          451.3,
+          182.46,
+          701.47,
+          588.11
+        ],
+        "confidence": 0.8807,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.22,
+          335.41,
+          142.16,
+          598.7
+        ],
+        "confidence": 0.8444,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          86.71,
+          171.82,
+          485.46,
+          630.56
+        ],
+        "confidence": 0.6023,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 125,
+    "timestamp_sec": 4.167,
+    "person_count": 3,
+    "inference_ms": 108.81,
+    "total_frame_ms": 116.88,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          446.06,
+          178.24,
+          699.08,
+          585.43
+        ],
+        "confidence": 0.901,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.28,
+          334.73,
+          137.54,
+          591.22
+        ],
+        "confidence": 0.8502,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          81.54,
+          148.34,
+          483.34,
+          625.31
+        ],
+        "confidence": 0.6336,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 126,
+    "timestamp_sec": 4.2,
+    "person_count": 3,
+    "inference_ms": 103.21,
+    "total_frame_ms": 110.15,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          441.24,
+          174.71,
+          693.66,
+          581.43
+        ],
+        "confidence": 0.9245,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.34,
+          337.94,
+          134.75,
+          588.94
+        ],
+        "confidence": 0.8342,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          75.54,
+          130.57,
+          480.66,
+          621.86
+        ],
+        "confidence": 0.8254,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 127,
+    "timestamp_sec": 4.233,
+    "person_count": 3,
+    "inference_ms": 92.5,
+    "total_frame_ms": 101.5,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          434.79,
+          169.84,
+          686.58,
+          577.1
+        ],
+        "confidence": 0.9167,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          72.33,
+          127.96,
+          479.22,
+          615.99
+        ],
+        "confidence": 0.8936,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.18,
+          345.31,
+          127.1,
+          582.3
+        ],
+        "confidence": 0.786,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 128,
+    "timestamp_sec": 4.267,
+    "person_count": 3,
+    "inference_ms": 106.57,
+    "total_frame_ms": 115.35,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          430.66,
+          163.04,
+          683.91,
+          574.41
+        ],
+        "confidence": 0.9049,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          64.03,
+          128.56,
+          472.52,
+          613.15
+        ],
+        "confidence": 0.8848,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.18,
+          344.08,
+          123.39,
+          581.04
+        ],
+        "confidence": 0.7459,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 129,
+    "timestamp_sec": 4.3,
+    "person_count": 3,
+    "inference_ms": 113.05,
+    "total_frame_ms": 121.46,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          424.12,
+          152.63,
+          673.54,
+          570.24
+        ],
+        "confidence": 0.8998,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          60.88,
+          120.79,
+          463.68,
+          609.09
+        ],
+        "confidence": 0.8949,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.18,
+          351.06,
+          115.42,
+          552.93
+        ],
+        "confidence": 0.5459,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 130,
+    "timestamp_sec": 4.333,
+    "person_count": 2,
+    "inference_ms": 103.48,
+    "total_frame_ms": 110.84,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          416.89,
+          157.93,
+          666.52,
+          564.23
+        ],
+        "confidence": 0.8961,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          53.83,
+          126.47,
+          461.06,
+          607.42
+        ],
+        "confidence": 0.8868,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 131,
+    "timestamp_sec": 4.367,
+    "person_count": 2,
+    "inference_ms": 110.88,
+    "total_frame_ms": 118.41,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          413.61,
+          151.37,
+          665.32,
+          561.01
+        ],
+        "confidence": 0.8932,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          50.61,
+          122.02,
+          456.71,
+          602.86
+        ],
+        "confidence": 0.8825,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 132,
+    "timestamp_sec": 4.4,
+    "person_count": 2,
+    "inference_ms": 101.04,
+    "total_frame_ms": 109.69,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          404.42,
+          140.73,
+          656.91,
+          558.22
+        ],
+        "confidence": 0.8966,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          36.93,
+          120.75,
+          449.47,
+          597.22
+        ],
+        "confidence": 0.8411,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 133,
+    "timestamp_sec": 4.433,
+    "person_count": 2,
+    "inference_ms": 105.15,
+    "total_frame_ms": 112.53,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          398.29,
+          142.04,
+          651.25,
+          554.87
+        ],
+        "confidence": 0.8985,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          28.76,
+          120.33,
+          445.44,
+          594.6
+        ],
+        "confidence": 0.8786,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 134,
+    "timestamp_sec": 4.467,
+    "person_count": 2,
+    "inference_ms": 109.61,
+    "total_frame_ms": 116.47,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          393.88,
+          133.32,
+          641.29,
+          552.42
+        ],
+        "confidence": 0.8889,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          24.55,
+          108.49,
+          439.58,
+          590.43
+        ],
+        "confidence": 0.8549,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 135,
+    "timestamp_sec": 4.5,
+    "person_count": 2,
+    "inference_ms": 109.66,
+    "total_frame_ms": 117.33,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          387.61,
+          142.09,
+          635.99,
+          546.73
+        ],
+        "confidence": 0.8863,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          21.51,
+          105.96,
+          429.64,
+          586.7
+        ],
+        "confidence": 0.875,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 136,
+    "timestamp_sec": 4.533,
+    "person_count": 2,
+    "inference_ms": 105.58,
+    "total_frame_ms": 112.78,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          15.45,
+          117.59,
+          422.28,
+          584.01
+        ],
+        "confidence": 0.8964,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          379.06,
+          137.11,
+          630.68,
+          544.16
+        ],
+        "confidence": 0.8867,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 137,
+    "timestamp_sec": 4.567,
+    "person_count": 2,
+    "inference_ms": 92.29,
+    "total_frame_ms": 99.99,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          5.87,
+          120.7,
+          415.63,
+          582.74
+        ],
+        "confidence": 0.9045,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          372.66,
+          133.58,
+          623.74,
+          540.6
+        ],
+        "confidence": 0.8855,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 138,
+    "timestamp_sec": 4.6,
+    "person_count": 2,
+    "inference_ms": 103.66,
+    "total_frame_ms": 110.77,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.68,
+          115.07,
+          403.23,
+          580.13
+        ],
+        "confidence": 0.9015,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          364.2,
+          132.91,
+          613.62,
+          539.38
+        ],
+        "confidence": 0.8795,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 139,
+    "timestamp_sec": 4.633,
+    "person_count": 2,
+    "inference_ms": 102.37,
+    "total_frame_ms": 110.2,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.0,
+          123.27,
+          393.22,
+          578.91
+        ],
+        "confidence": 0.9095,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          353.79,
+          131.95,
+          605.02,
+          532.74
+        ],
+        "confidence": 0.8921,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 140,
+    "timestamp_sec": 4.667,
+    "person_count": 2,
+    "inference_ms": 95.36,
+    "total_frame_ms": 102.77,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          345.93,
+          127.9,
+          597.08,
+          532.63
+        ],
+        "confidence": 0.9047,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.26,
+          116.56,
+          383.26,
+          573.67
+        ],
+        "confidence": 0.8728,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 141,
+    "timestamp_sec": 4.7,
+    "person_count": 2,
+    "inference_ms": 108.8,
+    "total_frame_ms": 116.58,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          340.92,
+          127.26,
+          588.97,
+          530.65
+        ],
+        "confidence": 0.9012,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.33,
+          109.75,
+          364.51,
+          575.1
+        ],
+        "confidence": 0.8787,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 142,
+    "timestamp_sec": 4.733,
+    "person_count": 2,
+    "inference_ms": 101.58,
+    "total_frame_ms": 108.88,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          335.78,
+          125.43,
+          581.33,
+          525.99
+        ],
+        "confidence": 0.8981,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.41,
+          106.61,
+          343.92,
+          571.6
+        ],
+        "confidence": 0.8428,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 143,
+    "timestamp_sec": 4.767,
+    "person_count": 2,
+    "inference_ms": 107.97,
+    "total_frame_ms": 115.03,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          323.35,
+          125.09,
+          571.24,
+          526.94
+        ],
+        "confidence": 0.8912,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.53,
+          110.38,
+          359.99,
+          571.29
+        ],
+        "confidence": 0.8659,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 144,
+    "timestamp_sec": 4.8,
+    "person_count": 2,
+    "inference_ms": 109.69,
+    "total_frame_ms": 116.53,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          313.76,
+          123.35,
+          565.95,
+          527.21
+        ],
+        "confidence": 0.903,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.54,
+          103.07,
+          356.6,
+          570.02
+        ],
+        "confidence": 0.9019,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 145,
+    "timestamp_sec": 4.833,
+    "person_count": 2,
+    "inference_ms": 102.76,
+    "total_frame_ms": 108.96,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.53,
+          91.57,
+          343.9,
+          567.55
+        ],
+        "confidence": 0.8905,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          305.64,
+          120.28,
+          557.34,
+          524.97
+        ],
+        "confidence": 0.8808,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 146,
+    "timestamp_sec": 4.867,
+    "person_count": 2,
+    "inference_ms": 114.24,
+    "total_frame_ms": 120.61,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          0.43,
+          92.44,
+          330.17,
+          568.47
+        ],
+        "confidence": 0.896,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          296.42,
+          117.74,
+          546.42,
+          526.29
+        ],
+        "confidence": 0.8767,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 147,
+    "timestamp_sec": 4.9,
+    "person_count": 2,
+    "inference_ms": 103.25,
+    "total_frame_ms": 110.4,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          286.33,
+          118.99,
+          538.11,
+          525.45
+        ],
+        "confidence": 0.891,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.4,
+          91.55,
+          320.35,
+          567.03
+        ],
+        "confidence": 0.8661,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 148,
+    "timestamp_sec": 4.933,
+    "person_count": 2,
+    "inference_ms": 95.74,
+    "total_frame_ms": 101.82,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          276.59,
+          114.93,
+          527.74,
+          524.75
+        ],
+        "confidence": 0.8967,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.7,
+          81.77,
+          319.25,
+          565.96
+        ],
+        "confidence": 0.8965,
+        "class_id": 0
+      }
+    ]
+  },
+  {
+    "frame_id": 149,
+    "timestamp_sec": 4.967,
+    "person_count": 2,
+    "inference_ms": 113.02,
+    "total_frame_ms": 119.89,
+    "detections": [
+      {
+        "bbox_xyxy": [
+          269.85,
+          113.15,
+          519.75,
+          524.25
+        ],
+        "confidence": 0.8798,
+        "class_id": 0
+      },
+      {
+        "bbox_xyxy": [
+          0.46,
+          89.26,
+          308.68,
+          564.61
+        ],
+        "confidence": 0.8665,
+        "class_id": 0
+      }
+    ]
+  }
+]

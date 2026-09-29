@@ -1,0 +1,86 @@
+{
+  "model_name": "yolo11n.pt",
+  "tracker_name": "ByteTrack",
+  "device": "cpu",
+  "confidence_threshold": 0.5,
+  "input_video": "experiments\\exp02\\videos\\occlusion_crossing_test.mp4",
+  "input_resolution": "1280x720",
+  "total_frames_measured": 180,
+  "benchmark_duration_sec": 12.88,
+  "processed_pipeline_fps": 13.97,
+  "detector_only_fps": 18.8,
+  "end_to_end_fps": 16.47,
+  "tracking_metrics": {
+    "total_unique_track_ids": 7,
+    "total_tracks_created": 7,
+    "total_loss_events": 11,
+    "max_simultaneous_tracks": 3,
+    "mean_simultaneous_tracks": 2.06,
+    "track_durations_frames": {
+      "min": 1,
+      "max": 86,
+      "mean": 53.0,
+      "median": 69.0
+    },
+    "track_durations_sec": {
+      "min": 0.03,
+      "max": 2.87,
+      "mean": 1.77,
+      "median": 2.3
+    },
+    "detection_to_track_association_rate_pct": 100.0,
+    "track_fragmentation_events": 4,
+    "id_switches": "Requires human-annotated ground truth identity labels to objectively measure (marked as N/A per specification)"
+  },
+  "latencies_ms": {
+    "detector": {
+      "mean": 53.18,
+      "median": 51.63,
+      "p95": 65.0,
+      "p99": 88.51
+    },
+    "tracker": {
+      "mean": 1.57,
+      "median": 1.44,
+      "p95": 2.53,
+      "p99": 2.87
+    },
+    "total_frame": {
+      "mean": 60.73,
+      "median": 58.57,
+      "p95": 76.37,
+      "p99": 119.42
+    }
+  },
+  "environment": {
+    "python_version": "3.14.2",
+    "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "os_name": "Windows",
+    "os_release": "11",
+    "os_version": "10.0.26200",
+    "platform_machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cpu_physical_cores": 8,
+    "cpu_logical_cores": 12,
+    "ram_total_gb": 15.64,
+    "ram_available_gb": 3.22,
+    "ram_used_percent": 79.4,
+    "torch_version": "2.14.0+cpu",
+    "cuda_available": false,
+    "gpu_name": "None (CPU Execution)",
+    "gpu_total_memory_gb": 0.0
+  },
+  "resource_usage": {
+    "start": {
+      "cpu_percent": 30.6,
+      "ram_used_percent": 79.4,
+      "ram_used_gb": 12.42
+    },
+    "end": {
+      "cpu_percent": 75.6,
+      "ram_used_percent": 79.7,
+      "ram_used_gb": 12.47
+    }
+  },
+  "output_video_path": "experiments\\exp02\\videos\\annotated_tracking_occlusion_crossing_test.mp4"
+}

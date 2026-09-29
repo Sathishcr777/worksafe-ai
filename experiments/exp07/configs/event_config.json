@@ -1,0 +1,10 @@
+{
+  "config_version_id": "v1.0.0-exp07",
+  "description": "Prototype alert and event configuration for Experiment 07 (Not certified safety parameters)",
+  "parameters": {
+    "cooldown_sec": 5.0,
+    "db_path": "experiments/exp07/results/events.db",
+    "enable_wal_mode": true,
+    "max_query_limit": 500
+  }
+}

@@ -1,0 +1,7725 @@
+{
+  "benchmark_summary": {
+    "experiment": "Experiment 04: Static Safety-Zone Geometry",
+    "model_name": "yolo11n.pt",
+    "tracker_name": "ByteTrack",
+    "calibration_file": "experiments\\exp03\\results\\calibration.json",
+    "config_file": "experiments\\exp04\\configs\\safety_zones_config.json",
+    "input_video": "experiments\\exp03\\videos\\calibrated_floor_walk.mp4",
+    "input_resolution": "1280x720",
+    "total_frames_measured": 180,
+    "benchmark_duration_sec": 12.93,
+    "processed_pipeline_fps": 13.92,
+    "detector_only_fps": 18.99,
+    "zone_distribution_frames": {
+      "SAFE": 81,
+      "WARNING": 36,
+      "DANGER": 38
+    },
+    "latencies_ms": {
+      "detector": {
+        "mean": 52.67,
+        "median": 50.67,
+        "p95": 70.02,
+        "p99": 88.68
+      },
+      "tracker": {
+        "mean": 1.52,
+        "median": 1.43,
+        "p95": 2.13,
+        "p99": 3.11
+      },
+      "homography_projection": {
+        "mean": 0.077,
+        "median": 0.083,
+        "p95": 0.118,
+        "p99": 0.161
+      },
+      "zone_geometry": {
+        "mean": 0.162,
+        "median": 0.176,
+        "p95": 0.208,
+        "p99": 0.384
+      },
+      "total_frame": {
+        "mean": 60.3,
+        "median": 57.54,
+        "p95": 78.89,
+        "p99": 110.1
+      }
+    },
+    "environment": {
+      "system": {
+        "python_version": "3.14.2",
+        "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "os_name": "Windows",
+        "os_release": "11",
+        "os_version": "10.0.26200",
+        "platform_machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_physical_cores": 8,
+        "cpu_logical_cores": 12,
+        "ram_total_gb": 15.64,
+        "ram_available_gb": 3.2,
+        "ram_used_percent": 79.5,
+        "torch_version": "2.14.0+cpu",
+        "cuda_available": false,
+        "gpu_name": "None (CPU Execution)",
+        "gpu_total_memory_gb": 0.0
+      },
+      "resources_start": {
+        "cpu_percent": 34.8,
+        "ram_used_percent": 79.5,
+        "ram_used_gb": 12.44
+      },
+      "resources_end": {
+        "cpu_percent": 79.3,
+        "ram_used_percent": 79.9,
+        "ram_used_gb": 12.5
+      }
+    }
+  },
+  "frames": [
+    {
+      "frame_id": 0,
+      "timestamp_sec": 0.0,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 60.37,
+        "tracker": 1.07,
+        "projection": 0.187,
+        "geometry": 0.28,
+        "total_frame": 173.63
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            244.23,
+            313.59,
+            356.06,
+            628.65
+          ],
+          "confidence": 0.8096,
+          "bottom_center": [
+            300.14,
+            628.65
+          ],
+          "world_pos_meters": [
+            0.266,
+            0.103
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.266,
+              0.103
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.5781,
+            "signed_distance_m": 1.5781,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 1,
+      "timestamp_sec": 0.033,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.59,
+        "tracker": 2.0,
+        "projection": 0.091,
+        "geometry": 0.192,
+        "total_frame": 56.45
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            246.82,
+            313.71,
+            358.19,
+            627.57
+          ],
+          "confidence": 0.7293,
+          "bottom_center": [
+            302.5,
+            627.57
+          ],
+          "world_pos_meters": [
+            0.274,
+            0.114
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.274,
+              0.114
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.5646,
+            "signed_distance_m": 1.5646,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 2,
+      "timestamp_sec": 0.067,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.98,
+        "tracker": 1.54,
+        "projection": 0.118,
+        "geometry": 0.208,
+        "total_frame": 63.63
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            249.37,
+            314.58,
+            360.17,
+            626.83
+          ],
+          "confidence": 0.765,
+          "bottom_center": [
+            304.77,
+            626.83
+          ],
+          "world_pos_meters": [
+            0.283,
+            0.12
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.283,
+              0.12
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.5551,
+            "signed_distance_m": 1.5551,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 3,
+      "timestamp_sec": 0.1,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 59.51,
+        "tracker": 1.49,
+        "projection": 0.083,
+        "geometry": 0.172,
+        "total_frame": 67.75
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            253.05,
+            309.6,
+            365.3,
+            626.17
+          ],
+          "confidence": 0.7669,
+          "bottom_center": [
+            309.17,
+            626.17
+          ],
+          "world_pos_meters": [
+            0.304,
+            0.127
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.304,
+              0.127
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.5393,
+            "signed_distance_m": 1.5393,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 4,
+      "timestamp_sec": 0.133,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 46.12,
+        "tracker": 1.41,
+        "projection": 0.085,
+        "geometry": 0.169,
+        "total_frame": 53.51
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            256.71,
+            313.76,
+            367.02,
+            624.57
+          ],
+          "confidence": 0.6813,
+          "bottom_center": [
+            311.87,
+            624.57
+          ],
+          "world_pos_meters": [
+            0.313,
+            0.142
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.313,
+              0.142
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.5219,
+            "signed_distance_m": 1.5219,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 5,
+      "timestamp_sec": 0.167,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 58.31,
+        "tracker": 1.46,
+        "projection": 0.086,
+        "geometry": 0.177,
+        "total_frame": 65.29
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            257.93,
+            313.45,
+            368.2,
+            624.04
+          ],
+          "confidence": 0.7143,
+          "bottom_center": [
+            313.06,
+            624.04
+          ],
+          "world_pos_meters": [
+            0.317,
+            0.147
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.317,
+              0.147
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.5156,
+            "signed_distance_m": 1.5156,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 6,
+      "timestamp_sec": 0.2,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.6,
+        "tracker": 1.41,
+        "projection": 0.087,
+        "geometry": 0.165,
+        "total_frame": 51.79
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            259.17,
+            309.14,
+            370.51,
+            622.9
+          ],
+          "confidence": 0.793,
+          "bottom_center": [
+            314.84,
+            622.9
+          ],
+          "world_pos_meters": [
+            0.323,
+            0.157
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.323,
+              0.157
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.504,
+            "signed_distance_m": 1.504,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 7,
+      "timestamp_sec": 0.233,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.04,
+        "tracker": 1.51,
+        "projection": 0.084,
+        "geometry": 0.17,
+        "total_frame": 63.58
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            262.34,
+            308.27,
+            373.63,
+            621.16
+          ],
+          "confidence": 0.7464,
+          "bottom_center": [
+            317.99,
+            621.16
+          ],
+          "world_pos_meters": [
+            0.334,
+            0.174
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.334,
+              0.174
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.4839,
+            "signed_distance_m": 1.4839,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 8,
+      "timestamp_sec": 0.267,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.9,
+        "tracker": 1.43,
+        "projection": 0.085,
+        "geometry": 0.17,
+        "total_frame": 54.53
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            265.12,
+            307.52,
+            376.6,
+            619.6
+          ],
+          "confidence": 0.6813,
+          "bottom_center": [
+            320.86,
+            619.6
+          ],
+          "world_pos_meters": [
+            0.344,
+            0.189
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.344,
+              0.189
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.466,
+            "signed_distance_m": 1.466,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 9,
+      "timestamp_sec": 0.3,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.37,
+        "tracker": 1.41,
+        "projection": 0.088,
+        "geometry": 0.17,
+        "total_frame": 57.75
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            269.1,
+            306.08,
+            380.8,
+            617.94
+          ],
+          "confidence": 0.7461,
+          "bottom_center": [
+            324.95,
+            617.94
+          ],
+          "world_pos_meters": [
+            0.36,
+            0.205
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.36,
+              0.205
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.4445,
+            "signed_distance_m": 1.4445,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 10,
+      "timestamp_sec": 0.333,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 45.4,
+        "tracker": 1.39,
+        "projection": 0.084,
+        "geometry": 0.172,
+        "total_frame": 51.85
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            272.02,
+            305.03,
+            384.03,
+            617.25
+          ],
+          "confidence": 0.6368,
+          "bottom_center": [
+            328.02,
+            617.25
+          ],
+          "world_pos_meters": [
+            0.374,
+            0.212
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.374,
+              0.212
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.4321,
+            "signed_distance_m": 1.4321,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 11,
+      "timestamp_sec": 0.367,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.69,
+        "tracker": 1.36,
+        "projection": 0.132,
+        "geometry": 0.193,
+        "total_frame": 57.6
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            274.44,
+            307.72,
+            385.48,
+            616.42
+          ],
+          "confidence": 0.6432,
+          "bottom_center": [
+            329.96,
+            616.42
+          ],
+          "world_pos_meters": [
+            0.382,
+            0.22
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.382,
+              0.22
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.4214,
+            "signed_distance_m": 1.4214,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 12,
+      "timestamp_sec": 0.4,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 57.88,
+        "tracker": 1.51,
+        "projection": 0.001,
+        "geometry": 0.0,
+        "total_frame": 63.72
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 13,
+      "timestamp_sec": 0.433,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 53.54,
+        "tracker": 1.09,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 60.46
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 14,
+      "timestamp_sec": 0.467,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 54.97,
+        "tracker": 1.47,
+        "projection": 0.086,
+        "geometry": 0.168,
+        "total_frame": 61.43
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            285.08,
+            314.69,
+            391.96,
+            611.63
+          ],
+          "confidence": 0.5811,
+          "bottom_center": [
+            338.52,
+            611.63
+          ],
+          "world_pos_meters": [
+            0.412,
+            0.267
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.412,
+              0.267
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.366,
+            "signed_distance_m": 1.366,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 15,
+      "timestamp_sec": 0.5,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 43.54,
+        "tracker": 0.99,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 49.39
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 16,
+      "timestamp_sec": 0.533,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 56.76,
+        "tracker": 1.35,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 63.21
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 17,
+      "timestamp_sec": 0.567,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.44,
+        "tracker": 1.55,
+        "projection": 0.088,
+        "geometry": 0.17,
+        "total_frame": 64.84
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            294.31,
+            309.78,
+            402.5,
+            608.97
+          ],
+          "confidence": 0.5221,
+          "bottom_center": [
+            348.4,
+            608.97
+          ],
+          "world_pos_meters": [
+            0.456,
+            0.293
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.456,
+              0.293
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.3239,
+            "signed_distance_m": 1.3239,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 18,
+      "timestamp_sec": 0.6,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 44.37,
+        "tracker": 1.0,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 49.55
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 19,
+      "timestamp_sec": 0.633,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 58.72,
+        "tracker": 1.47,
+        "projection": 0.085,
+        "geometry": 0.17,
+        "total_frame": 65.04
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            315.28,
+            309.01,
+            428.07,
+            605.49
+          ],
+          "confidence": 0.5417,
+          "bottom_center": [
+            371.68,
+            605.49
+          ],
+          "world_pos_meters": [
+            0.57,
+            0.328
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.57,
+              0.328
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.2484,
+            "signed_distance_m": 1.2484,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 20,
+      "timestamp_sec": 0.667,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 51.51,
+        "tracker": 1.53,
+        "projection": 0.098,
+        "geometry": 0.189,
+        "total_frame": 58.52
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            321.27,
+            317.15,
+            435.71,
+            603.26
+          ],
+          "confidence": 0.5921,
+          "bottom_center": [
+            378.49,
+            603.26
+          ],
+          "world_pos_meters": [
+            0.601,
+            0.351
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.601,
+              0.351
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.2163,
+            "signed_distance_m": 1.2163,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 21,
+      "timestamp_sec": 0.7,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 60.59,
+        "tracker": 1.41,
+        "projection": 0.083,
+        "geometry": 0.186,
+        "total_frame": 67.42
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            315.81,
+            323.73,
+            428.61,
+            601.11
+          ],
+          "confidence": 0.6243,
+          "bottom_center": [
+            372.21,
+            601.11
+          ],
+          "world_pos_meters": [
+            0.561,
+            0.373
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.561,
+              0.373
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.2095,
+            "signed_distance_m": 1.2095,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 22,
+      "timestamp_sec": 0.733,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.7,
+        "tracker": 1.4,
+        "projection": 0.121,
+        "geometry": 0.214,
+        "total_frame": 63.15
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            309.51,
+            316.67,
+            423.58,
+            598.92
+          ],
+          "confidence": 0.6079,
+          "bottom_center": [
+            366.55,
+            598.92
+          ],
+          "world_pos_meters": [
+            0.525,
+            0.396
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.525,
+              0.396
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.2018,
+            "signed_distance_m": 1.2018,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 23,
+      "timestamp_sec": 0.767,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 54.9,
+        "tracker": 1.42,
+        "projection": 0.083,
+        "geometry": 0.164,
+        "total_frame": 61.28
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            313.84,
+            323.04,
+            425.83,
+            597.7
+          ],
+          "confidence": 0.5333,
+          "bottom_center": [
+            369.84,
+            597.7
+          ],
+          "world_pos_meters": [
+            0.539,
+            0.409
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.539,
+              0.409
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.1844,
+            "signed_distance_m": 1.1844,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 24,
+      "timestamp_sec": 0.8,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 46.13,
+        "tracker": 1.46,
+        "projection": 0.084,
+        "geometry": 0.172,
+        "total_frame": 53.6
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            316.06,
+            328.81,
+            425.86,
+            596.15
+          ],
+          "confidence": 0.572,
+          "bottom_center": [
+            370.96,
+            596.15
+          ],
+          "world_pos_meters": [
+            0.541,
+            0.425
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.541,
+              0.425
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.1689,
+            "signed_distance_m": 1.1689,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 25,
+      "timestamp_sec": 0.833,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 51.6,
+        "tracker": 1.38,
+        "projection": 0.099,
+        "geometry": 0.198,
+        "total_frame": 58.06
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            314.28,
+            309.75,
+            430.96,
+            595.14
+          ],
+          "confidence": 0.5745,
+          "bottom_center": [
+            372.62,
+            595.14
+          ],
+          "world_pos_meters": [
+            0.547,
+            0.435
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.547,
+              0.435
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.1573,
+            "signed_distance_m": 1.1573,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 26,
+      "timestamp_sec": 0.867,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 61.18,
+        "tracker": 1.44,
+        "projection": 0.083,
+        "geometry": 0.17,
+        "total_frame": 67.56
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            315.14,
+            299.17,
+            435.01,
+            595.78
+          ],
+          "confidence": 0.6903,
+          "bottom_center": [
+            375.07,
+            595.78
+          ],
+          "world_pos_meters": [
+            0.562,
+            0.429
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.562,
+              0.429
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.1571,
+            "signed_distance_m": 1.1571,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 27,
+      "timestamp_sec": 0.9,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.65,
+        "tracker": 1.63,
+        "projection": 0.083,
+        "geometry": 0.173,
+        "total_frame": 57.51
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            317.33,
+            296.23,
+            436.95,
+            594.88
+          ],
+          "confidence": 0.522,
+          "bottom_center": [
+            377.14,
+            594.88
+          ],
+          "world_pos_meters": [
+            0.571,
+            0.438
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.571,
+              0.438
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.1454,
+            "signed_distance_m": 1.1454,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 28,
+      "timestamp_sec": 0.933,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 60.22,
+        "tracker": 1.49,
+        "projection": 0.084,
+        "geometry": 0.171,
+        "total_frame": 66.39
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            320.97,
+            301.15,
+            437.33,
+            594.0
+          ],
+          "confidence": 0.5764,
+          "bottom_center": [
+            379.15,
+            594.0
+          ],
+          "world_pos_meters": [
+            0.579,
+            0.447
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.579,
+              0.447
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.134,
+            "signed_distance_m": 1.134,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 29,
+      "timestamp_sec": 0.967,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 49.04,
+        "tracker": 1.44,
+        "projection": 0.127,
+        "geometry": 0.219,
+        "total_frame": 56.31
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            325.96,
+            310.2,
+            437.76,
+            592.34
+          ],
+          "confidence": 0.736,
+          "bottom_center": [
+            381.86,
+            592.34
+          ],
+          "world_pos_meters": [
+            0.589,
+            0.465
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.589,
+              0.465
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.1136,
+            "signed_distance_m": 1.1136,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 30,
+      "timestamp_sec": 1.0,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.51,
+        "tracker": 1.39,
+        "projection": 0.095,
+        "geometry": 0.164,
+        "total_frame": 59.85
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            328.7,
+            305.41,
+            441.19,
+            590.52
+          ],
+          "confidence": 0.7049,
+          "bottom_center": [
+            384.95,
+            590.52
+          ],
+          "world_pos_meters": [
+            0.601,
+            0.485
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.601,
+              0.485
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.0906,
+            "signed_distance_m": 1.0906,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 31,
+      "timestamp_sec": 1.033,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 95.14,
+        "tracker": 2.82,
+        "projection": 0.162,
+        "geometry": 0.332,
+        "total_frame": 104.68
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            329.33,
+            296.79,
+            443.9,
+            589.7
+          ],
+          "confidence": 0.7102,
+          "bottom_center": [
+            386.61,
+            589.7
+          ],
+          "world_pos_meters": [
+            0.608,
+            0.493
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.608,
+              0.493
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.0806,
+            "signed_distance_m": 1.0806,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 32,
+      "timestamp_sec": 1.067,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 51.39,
+        "tracker": 2.41,
+        "projection": 0.089,
+        "geometry": 0.174,
+        "total_frame": 60.1
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            332.37,
+            291.84,
+            447.75,
+            588.55
+          ],
+          "confidence": 0.7556,
+          "bottom_center": [
+            390.06,
+            588.55
+          ],
+          "world_pos_meters": [
+            0.624,
+            0.506
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.624,
+              0.506
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.0627,
+            "signed_distance_m": 1.0627,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 33,
+      "timestamp_sec": 1.1,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.01,
+        "tracker": 1.51,
+        "projection": 0.087,
+        "geometry": 0.171,
+        "total_frame": 54.51
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            335.74,
+            292.33,
+            449.85,
+            586.64
+          ],
+          "confidence": 0.6887,
+          "bottom_center": [
+            392.79,
+            586.64
+          ],
+          "world_pos_meters": [
+            0.634,
+            0.527
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.634,
+              0.527
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.0396,
+            "signed_distance_m": 1.0396,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 34,
+      "timestamp_sec": 1.133,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 54.27,
+        "tracker": 1.96,
+        "projection": 0.083,
+        "geometry": 0.164,
+        "total_frame": 60.87
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            337.31,
+            289.75,
+            451.38,
+            585.6
+          ],
+          "confidence": 0.791,
+          "bottom_center": [
+            394.34,
+            585.6
+          ],
+          "world_pos_meters": [
+            0.64,
+            0.538
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.64,
+              0.538
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.0272,
+            "signed_distance_m": 1.0272,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 35,
+      "timestamp_sec": 1.167,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.1,
+        "tracker": 1.38,
+        "projection": 0.083,
+        "geometry": 0.277,
+        "total_frame": 56.51
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            339.43,
+            284.8,
+            454.04,
+            584.46
+          ],
+          "confidence": 0.7946,
+          "bottom_center": [
+            396.73,
+            584.46
+          ],
+          "world_pos_meters": [
+            0.65,
+            0.55
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.65,
+              0.55
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 1.0124,
+            "signed_distance_m": 1.0124,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 36,
+      "timestamp_sec": 1.2,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 62.12,
+        "tracker": 1.41,
+        "projection": 0.08,
+        "geometry": 0.167,
+        "total_frame": 69.04
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            342.74,
+            283.71,
+            456.27,
+            582.52
+          ],
+          "confidence": 0.6987,
+          "bottom_center": [
+            399.51,
+            582.52
+          ],
+          "world_pos_meters": [
+            0.66,
+            0.572
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.66,
+              0.572
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.9883,
+            "signed_distance_m": 0.9883,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 37,
+      "timestamp_sec": 1.233,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 62.74,
+        "tracker": 1.59,
+        "projection": 0.109,
+        "geometry": 0.162,
+        "total_frame": 70.66
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            346.73,
+            284.26,
+            458.38,
+            580.21
+          ],
+          "confidence": 0.6895,
+          "bottom_center": [
+            402.56,
+            580.21
+          ],
+          "world_pos_meters": [
+            0.671,
+            0.598
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.671,
+              0.598
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.9601,
+            "signed_distance_m": 0.9601,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 38,
+      "timestamp_sec": 1.267,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 82.52,
+        "tracker": 1.44,
+        "projection": 0.083,
+        "geometry": 0.171,
+        "total_frame": 92.44
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            350.47,
+            282.46,
+            461.47,
+            579.15
+          ],
+          "confidence": 0.662,
+          "bottom_center": [
+            405.97,
+            579.15
+          ],
+          "world_pos_meters": [
+            0.687,
+            0.61
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.687,
+              0.61
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.9434,
+            "signed_distance_m": 0.9434,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 39,
+      "timestamp_sec": 1.3,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.49,
+        "tracker": 1.5,
+        "projection": 0.103,
+        "geometry": 0.176,
+        "total_frame": 65.05
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            353.83,
+            282.37,
+            463.47,
+            577.19
+          ],
+          "confidence": 0.5838,
+          "bottom_center": [
+            408.65,
+            577.19
+          ],
+          "world_pos_meters": [
+            0.697,
+            0.632
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.697,
+              0.632
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.9194,
+            "signed_distance_m": 0.9194,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 40,
+      "timestamp_sec": 1.333,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 56.7,
+        "tracker": 1.49,
+        "projection": 0.111,
+        "geometry": 0.179,
+        "total_frame": 64.39
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            357.23,
+            282.52,
+            466.06,
+            576.67
+          ],
+          "confidence": 0.6236,
+          "bottom_center": [
+            411.65,
+            576.67
+          ],
+          "world_pos_meters": [
+            0.713,
+            0.638
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.713,
+              0.638
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.9085,
+            "signed_distance_m": 0.9085,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 41,
+      "timestamp_sec": 1.367,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 59.89,
+        "tracker": 1.26,
+        "projection": 0.075,
+        "geometry": 0.151,
+        "total_frame": 66.01
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            360.48,
+            281.87,
+            468.74,
+            575.53
+          ],
+          "confidence": 0.7271,
+          "bottom_center": [
+            414.61,
+            575.53
+          ],
+          "world_pos_meters": [
+            0.726,
+            0.651
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.726,
+              0.651
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.8921,
+            "signed_distance_m": 0.8921,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 42,
+      "timestamp_sec": 1.4,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.84,
+        "tracker": 1.43,
+        "projection": 0.082,
+        "geometry": 0.178,
+        "total_frame": 60.49
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            363.88,
+            281.29,
+            471.57,
+            573.61
+          ],
+          "confidence": 0.6871,
+          "bottom_center": [
+            417.73,
+            573.61
+          ],
+          "world_pos_meters": [
+            0.739,
+            0.672
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.739,
+              0.672
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.8682,
+            "signed_distance_m": 0.8682,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 43,
+      "timestamp_sec": 1.433,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 54.08,
+        "tracker": 1.48,
+        "projection": 0.081,
+        "geometry": 0.17,
+        "total_frame": 60.17
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            369.17,
+            294.68,
+            471.47,
+            571.53
+          ],
+          "confidence": 0.7008,
+          "bottom_center": [
+            420.32,
+            571.53
+          ],
+          "world_pos_meters": [
+            0.749,
+            0.696
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.749,
+              0.696
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.8423,
+            "signed_distance_m": 0.8423,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 44,
+      "timestamp_sec": 1.467,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 60.52,
+        "tracker": 1.41,
+        "projection": 0.081,
+        "geometry": 0.164,
+        "total_frame": 66.43
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            372.09,
+            298.04,
+            472.85,
+            570.26
+          ],
+          "confidence": 0.721,
+          "bottom_center": [
+            422.47,
+            570.26
+          ],
+          "world_pos_meters": [
+            0.758,
+            0.711
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.758,
+              0.711
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.8253,
+            "signed_distance_m": 0.8253,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 45,
+      "timestamp_sec": 1.5,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 45.7,
+        "tracker": 1.43,
+        "projection": 0.085,
+        "geometry": 0.172,
+        "total_frame": 52.22
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            372.64,
+            281.42,
+            478.3,
+            568.24
+          ],
+          "confidence": 0.6847,
+          "bottom_center": [
+            425.47,
+            568.24
+          ],
+          "world_pos_meters": [
+            0.77,
+            0.735
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.77,
+              0.735
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.7988,
+            "signed_distance_m": 0.7988,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 46,
+      "timestamp_sec": 1.533,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 55.22,
+        "tracker": 1.36,
+        "projection": 0.081,
+        "geometry": 0.166,
+        "total_frame": 62.2
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            375.49,
+            278.29,
+            481.63,
+            567.36
+          ],
+          "confidence": 0.7607,
+          "bottom_center": [
+            428.56,
+            567.36
+          ],
+          "world_pos_meters": [
+            0.785,
+            0.745
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.785,
+              0.745
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.785,
+            "signed_distance_m": 0.785,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 47,
+      "timestamp_sec": 1.567,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 45.45,
+        "tracker": 1.41,
+        "projection": 0.085,
+        "geometry": 0.174,
+        "total_frame": 52.41
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            378.32,
+            275.64,
+            484.6,
+            566.39
+          ],
+          "confidence": 0.7781,
+          "bottom_center": [
+            431.46,
+            566.39
+          ],
+          "world_pos_meters": [
+            0.799,
+            0.757
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.799,
+              0.757
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.7697,
+            "signed_distance_m": 0.7697,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 48,
+      "timestamp_sec": 1.6,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 59.18,
+        "tracker": 1.38,
+        "projection": 0.085,
+        "geometry": 0.176,
+        "total_frame": 67.46
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            381.25,
+            275.31,
+            486.86,
+            565.26
+          ],
+          "confidence": 0.6924,
+          "bottom_center": [
+            434.06,
+            565.26
+          ],
+          "world_pos_meters": [
+            0.812,
+            0.77
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.812,
+              0.77
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.7538,
+            "signed_distance_m": 0.7538,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 49,
+      "timestamp_sec": 1.633,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 55.49,
+        "tracker": 1.61,
+        "projection": 0.101,
+        "geometry": 0.179,
+        "total_frame": 63.57
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            383.72,
+            274.2,
+            488.79,
+            563.95
+          ],
+          "confidence": 0.6196,
+          "bottom_center": [
+            436.25,
+            563.95
+          ],
+          "world_pos_meters": [
+            0.821,
+            0.786
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.821,
+              0.786
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.7361,
+            "signed_distance_m": 0.7361,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 50,
+      "timestamp_sec": 1.667,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.62,
+        "tracker": 1.71,
+        "projection": 0.082,
+        "geometry": 0.171,
+        "total_frame": 55.46
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            387.61,
+            273.47,
+            491.68,
+            561.49
+          ],
+          "confidence": 0.758,
+          "bottom_center": [
+            439.64,
+            561.49
+          ],
+          "world_pos_meters": [
+            0.835,
+            0.815
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.835,
+              0.815
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.7046,
+            "signed_distance_m": 0.7046,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 51,
+      "timestamp_sec": 1.7,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 56.73,
+        "tracker": 1.41,
+        "projection": 0.083,
+        "geometry": 0.164,
+        "total_frame": 62.75
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            391.66,
+            273.94,
+            495.17,
+            560.57
+          ],
+          "confidence": 0.7014,
+          "bottom_center": [
+            443.41,
+            560.57
+          ],
+          "world_pos_meters": [
+            0.855,
+            0.826
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.855,
+              0.826
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.6894,
+            "signed_distance_m": 0.6894,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 52,
+      "timestamp_sec": 1.733,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 46.45,
+        "tracker": 1.44,
+        "projection": 0.083,
+        "geometry": 0.19,
+        "total_frame": 53.15
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            394.5,
+            276.27,
+            496.58,
+            559.4
+          ],
+          "confidence": 0.7487,
+          "bottom_center": [
+            445.54,
+            559.4
+          ],
+          "world_pos_meters": [
+            0.864,
+            0.841
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.864,
+              0.841
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.6729,
+            "signed_distance_m": 0.6729,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 53,
+      "timestamp_sec": 1.767,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 59.97,
+        "tracker": 1.27,
+        "projection": 0.075,
+        "geometry": 0.153,
+        "total_frame": 65.7
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            397.15,
+            274.84,
+            498.94,
+            557.74
+          ],
+          "confidence": 0.7009,
+          "bottom_center": [
+            448.04,
+            557.74
+          ],
+          "world_pos_meters": [
+            0.875,
+            0.861
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.875,
+              0.861
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.6511,
+            "signed_distance_m": 0.6511,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 54,
+      "timestamp_sec": 1.8,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.64,
+        "tracker": 1.72,
+        "projection": 0.085,
+        "geometry": 0.169,
+        "total_frame": 55.28
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            398.53,
+            268.02,
+            502.32,
+            557.76
+          ],
+          "confidence": 0.7768,
+          "bottom_center": [
+            450.43,
+            557.76
+          ],
+          "world_pos_meters": [
+            0.889,
+            0.861
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.889,
+              0.861
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.6486,
+            "signed_distance_m": 0.6486,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 55,
+      "timestamp_sec": 1.833,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 51.68,
+        "tracker": 1.63,
+        "projection": 0.088,
+        "geometry": 0.17,
+        "total_frame": 58.46
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            401.66,
+            268.59,
+            504.6,
+            557.05
+          ],
+          "confidence": 0.8416,
+          "bottom_center": [
+            453.13,
+            557.05
+          ],
+          "world_pos_meters": [
+            0.903,
+            0.869
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.903,
+              0.869
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.6384,
+            "signed_distance_m": 0.6384,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 56,
+      "timestamp_sec": 1.867,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 52.64,
+        "tracker": 2.12,
+        "projection": 0.088,
+        "geometry": 0.173,
+        "total_frame": 59.86
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            405.85,
+            269.34,
+            507.62,
+            555.23
+          ],
+          "confidence": 0.8309,
+          "bottom_center": [
+            456.74,
+            555.23
+          ],
+          "world_pos_meters": [
+            0.92,
+            0.892
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.92,
+              0.892
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.6132,
+            "signed_distance_m": 0.6132,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 57,
+      "timestamp_sec": 1.9,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 51.75,
+        "tracker": 1.42,
+        "projection": 0.095,
+        "geometry": 0.164,
+        "total_frame": 58.68
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            409.37,
+            267.41,
+            511.27,
+            553.7
+          ],
+          "confidence": 0.7393,
+          "bottom_center": [
+            460.32,
+            553.7
+          ],
+          "world_pos_meters": [
+            0.938,
+            0.911
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.938,
+              0.911
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.5923,
+            "signed_distance_m": 0.5923,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 58,
+      "timestamp_sec": 1.933,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 60.52,
+        "tracker": 1.39,
+        "projection": 0.082,
+        "geometry": 0.169,
+        "total_frame": 66.78
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            412.09,
+            267.14,
+            513.66,
+            552.68
+          ],
+          "confidence": 0.7808,
+          "bottom_center": [
+            462.88,
+            552.68
+          ],
+          "world_pos_meters": [
+            0.951,
+            0.924
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.951,
+              0.924
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.5781,
+            "signed_distance_m": 0.5781,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 59,
+      "timestamp_sec": 1.967,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.97,
+        "tracker": 1.49,
+        "projection": 0.085,
+        "geometry": 0.173,
+        "total_frame": 54.45
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            414.75,
+            266.89,
+            515.74,
+            550.75
+          ],
+          "confidence": 0.786,
+          "bottom_center": [
+            465.25,
+            550.75
+          ],
+          "world_pos_meters": [
+            0.961,
+            0.948
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.961,
+              0.948
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.5534,
+            "signed_distance_m": 0.5534,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 60,
+      "timestamp_sec": 2.0,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.17,
+        "tracker": 1.5,
+        "projection": 0.084,
+        "geometry": 0.171,
+        "total_frame": 63.84
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            417.64,
+            265.87,
+            518.5,
+            549.29
+          ],
+          "confidence": 0.6983,
+          "bottom_center": [
+            468.07,
+            549.29
+          ],
+          "world_pos_meters": [
+            0.974,
+            0.966
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.974,
+              0.966
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.5346,
+            "signed_distance_m": 0.5346,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 61,
+      "timestamp_sec": 2.033,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 49.4,
+        "tracker": 1.43,
+        "projection": 0.083,
+        "geometry": 0.173,
+        "total_frame": 56.26
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            420.64,
+            266.48,
+            520.89,
+            548.85
+          ],
+          "confidence": 0.6648,
+          "bottom_center": [
+            470.77,
+            548.85
+          ],
+          "world_pos_meters": [
+            0.989,
+            0.972
+          ],
+          "zone_evaluation": {
+            "point": [
+              0.989,
+              0.972
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.5281,
+            "signed_distance_m": 0.5281,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 62,
+      "timestamp_sec": 2.067,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.96,
+        "tracker": 1.58,
+        "projection": 0.085,
+        "geometry": 0.174,
+        "total_frame": 55.95
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            423.33,
+            265.85,
+            523.95,
+            549.91
+          ],
+          "confidence": 0.7042,
+          "bottom_center": [
+            473.64,
+            549.91
+          ],
+          "world_pos_meters": [
+            1.009,
+            0.959
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.009,
+              0.959
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.541,
+            "signed_distance_m": 0.541,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 63,
+      "timestamp_sec": 2.1,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.12,
+        "tracker": 1.41,
+        "projection": 0.086,
+        "geometry": 0.168,
+        "total_frame": 53.11
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            425.46,
+            266.25,
+            525.92,
+            550.13
+          ],
+          "confidence": 0.6719,
+          "bottom_center": [
+            475.69,
+            550.13
+          ],
+          "world_pos_meters": [
+            1.021,
+            0.956
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.021,
+              0.956
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.544,
+            "signed_distance_m": 0.544,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 64,
+      "timestamp_sec": 2.133,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 60.96,
+        "tracker": 1.44,
+        "projection": 0.087,
+        "geometry": 0.175,
+        "total_frame": 69.62
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            427.9,
+            265.14,
+            528.4,
+            549.48
+          ],
+          "confidence": 0.6129,
+          "bottom_center": [
+            478.15,
+            549.48
+          ],
+          "world_pos_meters": [
+            1.035,
+            0.964
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.035,
+              0.964
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.536,
+            "signed_distance_m": 0.536,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 65,
+      "timestamp_sec": 2.167,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 49.52,
+        "tracker": 2.26,
+        "projection": 0.139,
+        "geometry": 0.205,
+        "total_frame": 57.49
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            432.83,
+            264.3,
+            531.84,
+            546.94
+          ],
+          "confidence": 0.5983,
+          "bottom_center": [
+            482.34,
+            546.94
+          ],
+          "world_pos_meters": [
+            1.055,
+            0.996
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.055,
+              0.996
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.504,
+            "signed_distance_m": 0.504,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 66,
+      "timestamp_sec": 2.2,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 45.18,
+        "tracker": 1.38,
+        "projection": 0.101,
+        "geometry": 0.199,
+        "total_frame": 51.52
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            436.74,
+            264.95,
+            534.27,
+            544.7
+          ],
+          "confidence": 0.6398,
+          "bottom_center": [
+            485.51,
+            544.7
+          ],
+          "world_pos_meters": [
+            1.069,
+            1.025
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.069,
+              1.025
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.475,
+            "signed_distance_m": 0.475,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 67,
+      "timestamp_sec": 2.233,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.34,
+        "tracker": 1.58,
+        "projection": 0.082,
+        "geometry": 0.178,
+        "total_frame": 64.31
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            438.97,
+            262.73,
+            538.0,
+            547.74
+          ],
+          "confidence": 0.7402,
+          "bottom_center": [
+            488.49,
+            547.74
+          ],
+          "world_pos_meters": [
+            1.093,
+            0.986
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.093,
+              0.986
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.514,
+            "signed_distance_m": 0.514,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 68,
+      "timestamp_sec": 2.267,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.77,
+        "tracker": 1.45,
+        "projection": 0.083,
+        "geometry": 0.169,
+        "total_frame": 55.36
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            440.64,
+            260.6,
+            540.52,
+            549.41
+          ],
+          "confidence": 0.697,
+          "bottom_center": [
+            490.58,
+            549.41
+          ],
+          "world_pos_meters": [
+            1.109,
+            0.965
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.109,
+              0.965
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.535,
+            "signed_distance_m": 0.535,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 69,
+      "timestamp_sec": 2.3,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.92,
+        "tracker": 1.69,
+        "projection": 0.085,
+        "geometry": 0.174,
+        "total_frame": 60.82
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            441.48,
+            260.39,
+            540.0,
+            543.11
+          ],
+          "confidence": 0.6032,
+          "bottom_center": [
+            490.74,
+            543.11
+          ],
+          "world_pos_meters": [
+            1.098,
+            1.046
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.098,
+              1.046
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.454,
+            "signed_distance_m": 0.454,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 70,
+      "timestamp_sec": 2.333,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.44,
+        "tracker": 1.4,
+        "projection": 0.083,
+        "geometry": 0.166,
+        "total_frame": 54.87
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            445.31,
+            260.61,
+            542.51,
+            539.05
+          ],
+          "confidence": 0.6973,
+          "bottom_center": [
+            493.91,
+            539.05
+          ],
+          "world_pos_meters": [
+            1.109,
+            1.1
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.109,
+              1.1
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.4,
+            "signed_distance_m": 0.4,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 71,
+      "timestamp_sec": 2.367,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 74.81,
+        "tracker": 1.76,
+        "projection": 0.084,
+        "geometry": 0.173,
+        "total_frame": 82.6
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            449.16,
+            259.69,
+            545.34,
+            534.48
+          ],
+          "confidence": 0.5765,
+          "bottom_center": [
+            497.25,
+            534.48
+          ],
+          "world_pos_meters": [
+            1.121,
+            1.161
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.121,
+              1.161
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.339,
+            "signed_distance_m": 0.339,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 72,
+      "timestamp_sec": 2.4,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 49.8,
+        "tracker": 1.45,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 56.53
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 73,
+      "timestamp_sec": 2.433,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 55.11,
+        "tracker": 1.18,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 60.0
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 74,
+      "timestamp_sec": 2.467,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.36,
+        "tracker": 1.43,
+        "projection": 0.08,
+        "geometry": 0.163,
+        "total_frame": 57.16
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            458.98,
+            257.93,
+            553.93,
+            528.86
+          ],
+          "confidence": 0.6877,
+          "bottom_center": [
+            506.45,
+            528.86
+          ],
+          "world_pos_meters": [
+            1.167,
+            1.238
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.167,
+              1.238
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.262,
+            "signed_distance_m": 0.262,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 75,
+      "timestamp_sec": 2.5,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.72,
+        "tracker": 1.46,
+        "projection": 0.087,
+        "geometry": 0.163,
+        "total_frame": 63.66
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            462.96,
+            258.11,
+            557.82,
+            528.08
+          ],
+          "confidence": 0.6697,
+          "bottom_center": [
+            510.39,
+            528.08
+          ],
+          "world_pos_meters": [
+            1.19,
+            1.249
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.19,
+              1.249
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.251,
+            "signed_distance_m": 0.251,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 76,
+      "timestamp_sec": 2.533,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 49.06,
+        "tracker": 1.41,
+        "projection": 0.084,
+        "geometry": 0.174,
+        "total_frame": 56.12
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            465.47,
+            257.92,
+            560.36,
+            527.91
+          ],
+          "confidence": 0.6988,
+          "bottom_center": [
+            512.91,
+            527.91
+          ],
+          "world_pos_meters": [
+            1.206,
+            1.251
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.206,
+              1.251
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.249,
+            "signed_distance_m": 0.249,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 77,
+      "timestamp_sec": 2.567,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.85,
+        "tracker": 1.42,
+        "projection": 0.082,
+        "geometry": 0.17,
+        "total_frame": 64.55
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            468.03,
+            253.4,
+            563.61,
+            526.28
+          ],
+          "confidence": 0.7928,
+          "bottom_center": [
+            515.82,
+            526.28
+          ],
+          "world_pos_meters": [
+            1.221,
+            1.274
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.221,
+              1.274
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.226,
+            "signed_distance_m": 0.226,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 78,
+      "timestamp_sec": 2.6,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.97,
+        "tracker": 1.38,
+        "projection": 0.087,
+        "geometry": 0.171,
+        "total_frame": 55.23
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            470.06,
+            250.94,
+            565.95,
+            525.31
+          ],
+          "confidence": 0.8174,
+          "bottom_center": [
+            518.0,
+            525.31
+          ],
+          "world_pos_meters": [
+            1.233,
+            1.288
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.233,
+              1.288
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.212,
+            "signed_distance_m": 0.212,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 79,
+      "timestamp_sec": 2.633,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.85,
+        "tracker": 1.39,
+        "projection": 0.139,
+        "geometry": 0.206,
+        "total_frame": 65.3
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            473.04,
+            252.41,
+            568.25,
+            524.35
+          ],
+          "confidence": 0.7117,
+          "bottom_center": [
+            520.65,
+            524.35
+          ],
+          "world_pos_meters": [
+            1.248,
+            1.301
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.248,
+              1.301
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.199,
+            "signed_distance_m": 0.199,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 80,
+      "timestamp_sec": 2.667,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.24,
+        "tracker": 1.57,
+        "projection": 0.088,
+        "geometry": 0.175,
+        "total_frame": 54.18
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            476.05,
+            252.3,
+            570.68,
+            522.2
+          ],
+          "confidence": 0.7063,
+          "bottom_center": [
+            523.36,
+            522.2
+          ],
+          "world_pos_meters": [
+            1.261,
+            1.332
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.261,
+              1.332
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.168,
+            "signed_distance_m": 0.168,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 81,
+      "timestamp_sec": 2.7,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 58.93,
+        "tracker": 1.37,
+        "projection": 0.08,
+        "geometry": 0.166,
+        "total_frame": 64.97
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            479.08,
+            252.07,
+            573.79,
+            521.71
+          ],
+          "confidence": 0.6839,
+          "bottom_center": [
+            526.43,
+            521.71
+          ],
+          "world_pos_meters": [
+            1.28,
+            1.339
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.28,
+              1.339
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.161,
+            "signed_distance_m": 0.161,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 82,
+      "timestamp_sec": 2.733,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 49.29,
+        "tracker": 1.37,
+        "projection": 0.097,
+        "geometry": 0.186,
+        "total_frame": 55.89
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            481.84,
+            254.06,
+            575.71,
+            520.63
+          ],
+          "confidence": 0.6543,
+          "bottom_center": [
+            528.78,
+            520.63
+          ],
+          "world_pos_meters": [
+            1.293,
+            1.355
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.293,
+              1.355
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.145,
+            "signed_distance_m": 0.145,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 83,
+      "timestamp_sec": 2.767,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 64.03,
+        "tracker": 1.65,
+        "projection": 0.093,
+        "geometry": 0.183,
+        "total_frame": 70.6
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            484.07,
+            252.61,
+            578.0,
+            518.82
+          ],
+          "confidence": 0.5979,
+          "bottom_center": [
+            531.04,
+            518.82
+          ],
+          "world_pos_meters": [
+            1.305,
+            1.381
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.305,
+              1.381
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.119,
+            "signed_distance_m": 0.119,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 84,
+      "timestamp_sec": 2.8,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 51.0,
+        "tracker": 1.09,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 56.84
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 85,
+      "timestamp_sec": 2.833,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 56.45,
+        "tracker": 1.54,
+        "projection": 0.08,
+        "geometry": 0.163,
+        "total_frame": 64.12
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            489.6,
+            248.5,
+            584.01,
+            516.56
+          ],
+          "confidence": 0.5972,
+          "bottom_center": [
+            536.8,
+            516.56
+          ],
+          "world_pos_meters": [
+            1.338,
+            1.414
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.338,
+              1.414
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.086,
+            "signed_distance_m": 0.086,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 86,
+      "timestamp_sec": 2.867,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 65.66,
+        "tracker": 1.49,
+        "projection": 0.082,
+        "geometry": 0.171,
+        "total_frame": 71.84
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            492.63,
+            248.0,
+            586.52,
+            514.44
+          ],
+          "confidence": 0.5757,
+          "bottom_center": [
+            539.58,
+            514.44
+          ],
+          "world_pos_meters": [
+            1.353,
+            1.445
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.353,
+              1.445
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.055,
+            "signed_distance_m": 0.055,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 87,
+      "timestamp_sec": 2.9,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 66.69,
+        "tracker": 1.45,
+        "projection": 0.083,
+        "geometry": 0.17,
+        "total_frame": 73.82
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            496.16,
+            248.79,
+            589.73,
+            513.93
+          ],
+          "confidence": 0.6753,
+          "bottom_center": [
+            542.95,
+            513.93
+          ],
+          "world_pos_meters": [
+            1.374,
+            1.453
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.374,
+              1.453
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.047,
+            "signed_distance_m": 0.047,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 88,
+      "timestamp_sec": 2.933,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 86.97,
+        "tracker": 1.76,
+        "projection": 0.087,
+        "geometry": 0.177,
+        "total_frame": 96.0
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            498.9,
+            248.76,
+            591.89,
+            512.49
+          ],
+          "confidence": 0.6686,
+          "bottom_center": [
+            545.4,
+            512.49
+          ],
+          "world_pos_meters": [
+            1.388,
+            1.474
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.388,
+              1.474
+            ],
+            "active_zone_id": null,
+            "active_zone_type": "SAFE",
+            "boundary_status": "OUTSIDE",
+            "distance_to_boundary_m": 0.026,
+            "signed_distance_m": 0.026,
+            "in_bounds": true,
+            "all_triggered_zones": [],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 89,
+      "timestamp_sec": 2.967,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 76.35,
+        "tracker": 5.47,
+        "projection": 0.095,
+        "geometry": 0.184,
+        "total_frame": 89.55
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            501.63,
+            246.65,
+            594.5,
+            510.79
+          ],
+          "confidence": 0.739,
+          "bottom_center": [
+            548.07,
+            510.79
+          ],
+          "world_pos_meters": [
+            1.402,
+            1.5
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.402,
+              1.5
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "ON_BOUNDARY",
+            "distance_to_boundary_m": 0.0,
+            "signed_distance_m": 0.0,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 90,
+      "timestamp_sec": 3.0,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 68.77,
+        "tracker": 2.0,
+        "projection": 0.089,
+        "geometry": 0.2,
+        "total_frame": 77.15
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            504.36,
+            245.35,
+            597.31,
+            510.35
+          ],
+          "confidence": 0.7723,
+          "bottom_center": [
+            550.83,
+            510.35
+          ],
+          "world_pos_meters": [
+            1.42,
+            1.506
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.42,
+              1.506
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.006,
+            "signed_distance_m": -0.006,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 91,
+      "timestamp_sec": 3.033,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 67.54,
+        "tracker": 1.67,
+        "projection": 0.087,
+        "geometry": 0.18,
+        "total_frame": 75.81
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            507.4,
+            243.76,
+            600.02,
+            507.91
+          ],
+          "confidence": 0.7864,
+          "bottom_center": [
+            553.71,
+            507.91
+          ],
+          "world_pos_meters": [
+            1.435,
+            1.543
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.435,
+              1.543
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.043,
+            "signed_distance_m": -0.043,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 92,
+      "timestamp_sec": 3.067,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 51.75,
+        "tracker": 1.43,
+        "projection": 0.083,
+        "geometry": 0.177,
+        "total_frame": 59.21
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            510.16,
+            244.32,
+            601.94,
+            505.75
+          ],
+          "confidence": 0.8191,
+          "bottom_center": [
+            556.05,
+            505.75
+          ],
+          "world_pos_meters": [
+            1.448,
+            1.577
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.448,
+              1.577
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.077,
+            "signed_distance_m": -0.077,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 93,
+      "timestamp_sec": 3.1,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.06,
+        "tracker": 1.91,
+        "projection": 0.083,
+        "geometry": 0.181,
+        "total_frame": 65.33
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            515.21,
+            254.44,
+            603.76,
+            504.74
+          ],
+          "confidence": 0.5772,
+          "bottom_center": [
+            559.48,
+            504.74
+          ],
+          "world_pos_meters": [
+            1.469,
+            1.592
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.469,
+              1.592
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.092,
+            "signed_distance_m": -0.092,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 94,
+      "timestamp_sec": 3.133,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.2,
+        "tracker": 1.43,
+        "projection": 0.084,
+        "geometry": 0.181,
+        "total_frame": 50.71
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            517.13,
+            245.11,
+            607.93,
+            502.1
+          ],
+          "confidence": 0.6605,
+          "bottom_center": [
+            562.53,
+            502.1
+          ],
+          "world_pos_meters": [
+            1.486,
+            1.633
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.486,
+              1.633
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.133,
+            "signed_distance_m": -0.133,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 95,
+      "timestamp_sec": 3.167,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.9,
+        "tracker": 1.4,
+        "projection": 0.086,
+        "geometry": 0.184,
+        "total_frame": 57.7
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            520.02,
+            242.87,
+            611.07,
+            500.73
+          ],
+          "confidence": 0.5797,
+          "bottom_center": [
+            565.55,
+            500.73
+          ],
+          "world_pos_meters": [
+            1.505,
+            1.655
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.505,
+              1.655
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.155,
+            "signed_distance_m": -0.155,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 96,
+      "timestamp_sec": 3.2,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 39.86,
+        "tracker": 1.42,
+        "projection": 0.083,
+        "geometry": 0.172,
+        "total_frame": 46.59
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            522.65,
+            240.64,
+            614.05,
+            499.58
+          ],
+          "confidence": 0.6009,
+          "bottom_center": [
+            568.35,
+            499.58
+          ],
+          "world_pos_meters": [
+            1.522,
+            1.673
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.522,
+              1.673
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.173,
+            "signed_distance_m": -0.173,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 97,
+      "timestamp_sec": 3.233,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 40.06,
+        "tracker": 1.42,
+        "projection": 0.085,
+        "geometry": 0.189,
+        "total_frame": 48.65
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            524.75,
+            239.97,
+            615.92,
+            498.32
+          ],
+          "confidence": 0.6884,
+          "bottom_center": [
+            570.34,
+            498.32
+          ],
+          "world_pos_meters": [
+            1.534,
+            1.693
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.534,
+              1.693
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.193,
+            "signed_distance_m": -0.193,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 98,
+      "timestamp_sec": 3.267,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 49.1,
+        "tracker": 1.45,
+        "projection": 0.101,
+        "geometry": 0.178,
+        "total_frame": 59.36
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            528.26,
+            241.3,
+            618.41,
+            497.32
+          ],
+          "confidence": 0.7225,
+          "bottom_center": [
+            573.34,
+            497.32
+          ],
+          "world_pos_meters": [
+            1.553,
+            1.709
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.553,
+              1.709
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.209,
+            "signed_distance_m": -0.209,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 99,
+      "timestamp_sec": 3.3,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.41,
+        "tracker": 1.39,
+        "projection": 0.086,
+        "geometry": 0.172,
+        "total_frame": 50.43
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            531.33,
+            239.21,
+            622.1,
+            497.02
+          ],
+          "confidence": 0.6679,
+          "bottom_center": [
+            576.71,
+            497.02
+          ],
+          "world_pos_meters": [
+            1.575,
+            1.714
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.575,
+              1.714
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.214,
+            "signed_distance_m": -0.214,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 100,
+      "timestamp_sec": 3.333,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 49.42,
+        "tracker": 1.4,
+        "projection": 0.082,
+        "geometry": 0.173,
+        "total_frame": 56.87
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            533.63,
+            237.5,
+            624.5,
+            495.58
+          ],
+          "confidence": 0.7131,
+          "bottom_center": [
+            579.07,
+            495.58
+          ],
+          "world_pos_meters": [
+            1.589,
+            1.738
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.589,
+              1.738
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.238,
+            "signed_distance_m": -0.238,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 101,
+      "timestamp_sec": 3.367,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 41.6,
+        "tracker": 1.34,
+        "projection": 0.081,
+        "geometry": 0.171,
+        "total_frame": 48.49
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            537.41,
+            238.69,
+            627.31,
+            494.4
+          ],
+          "confidence": 0.7023,
+          "bottom_center": [
+            582.36,
+            494.4
+          ],
+          "world_pos_meters": [
+            1.611,
+            1.757
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.611,
+              1.757
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.257,
+            "signed_distance_m": -0.257,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 102,
+      "timestamp_sec": 3.4,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 45.24,
+        "tracker": 1.42,
+        "projection": 0.084,
+        "geometry": 0.178,
+        "total_frame": 51.81
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            538.51,
+            235.76,
+            629.51,
+            494.17
+          ],
+          "confidence": 0.6549,
+          "bottom_center": [
+            584.01,
+            494.17
+          ],
+          "world_pos_meters": [
+            1.621,
+            1.761
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.621,
+              1.761
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.261,
+            "signed_distance_m": -0.261,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 103,
+      "timestamp_sec": 3.433,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.23,
+        "tracker": 1.39,
+        "projection": 0.08,
+        "geometry": 0.178,
+        "total_frame": 52.11
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            542.63,
+            235.28,
+            633.22,
+            492.54
+          ],
+          "confidence": 0.6789,
+          "bottom_center": [
+            587.92,
+            492.54
+          ],
+          "world_pos_meters": [
+            1.647,
+            1.787
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.647,
+              1.787
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.287,
+            "signed_distance_m": -0.287,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 104,
+      "timestamp_sec": 3.467,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 51.48,
+        "tracker": 1.52,
+        "projection": 0.083,
+        "geometry": 0.181,
+        "total_frame": 58.13
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            546.3,
+            237.75,
+            635.27,
+            490.16
+          ],
+          "confidence": 0.7737,
+          "bottom_center": [
+            590.79,
+            490.16
+          ],
+          "world_pos_meters": [
+            1.664,
+            1.827
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.664,
+              1.827
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.327,
+            "signed_distance_m": -0.327,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 105,
+      "timestamp_sec": 3.5,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 41.31,
+        "tracker": 1.43,
+        "projection": 0.084,
+        "geometry": 0.18,
+        "total_frame": 47.98
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            549.48,
+            236.3,
+            638.71,
+            489.12
+          ],
+          "confidence": 0.7743,
+          "bottom_center": [
+            594.09,
+            489.12
+          ],
+          "world_pos_meters": [
+            1.686,
+            1.844
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.686,
+              1.844
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.344,
+            "signed_distance_m": -0.344,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 106,
+      "timestamp_sec": 3.533,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.76,
+        "tracker": 1.78,
+        "projection": 0.083,
+        "geometry": 0.193,
+        "total_frame": 54.51
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            553.39,
+            237.24,
+            641.76,
+            487.57
+          ],
+          "confidence": 0.6916,
+          "bottom_center": [
+            597.58,
+            487.57
+          ],
+          "world_pos_meters": [
+            1.709,
+            1.87
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.709,
+              1.87
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.37,
+            "signed_distance_m": -0.37,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 107,
+      "timestamp_sec": 3.567,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.37,
+        "tracker": 1.69,
+        "projection": 0.081,
+        "geometry": 0.205,
+        "total_frame": 51.85
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            555.54,
+            237.05,
+            643.52,
+            486.32
+          ],
+          "confidence": 0.7567,
+          "bottom_center": [
+            599.53,
+            486.32
+          ],
+          "world_pos_meters": [
+            1.721,
+            1.891
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.721,
+              1.891
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.391,
+            "signed_distance_m": -0.391,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 108,
+      "timestamp_sec": 3.6,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.33,
+        "tracker": 1.46,
+        "projection": 0.095,
+        "geometry": 0.185,
+        "total_frame": 54.91
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            556.66,
+            233.2,
+            646.01,
+            485.83
+          ],
+          "confidence": 0.7434,
+          "bottom_center": [
+            601.34,
+            485.83
+          ],
+          "world_pos_meters": [
+            1.733,
+            1.899
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.733,
+              1.899
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.399,
+            "signed_distance_m": -0.399,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 109,
+      "timestamp_sec": 3.633,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 43.13,
+        "tracker": 1.41,
+        "projection": 0.08,
+        "geometry": 0.177,
+        "total_frame": 50.98
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            558.82,
+            231.72,
+            648.18,
+            484.53
+          ],
+          "confidence": 0.698,
+          "bottom_center": [
+            603.5,
+            484.53
+          ],
+          "world_pos_meters": [
+            1.747,
+            1.922
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.747,
+              1.922
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.422,
+            "signed_distance_m": -0.422,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 110,
+      "timestamp_sec": 3.667,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.61,
+        "tracker": 1.45,
+        "projection": 0.087,
+        "geometry": 0.189,
+        "total_frame": 55.52
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            560.82,
+            230.39,
+            650.1,
+            483.48
+          ],
+          "confidence": 0.7351,
+          "bottom_center": [
+            605.46,
+            483.48
+          ],
+          "world_pos_meters": [
+            1.76,
+            1.94
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.76,
+              1.94
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.44,
+            "signed_distance_m": -0.44,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 111,
+      "timestamp_sec": 3.7,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 42.14,
+        "tracker": 1.43,
+        "projection": 0.082,
+        "geometry": 0.178,
+        "total_frame": 49.16
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            564.83,
+            229.44,
+            654.08,
+            482.88
+          ],
+          "confidence": 0.6826,
+          "bottom_center": [
+            609.45,
+            482.88
+          ],
+          "world_pos_meters": [
+            1.788,
+            1.95
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.788,
+              1.95
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.45,
+            "signed_distance_m": -0.45,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 112,
+      "timestamp_sec": 3.733,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.42,
+        "tracker": 1.46,
+        "projection": 0.081,
+        "geometry": 0.172,
+        "total_frame": 54.54
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            568.32,
+            229.47,
+            656.5,
+            480.61
+          ],
+          "confidence": 0.608,
+          "bottom_center": [
+            612.41,
+            480.61
+          ],
+          "world_pos_meters": [
+            1.807,
+            1.989
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.807,
+              1.989
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.489,
+            "signed_distance_m": -0.489,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 113,
+      "timestamp_sec": 3.767,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 41.44,
+        "tracker": 1.42,
+        "projection": 0.082,
+        "geometry": 0.179,
+        "total_frame": 48.22
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            571.36,
+            229.84,
+            658.86,
+            479.71
+          ],
+          "confidence": 0.7459,
+          "bottom_center": [
+            615.11,
+            479.71
+          ],
+          "world_pos_meters": [
+            1.826,
+            2.005
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.826,
+              2.005
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.005,
+            "signed_distance_m": -0.005,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 114,
+      "timestamp_sec": 3.8,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.58,
+        "tracker": 1.68,
+        "projection": 0.081,
+        "geometry": 0.18,
+        "total_frame": 55.19
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            574.6,
+            229.23,
+            662.02,
+            478.96
+          ],
+          "confidence": 0.7034,
+          "bottom_center": [
+            618.31,
+            478.96
+          ],
+          "world_pos_meters": [
+            1.848,
+            2.018
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.848,
+              2.018
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.018,
+            "signed_distance_m": -0.018,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 115,
+      "timestamp_sec": 3.833,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 40.1,
+        "tracker": 1.4,
+        "projection": 0.083,
+        "geometry": 0.181,
+        "total_frame": 47.22
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            578.04,
+            229.36,
+            664.76,
+            476.84
+          ],
+          "confidence": 0.7891,
+          "bottom_center": [
+            621.4,
+            476.84
+          ],
+          "world_pos_meters": [
+            1.869,
+            2.056
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.869,
+              2.056
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.056,
+            "signed_distance_m": -0.056,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 116,
+      "timestamp_sec": 3.867,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.17,
+        "tracker": 1.45,
+        "projection": 0.086,
+        "geometry": 0.183,
+        "total_frame": 64.64
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            582.03,
+            231.74,
+            667.45,
+            474.46
+          ],
+          "confidence": 0.6437,
+          "bottom_center": [
+            624.74,
+            474.46
+          ],
+          "world_pos_meters": [
+            1.892,
+            2.098
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.892,
+              2.098
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.098,
+            "signed_distance_m": -0.098,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 117,
+      "timestamp_sec": 3.9,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 39.47,
+        "tracker": 1.0,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 44.51
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 118,
+      "timestamp_sec": 3.933,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 54.74,
+        "tracker": 1.41,
+        "projection": 0.086,
+        "geometry": 0.748,
+        "total_frame": 63.52
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            587.56,
+            229.31,
+            672.6,
+            470.97
+          ],
+          "confidence": 0.7133,
+          "bottom_center": [
+            630.08,
+            470.97
+          ],
+          "world_pos_meters": [
+            1.929,
+            2.162
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.929,
+              2.162
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.162,
+            "signed_distance_m": -0.162,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 119,
+      "timestamp_sec": 3.967,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 43.16,
+        "tracker": 1.42,
+        "projection": 0.08,
+        "geometry": 0.181,
+        "total_frame": 50.06
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            590.18,
+            231.33,
+            674.42,
+            470.0
+          ],
+          "confidence": 0.7983,
+          "bottom_center": [
+            632.3,
+            470.0
+          ],
+          "world_pos_meters": [
+            1.945,
+            2.179
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.945,
+              2.179
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.179,
+            "signed_distance_m": -0.179,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 120,
+      "timestamp_sec": 4.0,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.07,
+        "tracker": 1.46,
+        "projection": 0.083,
+        "geometry": 0.182,
+        "total_frame": 60.6
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            593.63,
+            236.24,
+            676.31,
+            469.09
+          ],
+          "confidence": 0.8149,
+          "bottom_center": [
+            634.97,
+            469.09
+          ],
+          "world_pos_meters": [
+            1.964,
+            2.196
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.964,
+              2.196
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.196,
+            "signed_distance_m": -0.196,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 121,
+      "timestamp_sec": 4.033,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 41.04,
+        "tracker": 1.43,
+        "projection": 0.085,
+        "geometry": 0.186,
+        "total_frame": 47.62
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            596.92,
+            240.23,
+            678.16,
+            467.6
+          ],
+          "confidence": 0.6681,
+          "bottom_center": [
+            637.54,
+            467.6
+          ],
+          "world_pos_meters": [
+            1.982,
+            2.224
+          ],
+          "zone_evaluation": {
+            "point": [
+              1.982,
+              2.224
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.224,
+            "signed_distance_m": -0.224,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 122,
+      "timestamp_sec": 4.067,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 56.23,
+        "tracker": 1.39,
+        "projection": 0.084,
+        "geometry": 0.186,
+        "total_frame": 62.86
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            598.77,
+            229.4,
+            683.09,
+            465.84
+          ],
+          "confidence": 0.69,
+          "bottom_center": [
+            640.93,
+            465.84
+          ],
+          "world_pos_meters": [
+            2.007,
+            2.257
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.007,
+              2.257
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.257,
+            "signed_distance_m": -0.257,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 123,
+      "timestamp_sec": 4.1,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.68,
+        "tracker": 1.44,
+        "projection": 0.083,
+        "geometry": 0.182,
+        "total_frame": 57.24
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            600.34,
+            224.45,
+            686.1,
+            464.96
+          ],
+          "confidence": 0.5292,
+          "bottom_center": [
+            643.22,
+            464.96
+          ],
+          "world_pos_meters": [
+            2.023,
+            2.273
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.023,
+              2.273
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.273,
+            "signed_distance_m": -0.273,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 124,
+      "timestamp_sec": 4.133,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.02,
+        "tracker": 1.41,
+        "projection": 0.084,
+        "geometry": 0.2,
+        "total_frame": 61.07
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            602.62,
+            221.79,
+            688.71,
+            463.32
+          ],
+          "confidence": 0.5468,
+          "bottom_center": [
+            645.67,
+            463.32
+          ],
+          "world_pos_meters": [
+            2.041,
+            2.305
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.041,
+              2.305
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.305,
+            "signed_distance_m": -0.305,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 125,
+      "timestamp_sec": 4.167,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 38.83,
+        "tracker": 1.5,
+        "projection": 0.086,
+        "geometry": 0.184,
+        "total_frame": 45.58
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            606.7,
+            221.58,
+            692.52,
+            462.73
+          ],
+          "confidence": 0.5266,
+          "bottom_center": [
+            649.61,
+            462.73
+          ],
+          "world_pos_meters": [
+            2.07,
+            2.316
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.07,
+              2.316
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.316,
+            "signed_distance_m": -0.316,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 126,
+      "timestamp_sec": 4.2,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.03,
+        "tracker": 1.38,
+        "projection": 0.079,
+        "geometry": 0.176,
+        "total_frame": 53.52
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            608.93,
+            220.4,
+            694.62,
+            462.22
+          ],
+          "confidence": 0.5985,
+          "bottom_center": [
+            651.77,
+            462.22
+          ],
+          "world_pos_meters": [
+            2.086,
+            2.326
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.086,
+              2.326
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.326,
+            "signed_distance_m": -0.326,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 127,
+      "timestamp_sec": 4.233,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 39.67,
+        "tracker": 4.16,
+        "projection": 0.085,
+        "geometry": 0.183,
+        "total_frame": 48.99
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            611.34,
+            219.12,
+            696.93,
+            460.57
+          ],
+          "confidence": 0.5501,
+          "bottom_center": [
+            654.13,
+            460.57
+          ],
+          "world_pos_meters": [
+            2.104,
+            2.357
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.104,
+              2.357
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.357,
+            "signed_distance_m": -0.357,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 128,
+      "timestamp_sec": 4.267,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 51.78,
+        "tracker": 1.0,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 57.07
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 129,
+      "timestamp_sec": 4.3,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 41.27,
+        "tracker": 1.03,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 46.46
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 130,
+      "timestamp_sec": 4.333,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.56,
+        "tracker": 1.37,
+        "projection": 0.082,
+        "geometry": 0.18,
+        "total_frame": 59.88
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            622.27,
+            228.51,
+            703.76,
+            456.4
+          ],
+          "confidence": 0.6234,
+          "bottom_center": [
+            663.02,
+            456.4
+          ],
+          "world_pos_meters": [
+            2.171,
+            2.439
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.171,
+              2.439
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.439,
+            "signed_distance_m": -0.439,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 131,
+      "timestamp_sec": 4.367,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 39.01,
+        "tracker": 1.37,
+        "projection": 0.085,
+        "geometry": 0.183,
+        "total_frame": 45.5
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            624.04,
+            221.02,
+            707.57,
+            455.13
+          ],
+          "confidence": 0.633,
+          "bottom_center": [
+            665.81,
+            455.13
+          ],
+          "world_pos_meters": [
+            2.193,
+            2.464
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.193,
+              2.464
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.464,
+            "signed_distance_m": -0.464,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 132,
+      "timestamp_sec": 4.4,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.37,
+        "tracker": 1.41,
+        "projection": 0.082,
+        "geometry": 0.179,
+        "total_frame": 61.97
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            626.38,
+            219.08,
+            710.85,
+            456.18
+          ],
+          "confidence": 0.54,
+          "bottom_center": [
+            668.62,
+            456.18
+          ],
+          "world_pos_meters": [
+            2.213,
+            2.443
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.213,
+              2.443
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.443,
+            "signed_distance_m": -0.443,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 133,
+      "timestamp_sec": 4.433,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 39.18,
+        "tracker": 1.4,
+        "projection": 0.082,
+        "geometry": 0.183,
+        "total_frame": 46.01
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            628.7,
+            216.12,
+            713.82,
+            455.63
+          ],
+          "confidence": 0.5973,
+          "bottom_center": [
+            671.26,
+            455.63
+          ],
+          "world_pos_meters": [
+            2.233,
+            2.454
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.233,
+              2.454
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.454,
+            "signed_distance_m": -0.454,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 134,
+      "timestamp_sec": 4.467,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 52.79,
+        "tracker": 1.55,
+        "projection": 0.098,
+        "geometry": 0.184,
+        "total_frame": 59.2
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            632.3,
+            213.41,
+            717.68,
+            453.8
+          ],
+          "confidence": 0.6188,
+          "bottom_center": [
+            674.99,
+            453.8
+          ],
+          "world_pos_meters": [
+            2.262,
+            2.491
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.262,
+              2.491
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.491,
+            "signed_distance_m": -0.491,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 135,
+      "timestamp_sec": 4.5,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.98,
+        "tracker": 1.5,
+        "projection": 0.088,
+        "geometry": 0.192,
+        "total_frame": 51.57
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            635.58,
+            213.12,
+            719.63,
+            450.16
+          ],
+          "confidence": 0.6091,
+          "bottom_center": [
+            677.61,
+            450.16
+          ],
+          "world_pos_meters": [
+            2.284,
+            2.564
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.284,
+              2.564
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.564,
+            "signed_distance_m": -0.564,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 136,
+      "timestamp_sec": 4.533,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 56.86,
+        "tracker": 1.02,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 63.34
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 137,
+      "timestamp_sec": 4.567,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.23,
+        "tracker": 1.45,
+        "projection": 0.081,
+        "geometry": 0.183,
+        "total_frame": 56.04
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            640.0,
+            212.28,
+            723.96,
+            448.61
+          ],
+          "confidence": 0.5071,
+          "bottom_center": [
+            681.98,
+            448.61
+          ],
+          "world_pos_meters": [
+            2.319,
+            2.596
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.319,
+              2.596
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.596,
+            "signed_distance_m": -0.596,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 138,
+      "timestamp_sec": 4.6,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 41.72,
+        "tracker": 1.05,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 48.03
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 139,
+      "timestamp_sec": 4.633,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 38.64,
+        "tracker": 1.07,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 43.89
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 140,
+      "timestamp_sec": 4.667,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 51.55,
+        "tracker": 1.26,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 57.57
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 141,
+      "timestamp_sec": 4.7,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 39.9,
+        "tracker": 1.43,
+        "projection": 0.081,
+        "geometry": 0.185,
+        "total_frame": 46.42
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            654.21,
+            211.64,
+            735.17,
+            439.37
+          ],
+          "confidence": 0.7475,
+          "bottom_center": [
+            694.69,
+            439.37
+          ],
+          "world_pos_meters": [
+            2.426,
+            2.791
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.426,
+              2.791
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.574,
+            "signed_distance_m": -0.574,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 142,
+      "timestamp_sec": 4.733,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 54.41,
+        "tracker": 1.01,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 60.59
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 143,
+      "timestamp_sec": 4.767,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 42.46,
+        "tracker": 1.07,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 47.58
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 144,
+      "timestamp_sec": 4.8,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 46.48,
+        "tracker": 1.44,
+        "projection": 0.085,
+        "geometry": 0.188,
+        "total_frame": 53.08
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            663.19,
+            207.28,
+            744.27,
+            435.15
+          ],
+          "confidence": 0.7162,
+          "bottom_center": [
+            703.73,
+            435.15
+          ],
+          "world_pos_meters": [
+            2.502,
+            2.884
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.502,
+              2.884
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.498,
+            "signed_distance_m": -0.498,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 145,
+      "timestamp_sec": 4.833,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.81,
+        "tracker": 1.53,
+        "projection": 0.084,
+        "geometry": 0.184,
+        "total_frame": 51.51
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            665.2,
+            204.45,
+            746.26,
+            431.9
+          ],
+          "confidence": 0.5627,
+          "bottom_center": [
+            705.73,
+            431.9
+          ],
+          "world_pos_meters": [
+            2.523,
+            2.957
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.523,
+              2.957
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.477,
+            "signed_distance_m": -0.477,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 146,
+      "timestamp_sec": 4.867,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 53.35,
+        "tracker": 1.4,
+        "projection": 0.081,
+        "geometry": 0.18,
+        "total_frame": 61.2
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            667.73,
+            204.35,
+            749.07,
+            431.53
+          ],
+          "confidence": 0.7034,
+          "bottom_center": [
+            708.4,
+            431.53
+          ],
+          "world_pos_meters": [
+            2.545,
+            2.965
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.545,
+              2.965
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.455,
+            "signed_distance_m": -0.455,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 147,
+      "timestamp_sec": 4.9,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 47.44,
+        "tracker": 1.43,
+        "projection": 0.082,
+        "geometry": 0.176,
+        "total_frame": 53.87
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            670.4,
+            203.15,
+            751.62,
+            429.95
+          ],
+          "confidence": 0.7065,
+          "bottom_center": [
+            711.01,
+            429.95
+          ],
+          "world_pos_meters": [
+            2.568,
+            3.001
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.568,
+              3.001
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.432,
+            "signed_distance_m": -0.432,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 148,
+      "timestamp_sec": 4.933,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 43.5,
+        "tracker": 1.41,
+        "projection": 0.081,
+        "geometry": 0.182,
+        "total_frame": 51.49
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            673.35,
+            203.76,
+            754.16,
+            429.52
+          ],
+          "confidence": 0.6122,
+          "bottom_center": [
+            713.75,
+            429.52
+          ],
+          "world_pos_meters": [
+            2.591,
+            3.011
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.591,
+              3.011
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.409,
+            "signed_distance_m": -0.409,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 149,
+      "timestamp_sec": 4.967,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 40.92,
+        "tracker": 1.53,
+        "projection": 0.081,
+        "geometry": 0.264,
+        "total_frame": 47.68
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            676.48,
+            203.18,
+            757.42,
+            429.36
+          ],
+          "confidence": 0.5676,
+          "bottom_center": [
+            716.95,
+            429.36
+          ],
+          "world_pos_meters": [
+            2.617,
+            3.015
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.617,
+              3.015
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.383,
+            "signed_distance_m": -0.383,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 150,
+      "timestamp_sec": 5.0,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 46.62,
+        "tracker": 0.97,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 51.72
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 151,
+      "timestamp_sec": 5.033,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 39.95,
+        "tracker": 1.14,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 45.18
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 152,
+      "timestamp_sec": 5.067,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.16,
+        "tracker": 1.45,
+        "projection": 0.083,
+        "geometry": 0.207,
+        "total_frame": 56.61
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            684.54,
+            202.39,
+            764.57,
+            425.19
+          ],
+          "confidence": 0.7086,
+          "bottom_center": [
+            724.55,
+            425.19
+          ],
+          "world_pos_meters": [
+            2.686,
+            3.111
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.686,
+              3.111
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.314,
+            "signed_distance_m": -0.314,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 153,
+      "timestamp_sec": 5.1,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 49.16,
+        "tracker": 1.1,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 54.42
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 154,
+      "timestamp_sec": 5.133,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 46.63,
+        "tracker": 1.56,
+        "projection": 0.096,
+        "geometry": 0.193,
+        "total_frame": 53.8
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            690.97,
+            199.15,
+            771.16,
+            422.79
+          ],
+          "confidence": 0.6109,
+          "bottom_center": [
+            731.07,
+            422.79
+          ],
+          "world_pos_meters": [
+            2.744,
+            3.168
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.744,
+              3.168
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.256,
+            "signed_distance_m": -0.256,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 155,
+      "timestamp_sec": 5.167,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 46.93,
+        "tracker": 1.56,
+        "projection": 0.085,
+        "geometry": 0.182,
+        "total_frame": 54.69
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            693.08,
+            197.63,
+            773.51,
+            422.22
+          ],
+          "confidence": 0.6926,
+          "bottom_center": [
+            733.3,
+            422.22
+          ],
+          "world_pos_meters": [
+            2.763,
+            3.182
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.763,
+              3.182
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.237,
+            "signed_distance_m": -0.237,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 156,
+      "timestamp_sec": 5.2,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 42.75,
+        "tracker": 1.42,
+        "projection": 0.085,
+        "geometry": 0.182,
+        "total_frame": 49.62
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            696.17,
+            199.25,
+            775.52,
+            420.71
+          ],
+          "confidence": 0.7181,
+          "bottom_center": [
+            735.85,
+            420.71
+          ],
+          "world_pos_meters": [
+            2.788,
+            3.218
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.788,
+              3.218
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.212,
+            "signed_distance_m": -0.212,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 157,
+      "timestamp_sec": 5.233,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 43.04,
+        "tracker": 1.36,
+        "projection": 0.109,
+        "geometry": 0.188,
+        "total_frame": 49.8
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            698.65,
+            198.53,
+            777.59,
+            418.33
+          ],
+          "confidence": 0.5574,
+          "bottom_center": [
+            738.12,
+            418.33
+          ],
+          "world_pos_meters": [
+            2.812,
+            3.276
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.812,
+              3.276
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.188,
+            "signed_distance_m": -0.188,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 158,
+      "timestamp_sec": 5.267,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 44.46,
+        "tracker": 1.4,
+        "projection": 0.081,
+        "geometry": 0.19,
+        "total_frame": 51.27
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            701.48,
+            197.22,
+            780.58,
+            416.74
+          ],
+          "confidence": 0.637,
+          "bottom_center": [
+            741.03,
+            416.74
+          ],
+          "world_pos_meters": [
+            2.84,
+            3.315
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.84,
+              3.315
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.16,
+            "signed_distance_m": -0.16,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 159,
+      "timestamp_sec": 5.3,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 45.96,
+        "tracker": 1.4,
+        "projection": 0.081,
+        "geometry": 0.183,
+        "total_frame": 52.45
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            704.62,
+            197.33,
+            783.17,
+            415.15
+          ],
+          "confidence": 0.6066,
+          "bottom_center": [
+            743.9,
+            415.15
+          ],
+          "world_pos_meters": [
+            2.868,
+            3.354
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.868,
+              3.354
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.132,
+            "signed_distance_m": -0.132,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 160,
+      "timestamp_sec": 5.333,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 40.27,
+        "tracker": 1.43,
+        "projection": 0.1,
+        "geometry": 0.184,
+        "total_frame": 46.97
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            707.79,
+            200.07,
+            785.15,
+            414.59
+          ],
+          "confidence": 0.7418,
+          "bottom_center": [
+            746.47,
+            414.59
+          ],
+          "world_pos_meters": [
+            2.891,
+            3.368
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.891,
+              3.368
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.109,
+            "signed_distance_m": -0.109,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 161,
+      "timestamp_sec": 5.367,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 48.24,
+        "tracker": 1.41,
+        "projection": 0.08,
+        "geometry": 0.174,
+        "total_frame": 54.5
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            710.85,
+            197.57,
+            788.57,
+            414.32
+          ],
+          "confidence": 0.6734,
+          "bottom_center": [
+            749.71,
+            414.32
+          ],
+          "world_pos_meters": [
+            2.919,
+            3.375
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.919,
+              3.375
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.081,
+            "signed_distance_m": -0.081,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 162,
+      "timestamp_sec": 5.4,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 44.07,
+        "tracker": 1.01,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 49.14
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 163,
+      "timestamp_sec": 5.433,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 46.2,
+        "tracker": 1.43,
+        "projection": 0.088,
+        "geometry": 0.184,
+        "total_frame": 52.6
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            716.41,
+            196.49,
+            793.55,
+            411.73
+          ],
+          "confidence": 0.7737,
+          "bottom_center": [
+            754.98,
+            411.73
+          ],
+          "world_pos_meters": [
+            2.971,
+            3.441
+          ],
+          "zone_evaluation": {
+            "point": [
+              2.971,
+              3.441
+            ],
+            "active_zone_id": "zone_machine_01_danger",
+            "active_zone_type": "DANGER",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.029,
+            "signed_distance_m": -0.029,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_danger",
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_danger"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 164,
+      "timestamp_sec": 5.467,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 50.22,
+        "tracker": 1.44,
+        "projection": 0.082,
+        "geometry": 0.177,
+        "total_frame": 56.23
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            719.55,
+            194.89,
+            796.77,
+            410.25
+          ],
+          "confidence": 0.6389,
+          "bottom_center": [
+            758.16,
+            410.25
+          ],
+          "world_pos_meters": [
+            3.002,
+            3.478
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.002,
+              3.478
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.498,
+            "signed_distance_m": -0.498,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 165,
+      "timestamp_sec": 5.5,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 62.33,
+        "tracker": 1.49,
+        "projection": 0.086,
+        "geometry": 0.196,
+        "total_frame": 68.6
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            722.46,
+            194.57,
+            799.2,
+            408.08
+          ],
+          "confidence": 0.6593,
+          "bottom_center": [
+            760.83,
+            408.08
+          ],
+          "world_pos_meters": [
+            3.031,
+            3.535
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.031,
+              3.535
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.469,
+            "signed_distance_m": -0.469,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 166,
+      "timestamp_sec": 5.533,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 75.87,
+        "tracker": 1.77,
+        "projection": 0.085,
+        "geometry": 0.187,
+        "total_frame": 83.43
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            725.17,
+            193.88,
+            802.0,
+            406.97
+          ],
+          "confidence": 0.7614,
+          "bottom_center": [
+            763.58,
+            406.97
+          ],
+          "world_pos_meters": [
+            3.058,
+            3.563
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.058,
+              3.563
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.442,
+            "signed_distance_m": -0.442,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 167,
+      "timestamp_sec": 5.567,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 74.45,
+        "tracker": 2.52,
+        "projection": 0.161,
+        "geometry": 0.578,
+        "total_frame": 85.14
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            729.18,
+            198.87,
+            804.24,
+            405.77
+          ],
+          "confidence": 0.7255,
+          "bottom_center": [
+            766.71,
+            405.77
+          ],
+          "world_pos_meters": [
+            3.089,
+            3.595
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.089,
+              3.595
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.411,
+            "signed_distance_m": -0.411,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 168,
+      "timestamp_sec": 5.6,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 56.67,
+        "tracker": 1.72,
+        "projection": 0.085,
+        "geometry": 0.192,
+        "total_frame": 65.98
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            732.03,
+            199.03,
+            806.83,
+            404.84
+          ],
+          "confidence": 0.7674,
+          "bottom_center": [
+            769.43,
+            404.84
+          ],
+          "world_pos_meters": [
+            3.116,
+            3.62
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.116,
+              3.62
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.384,
+            "signed_distance_m": -0.384,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 169,
+      "timestamp_sec": 5.633,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 69.97,
+        "tracker": 1.08,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 75.41
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 170,
+      "timestamp_sec": 5.667,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 66.01,
+        "tracker": 2.09,
+        "projection": 0.001,
+        "geometry": 0.0,
+        "total_frame": 73.89
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 171,
+      "timestamp_sec": 5.7,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 63.93,
+        "tracker": 1.49,
+        "projection": 0.081,
+        "geometry": 0.177,
+        "total_frame": 70.16
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            740.48,
+            195.98,
+            815.32,
+            401.38
+          ],
+          "confidence": 0.7144,
+          "bottom_center": [
+            777.9,
+            401.38
+          ],
+          "world_pos_meters": [
+            3.201,
+            3.712
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.201,
+              3.712
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.299,
+            "signed_distance_m": -0.299,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 172,
+      "timestamp_sec": 5.733,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 65.87,
+        "tracker": 2.32,
+        "projection": 0.083,
+        "geometry": 0.18,
+        "total_frame": 72.98
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            743.02,
+            192.96,
+            818.88,
+            400.7
+          ],
+          "confidence": 0.6607,
+          "bottom_center": [
+            780.95,
+            400.7
+          ],
+          "world_pos_meters": [
+            3.231,
+            3.731
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.231,
+              3.731
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.269,
+            "signed_distance_m": -0.269,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 173,
+      "timestamp_sec": 5.767,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 58.19,
+        "tracker": 1.57,
+        "projection": 0.085,
+        "geometry": 0.176,
+        "total_frame": 65.42
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            745.54,
+            197.6,
+            819.99,
+            399.74
+          ],
+          "confidence": 0.549,
+          "bottom_center": [
+            782.77,
+            399.74
+          ],
+          "world_pos_meters": [
+            3.25,
+            3.757
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.25,
+              3.757
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.25,
+            "signed_distance_m": -0.25,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 174,
+      "timestamp_sec": 5.8,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 66.21,
+        "tracker": 1.46,
+        "projection": 0.084,
+        "geometry": 0.181,
+        "total_frame": 73.57
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            746.59,
+            193.62,
+            822.16,
+            397.91
+          ],
+          "confidence": 0.6483,
+          "bottom_center": [
+            784.37,
+            397.91
+          ],
+          "world_pos_meters": [
+            3.272,
+            3.808
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.272,
+              3.808
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.228,
+            "signed_distance_m": -0.228,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 175,
+      "timestamp_sec": 5.833,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 71.06,
+        "tracker": 2.53,
+        "projection": 0.082,
+        "geometry": 0.183,
+        "total_frame": 78.7
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            748.38,
+            190.28,
+            825.03,
+            397.39
+          ],
+          "confidence": 0.5745,
+          "bottom_center": [
+            786.7,
+            397.39
+          ],
+          "world_pos_meters": [
+            3.294,
+            3.822
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.294,
+              3.822
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.206,
+            "signed_distance_m": -0.206,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 176,
+      "timestamp_sec": 5.867,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 121.79,
+        "tracker": 1.93,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 130.48
+      },
+      "tracks": []
+    },
+    {
+      "frame_id": 177,
+      "timestamp_sec": 5.9,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 57.63,
+        "tracker": 2.49,
+        "projection": 0.149,
+        "geometry": 0.307,
+        "total_frame": 71.89
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            752.71,
+            183.98,
+            830.31,
+            392.36
+          ],
+          "confidence": 0.548,
+          "bottom_center": [
+            791.51,
+            392.36
+          ],
+          "world_pos_meters": [
+            3.358,
+            3.964
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.358,
+              3.964
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.142,
+            "signed_distance_m": -0.142,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 178,
+      "timestamp_sec": 5.933,
+      "active_tracks_count": 1,
+      "timings_ms": {
+        "detector": 40.4,
+        "tracker": 1.39,
+        "projection": 0.081,
+        "geometry": 0.182,
+        "total_frame": 46.5
+      },
+      "tracks": [
+        {
+          "track_id": 1,
+          "bounding_box": [
+            756.92,
+            181.95,
+            834.69,
+            390.45
+          ],
+          "confidence": 0.6428,
+          "bottom_center": [
+            795.8,
+            390.45
+          ],
+          "world_pos_meters": [
+            3.405,
+            4.019
+          ],
+          "zone_evaluation": {
+            "point": [
+              3.405,
+              4.019
+            ],
+            "active_zone_id": "zone_machine_01_warning",
+            "active_zone_type": "WARNING",
+            "boundary_status": "INSIDE",
+            "distance_to_boundary_m": 0.095,
+            "signed_distance_m": -0.095,
+            "in_bounds": true,
+            "all_triggered_zones": [
+              "zone_machine_01_warning"
+            ],
+            "nearest_hazard_zone_id": "zone_machine_01_warning"
+          }
+        }
+      ]
+    },
+    {
+      "frame_id": 179,
+      "timestamp_sec": 5.967,
+      "active_tracks_count": 0,
+      "timings_ms": {
+        "detector": 41.88,
+        "tracker": 1.36,
+        "projection": 0.0,
+        "geometry": 0.0,
+        "total_frame": 47.07
+      },
+      "tracks": []
+    }
+  ]
+}

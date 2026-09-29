@@ -1,0 +1,11 @@
+{
+  "config_version_id": "v1.0.0-exp05",
+  "description": "Prototype temporal configuration for Experiment 05 (Not certified safety parameters)",
+  "thresholds": {
+    "warning_confirm_frames": 3,
+    "danger_confirm_frames": 3,
+    "warning_clear_frames": 5,
+    "clear_confirm_frames": 15,
+    "max_lost_grace_frames": 5
+  }
+}

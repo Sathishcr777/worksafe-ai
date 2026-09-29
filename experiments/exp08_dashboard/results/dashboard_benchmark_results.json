@@ -1,0 +1,229 @@
+{
+  "timestamp": 1790012149.919743,
+  "environment": {
+    "python_version": "3.14.2",
+    "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "os_name": "Windows",
+    "os_release": "11",
+    "os_version": "10.0.26200",
+    "platform_machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cpu_physical_cores": 8,
+    "cpu_logical_cores": 12,
+    "ram_total_gb": 15.64,
+    "ram_available_gb": 3.53,
+    "ram_used_percent": 77.5,
+    "power_plugged": false,
+    "battery_percent": 27,
+    "power_profile": "Battery DC (Power Throttled Profile)",
+    "cpu_freq_current_mhz": 1453.0,
+    "torch_version": "2.14.0+cpu",
+    "cuda_available": false,
+    "gpu_name": "None (CPU Execution)",
+    "gpu_total_memory_gb": 0.0
+  },
+  "power_profile": "Battery DC (Power Throttled Profile)",
+  "power_plugged": false,
+  "total_frames_analyzed": 303,
+  "stage_latencies_ms": {
+    "watchdog": {
+      "mean": 0.27,
+      "p95": 0.422,
+      "p99": 0.882,
+      "min": 0.198,
+      "max": 1.124
+    },
+    "detector": {
+      "mean": 86.877,
+      "p95": 100.371,
+      "p99": 129.204,
+      "min": 72.609,
+      "max": 230.697
+    },
+    "tracker": {
+      "mean": 2.648,
+      "p95": 3.507,
+      "p99": 5.26,
+      "min": 1.455,
+      "max": 7.265
+    },
+    "homography": {
+      "mean": 0.158,
+      "p95": 0.223,
+      "p99": 0.402,
+      "min": 0.0,
+      "max": 0.658
+    },
+    "zones": {
+      "mean": 0.306,
+      "p95": 0.556,
+      "p99": 0.66,
+      "min": 0.0,
+      "max": 1.28
+    },
+    "temporal_fsm": {
+      "mean": 0.026,
+      "p95": 0.032,
+      "p99": 0.104,
+      "min": 0.009,
+      "max": 0.22
+    },
+    "event_engine": {
+      "mean": 0.127,
+      "p95": 0.001,
+      "p99": 6.238,
+      "min": 0.0,
+      "max": 13.812
+    },
+    "pure_algorithmic_mean": 90.412,
+    "hud_overlay": {
+      "mean": 8.716,
+      "p95": 10.315,
+      "p99": 15.61,
+      "min": 6.652,
+      "max": 19.476
+    },
+    "jpeg_encode": {
+      "mean": 6.262,
+      "p95": 7.984,
+      "p99": 9.35,
+      "min": 4.359,
+      "max": 11.606
+    },
+    "total_frame": {
+      "mean": 112.509,
+      "p95": 128.158,
+      "p99": 166.836,
+      "min": 94.561,
+      "max": 257.106
+    }
+  },
+  "throughput_fps": {
+    "pure_algorithmic_fps": 11.06,
+    "total_streaming_fps": 8.89
+  },
+  "observed_states": [
+    {
+      "wall_sec": 0.0,
+      "loop": 0,
+      "frame_id": 3,
+      "from_state": null,
+      "to_state": "NORMAL"
+    },
+    {
+      "wall_sec": 10.046,
+      "loop": 0,
+      "frame_id": 91,
+      "from_state": "NORMAL",
+      "to_state": "WARNING"
+    },
+    {
+      "wall_sec": 12.699,
+      "loop": 0,
+      "frame_id": 115,
+      "from_state": "WARNING",
+      "to_state": "DANGER"
+    },
+    {
+      "wall_sec": 18.071,
+      "loop": 0,
+      "frame_id": 164,
+      "from_state": "DANGER",
+      "to_state": "RECOVERY"
+    },
+    {
+      "wall_sec": 19.929,
+      "loop": 1,
+      "frame_id": 0,
+      "from_state": "RECOVERY",
+      "to_state": "NORMAL"
+    },
+    {
+      "wall_sec": 30.117,
+      "loop": 1,
+      "frame_id": 91,
+      "from_state": "NORMAL",
+      "to_state": "WARNING"
+    },
+    {
+      "wall_sec": 32.809,
+      "loop": 1,
+      "frame_id": 115,
+      "from_state": "WARNING",
+      "to_state": "DANGER"
+    }
+  ],
+  "websocket_events_count": 7,
+  "websocket_event_types": [
+    "WARNING_ENTERED",
+    "DANGER_ENTERED",
+    "DANGER_ENTERED",
+    "DANGER_ENTERED",
+    "RECOVERY_STARTED",
+    "WARNING_ENTERED",
+    "DANGER_ENTERED"
+  ],
+  "operator_lifecycle": {
+    "tested_alert_id": "EVT-19700101-000003-T001-F67C5A",
+    "ack_status": "ACKNOWLEDGED",
+    "resolve_status": "RESOLVED",
+    "evacuated_from_queue": true
+  },
+  "replay_loops_evaluated": 2,
+  "danger_events_generated": 2,
+  "system_health": {
+    "status": "READY",
+    "overall_safety_state": "DANGER",
+    "pipeline_fps": 8.0,
+    "latency_ms": 125.5,
+    "active_tracks_count": 1,
+    "camera_id": "cam_bay_01",
+    "source_mode": "DEMO_REPLAY",
+    "components": {
+      "detector_yolo11n": "AVAILABLE",
+      "tracker_bytetrack": "AVAILABLE",
+      "homography_engine": "AVAILABLE",
+      "safety_zone_engine": "AVAILABLE",
+      "temporal_fsm": "AVAILABLE",
+      "camera_watchdog": "HEALTHY",
+      "event_engine": "AVAILABLE",
+      "sqlite_wal_storage": "AVAILABLE",
+      "websocket_broadcaster": "AVAILABLE"
+    },
+    "environment": {
+      "os": "Windows",
+      "cpu": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "python_version": "3.14.2",
+      "ram_total_gb": 15.64,
+      "ram_available_gb": 3.34,
+      "device": "cpu"
+    },
+    "disclaimer": "Supervisory AI monitoring \u2014 does not replace certified machine guarding, interlocks, or E-stops."
+  },
+  "camera_health": {
+    "camera_id": "cam_bay_01",
+    "health_state": "HEALTHY",
+    "effective_fps": 0.0,
+    "frozen_frame_count": 0,
+    "consecutive_drops": 0,
+    "queue_depth": 0,
+    "max_queue_depth": 3,
+    "processing_latency_ms": 0.0,
+    "inter_frame_gap_ms": 0.0,
+    "last_frame_id": 0,
+    "failure_reasons": []
+  },
+  "criteria": {
+    "ac1_server_health_ready": true,
+    "ac2_supervisory_disclaimer_present": true,
+    "ac3_state_sequence_observed": true,
+    "ac4_websocket_push_delivered": true,
+    "ac5_active_alert_prioritized": true,
+    "ac6_alert_acknowledged": true,
+    "ac7_alert_resolved_and_evacuated": true,
+    "ac8_loop2_deduplication_reset": true,
+    "ac9_watchdog_healthy": true,
+    "ac10_all_components_available": true
+  },
+  "overall_status": "PASS"
+}

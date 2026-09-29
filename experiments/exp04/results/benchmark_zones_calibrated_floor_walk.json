@@ -1,0 +1,80 @@
+{
+  "experiment": "Experiment 04: Static Safety-Zone Geometry",
+  "model_name": "yolo11n.pt",
+  "tracker_name": "ByteTrack",
+  "calibration_file": "experiments\\exp03\\results\\calibration.json",
+  "config_file": "experiments\\exp04\\configs\\safety_zones_config.json",
+  "input_video": "experiments\\exp03\\videos\\calibrated_floor_walk.mp4",
+  "input_resolution": "1280x720",
+  "total_frames_measured": 180,
+  "benchmark_duration_sec": 12.93,
+  "processed_pipeline_fps": 13.92,
+  "detector_only_fps": 18.99,
+  "zone_distribution_frames": {
+    "SAFE": 81,
+    "WARNING": 36,
+    "DANGER": 38
+  },
+  "latencies_ms": {
+    "detector": {
+      "mean": 52.67,
+      "median": 50.67,
+      "p95": 70.02,
+      "p99": 88.68
+    },
+    "tracker": {
+      "mean": 1.52,
+      "median": 1.43,
+      "p95": 2.13,
+      "p99": 3.11
+    },
+    "homography_projection": {
+      "mean": 0.077,
+      "median": 0.083,
+      "p95": 0.118,
+      "p99": 0.161
+    },
+    "zone_geometry": {
+      "mean": 0.162,
+      "median": 0.176,
+      "p95": 0.208,
+      "p99": 0.384
+    },
+    "total_frame": {
+      "mean": 60.3,
+      "median": 57.54,
+      "p95": 78.89,
+      "p99": 110.1
+    }
+  },
+  "environment": {
+    "system": {
+      "python_version": "3.14.2",
+      "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "os_name": "Windows",
+      "os_release": "11",
+      "os_version": "10.0.26200",
+      "platform_machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "cpu_physical_cores": 8,
+      "cpu_logical_cores": 12,
+      "ram_total_gb": 15.64,
+      "ram_available_gb": 3.2,
+      "ram_used_percent": 79.5,
+      "torch_version": "2.14.0+cpu",
+      "cuda_available": false,
+      "gpu_name": "None (CPU Execution)",
+      "gpu_total_memory_gb": 0.0
+    },
+    "resources_start": {
+      "cpu_percent": 34.8,
+      "ram_used_percent": 79.5,
+      "ram_used_gb": 12.44
+    },
+    "resources_end": {
+      "cpu_percent": 79.3,
+      "ram_used_percent": 79.9,
+      "ram_used_gb": 12.5
+    }
+  }
+}

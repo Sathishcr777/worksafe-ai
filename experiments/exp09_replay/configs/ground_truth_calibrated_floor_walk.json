@@ -1,0 +1,62 @@
+{
+  "test_clip_id": "TC-001-calibrated-floor-walk",
+  "version": "1.0.0-exp09",
+  "video_file": "experiments/exp03/videos/calibrated_floor_walk.mp4",
+  "calibration_file": "experiments/exp03/results/calibration.json",
+  "zone_config_file": "experiments/exp04/configs/safety_zones_config.json",
+  "total_frames": 180,
+  "fps": 30.0,
+  "duration_sec": 6.0,
+  "tracked_person_id": 1,
+  "ground_truth_events": [
+    {
+      "event_type": "WARNING_ENTERED",
+      "person_id": 1,
+      "physical_crossing_frame": 89,
+      "confirmed_frame": 91,
+      "timestamp_sec": 3.033,
+      "zone_id": "zone_machine_01_warning",
+      "severity": "WARNING",
+      "entry_point_world": [1.402, 1.500]
+    },
+    {
+      "event_type": "DANGER_ENTERED",
+      "person_id": 1,
+      "physical_crossing_frame": 113,
+      "confirmed_frame": 115,
+      "timestamp_sec": 3.833,
+      "zone_id": "zone_machine_01_danger",
+      "severity": "CRITICAL",
+      "entry_point_world": [1.826, 2.005]
+    },
+    {
+      "event_type": "RECOVERY_STARTED",
+      "person_id": 1,
+      "physical_crossing_frame": 164,
+      "confirmed_frame": 164,
+      "timestamp_sec": 5.467,
+      "zone_id": "zone_machine_01_warning",
+      "severity": "INFO",
+      "exit_point_world": [3.002, 3.478]
+    }
+  ],
+  "frame_intervals": {
+    "NORMAL": [0, 90],
+    "WARNING": [91, 114],
+    "DANGER": [115, 163],
+    "RECOVERY": [164, 179]
+  },
+  "occlusion_intervals": [
+    {
+      "track_id": 1,
+      "start_frame": 138,
+      "end_frame": 140,
+      "description": "Transient tracker dropout; retained via ByteTrack Kalman grace window"
+    }
+  ],
+  "max_penetration": {
+    "frame": 163,
+    "world_coords": [2.971, 3.441],
+    "depth_in_danger_zone_meters": 1.441
+  }
+}

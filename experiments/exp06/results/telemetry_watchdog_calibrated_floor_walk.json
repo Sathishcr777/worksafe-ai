@@ -1,0 +1,3770 @@
+{
+  "benchmark_summary": {
+    "experiment": "Experiment 06: Real-Time Camera Health & System Watchdog",
+    "model_name": "yolo11n.pt",
+    "tracker_name": "ByteTrack",
+    "calibration_file": "experiments\\exp03\\results\\calibration.json",
+    "zone_config_file": "experiments\\exp04\\configs\\safety_zones_config.json",
+    "temporal_config_file": "experiments\\exp05\\configs\\temporal_config.json",
+    "watchdog_config_file": "experiments\\exp06\\configs\\watchdog_config.json",
+    "input_video": "experiments\\exp03\\videos\\calibrated_floor_walk.mp4",
+    "input_resolution": "1280x720",
+    "total_frames_measured": 180,
+    "power_profile": "Battery DC (Power Throttled Profile)",
+    "cpu_freq_current_mhz": 2100.0,
+    "benchmark_duration_sec": 13.42,
+    "pipeline_computational_fps": 15.69,
+    "processed_pipeline_fps": 13.41,
+    "total_dropped_frames": 0,
+    "health_state_distribution": {
+      "HEALTHY": 180,
+      "DEGRADED": 0,
+      "UNKNOWN": 0
+    },
+    "temporal_state_distribution_frames": {
+      "NORMAL": 83,
+      "WARNING": 24,
+      "DANGER": 36,
+      "RECOVERY": 12,
+      "UNKNOWN": 0
+    },
+    "events_summary": {
+      "total_events_emitted": 3,
+      "counts_by_type": {
+        "WARNING_ENTERED": 1,
+        "DANGER_ENTERED": 1,
+        "RECOVERY_STARTED": 1
+      }
+    },
+    "latencies_ms": {
+      "watchdog": {
+        "mean": 0.16,
+        "median": 0.143,
+        "p95": 0.213,
+        "p99": 0.317
+      },
+      "detector": {
+        "mean": 57.16,
+        "median": 56.92,
+        "p95": 70.67,
+        "p99": 77.55
+      },
+      "tracker": {
+        "mean": 1.44,
+        "median": 1.31,
+        "p95": 2.4,
+        "p99": 3.16
+      },
+      "homography_projection": {
+        "mean": 0.082,
+        "median": 0.088,
+        "p95": 0.144,
+        "p99": 0.167
+      },
+      "zone_geometry": {
+        "mean": 0.176,
+        "median": 0.175,
+        "p95": 0.291,
+        "p99": 0.619
+      },
+      "temporal_fsm": {
+        "mean": 0.014,
+        "median": 0.014,
+        "p95": 0.021,
+        "p99": 0.054
+      },
+      "total_frame": {
+        "mean": 63.74,
+        "median": 63.35,
+        "p95": 77.45,
+        "p99": 84.76
+      }
+    },
+    "environment": {
+      "system": {
+        "python_version": "3.14.2",
+        "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+        "os_name": "Windows",
+        "os_release": "11",
+        "os_version": "10.0.26200",
+        "platform_machine": "AMD64",
+        "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+        "cpu_physical_cores": 8,
+        "cpu_logical_cores": 12,
+        "ram_total_gb": 15.64,
+        "ram_available_gb": 3.58,
+        "ram_used_percent": 77.1,
+        "power_plugged": false,
+        "battery_percent": 56,
+        "power_profile": "Battery DC (Power Throttled Profile)",
+        "cpu_freq_current_mhz": 2100.0,
+        "torch_version": "2.14.0+cpu",
+        "cuda_available": false,
+        "gpu_name": "None (CPU Execution)",
+        "gpu_total_memory_gb": 0.0
+      },
+      "resources_start": {
+        "cpu_percent": 31.3,
+        "ram_used_percent": 77.1,
+        "ram_used_gb": 12.06
+      },
+      "resources_end": {
+        "cpu_percent": 77.9,
+        "ram_used_percent": 77.1,
+        "ram_used_gb": 12.06
+      }
+    }
+  },
+  "telemetry_stream": [
+    {
+      "timestamp": 0.0,
+      "camera_id": "cam_bay_01",
+      "frame_id": 0,
+      "capture_timestamp": 0.0,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 76.57,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.033,
+      "camera_id": "cam_bay_01",
+      "frame_id": 1,
+      "capture_timestamp": 0.033,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 78.36,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.067,
+      "camera_id": "cam_bay_01",
+      "frame_id": 2,
+      "capture_timestamp": 0.067,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 54.55,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.1,
+      "camera_id": "cam_bay_01",
+      "frame_id": 3,
+      "capture_timestamp": 0.1,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 78.33,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.133,
+      "camera_id": "cam_bay_01",
+      "frame_id": 4,
+      "capture_timestamp": 0.133,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 61.84,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.167,
+      "camera_id": "cam_bay_01",
+      "frame_id": 5,
+      "capture_timestamp": 0.167,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 67.44,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.2,
+      "camera_id": "cam_bay_01",
+      "frame_id": 6,
+      "capture_timestamp": 0.2,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.14,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.233,
+      "camera_id": "cam_bay_01",
+      "frame_id": 7,
+      "capture_timestamp": 0.233,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 76.05,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.267,
+      "camera_id": "cam_bay_01",
+      "frame_id": 8,
+      "capture_timestamp": 0.267,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.29,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.3,
+      "camera_id": "cam_bay_01",
+      "frame_id": 9,
+      "capture_timestamp": 0.3,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.73,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.333,
+      "camera_id": "cam_bay_01",
+      "frame_id": 10,
+      "capture_timestamp": 0.333,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 72.87,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.367,
+      "camera_id": "cam_bay_01",
+      "frame_id": 11,
+      "capture_timestamp": 0.367,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.66,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.4,
+      "camera_id": "cam_bay_01",
+      "frame_id": 12,
+      "capture_timestamp": 0.4,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.41,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.433,
+      "camera_id": "cam_bay_01",
+      "frame_id": 13,
+      "capture_timestamp": 0.433,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.32,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.467,
+      "camera_id": "cam_bay_01",
+      "frame_id": 14,
+      "capture_timestamp": 0.467,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.53,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.5,
+      "camera_id": "cam_bay_01",
+      "frame_id": 15,
+      "capture_timestamp": 0.5,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 54.62,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.533,
+      "camera_id": "cam_bay_01",
+      "frame_id": 16,
+      "capture_timestamp": 0.533,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 55.22,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.567,
+      "camera_id": "cam_bay_01",
+      "frame_id": 17,
+      "capture_timestamp": 0.567,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 68.65,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.6,
+      "camera_id": "cam_bay_01",
+      "frame_id": 18,
+      "capture_timestamp": 0.6,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.19,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.633,
+      "camera_id": "cam_bay_01",
+      "frame_id": 19,
+      "capture_timestamp": 0.633,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 81.59,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.667,
+      "camera_id": "cam_bay_01",
+      "frame_id": 20,
+      "capture_timestamp": 0.667,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.4,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.7,
+      "camera_id": "cam_bay_01",
+      "frame_id": 21,
+      "capture_timestamp": 0.7,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 71.53,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.733,
+      "camera_id": "cam_bay_01",
+      "frame_id": 22,
+      "capture_timestamp": 0.733,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.99,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.767,
+      "camera_id": "cam_bay_01",
+      "frame_id": 23,
+      "capture_timestamp": 0.767,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.07,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.8,
+      "camera_id": "cam_bay_01",
+      "frame_id": 24,
+      "capture_timestamp": 0.8,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.51,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.833,
+      "camera_id": "cam_bay_01",
+      "frame_id": 25,
+      "capture_timestamp": 0.833,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 68.82,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.867,
+      "camera_id": "cam_bay_01",
+      "frame_id": 26,
+      "capture_timestamp": 0.867,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 51.87,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.9,
+      "camera_id": "cam_bay_01",
+      "frame_id": 27,
+      "capture_timestamp": 0.9,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.83,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.933,
+      "camera_id": "cam_bay_01",
+      "frame_id": 28,
+      "capture_timestamp": 0.933,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.54,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 0.967,
+      "camera_id": "cam_bay_01",
+      "frame_id": 29,
+      "capture_timestamp": 0.967,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.25,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.0,
+      "camera_id": "cam_bay_01",
+      "frame_id": 30,
+      "capture_timestamp": 1.0,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 69.25,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.033,
+      "camera_id": "cam_bay_01",
+      "frame_id": 31,
+      "capture_timestamp": 1.033,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 77.41,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.067,
+      "camera_id": "cam_bay_01",
+      "frame_id": 32,
+      "capture_timestamp": 1.067,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.07,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.1,
+      "camera_id": "cam_bay_01",
+      "frame_id": 33,
+      "capture_timestamp": 1.1,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.62,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.133,
+      "camera_id": "cam_bay_01",
+      "frame_id": 34,
+      "capture_timestamp": 1.133,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.59,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.167,
+      "camera_id": "cam_bay_01",
+      "frame_id": 35,
+      "capture_timestamp": 1.167,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.96,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.2,
+      "camera_id": "cam_bay_01",
+      "frame_id": 36,
+      "capture_timestamp": 1.2,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 71.32,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.233,
+      "camera_id": "cam_bay_01",
+      "frame_id": 37,
+      "capture_timestamp": 1.233,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 59.64,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.267,
+      "camera_id": "cam_bay_01",
+      "frame_id": 38,
+      "capture_timestamp": 1.267,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.71,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.3,
+      "camera_id": "cam_bay_01",
+      "frame_id": 39,
+      "capture_timestamp": 1.3,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.4,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.333,
+      "camera_id": "cam_bay_01",
+      "frame_id": 40,
+      "capture_timestamp": 1.333,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.96,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.367,
+      "camera_id": "cam_bay_01",
+      "frame_id": 41,
+      "capture_timestamp": 1.367,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 71.51,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.4,
+      "camera_id": "cam_bay_01",
+      "frame_id": 42,
+      "capture_timestamp": 1.4,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 55.05,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.433,
+      "camera_id": "cam_bay_01",
+      "frame_id": 43,
+      "capture_timestamp": 1.433,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 68.49,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.467,
+      "camera_id": "cam_bay_01",
+      "frame_id": 44,
+      "capture_timestamp": 1.467,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.56,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.5,
+      "camera_id": "cam_bay_01",
+      "frame_id": 45,
+      "capture_timestamp": 1.5,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 113.9,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.533,
+      "camera_id": "cam_bay_01",
+      "frame_id": 46,
+      "capture_timestamp": 1.533,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.89,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.567,
+      "camera_id": "cam_bay_01",
+      "frame_id": 47,
+      "capture_timestamp": 1.567,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 61.62,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.6,
+      "camera_id": "cam_bay_01",
+      "frame_id": 48,
+      "capture_timestamp": 1.6,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 67.81,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.633,
+      "camera_id": "cam_bay_01",
+      "frame_id": 49,
+      "capture_timestamp": 1.633,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.95,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.667,
+      "camera_id": "cam_bay_01",
+      "frame_id": 50,
+      "capture_timestamp": 1.667,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.27,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.7,
+      "camera_id": "cam_bay_01",
+      "frame_id": 51,
+      "capture_timestamp": 1.7,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.83,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.733,
+      "camera_id": "cam_bay_01",
+      "frame_id": 52,
+      "capture_timestamp": 1.733,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.63,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.767,
+      "camera_id": "cam_bay_01",
+      "frame_id": 53,
+      "capture_timestamp": 1.767,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.7,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.8,
+      "camera_id": "cam_bay_01",
+      "frame_id": 54,
+      "capture_timestamp": 1.8,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 61.67,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.833,
+      "camera_id": "cam_bay_01",
+      "frame_id": 55,
+      "capture_timestamp": 1.833,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 66.25,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.867,
+      "camera_id": "cam_bay_01",
+      "frame_id": 56,
+      "capture_timestamp": 1.867,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.89,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.9,
+      "camera_id": "cam_bay_01",
+      "frame_id": 57,
+      "capture_timestamp": 1.9,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.84,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.933,
+      "camera_id": "cam_bay_01",
+      "frame_id": 58,
+      "capture_timestamp": 1.933,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.15,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 1.967,
+      "camera_id": "cam_bay_01",
+      "frame_id": 59,
+      "capture_timestamp": 1.967,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 84.03,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.0,
+      "camera_id": "cam_bay_01",
+      "frame_id": 60,
+      "capture_timestamp": 2.0,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.48,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.033,
+      "camera_id": "cam_bay_01",
+      "frame_id": 61,
+      "capture_timestamp": 2.033,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 71.37,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.067,
+      "camera_id": "cam_bay_01",
+      "frame_id": 62,
+      "capture_timestamp": 2.067,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.51,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.1,
+      "camera_id": "cam_bay_01",
+      "frame_id": 63,
+      "capture_timestamp": 2.1,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 59.59,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.133,
+      "camera_id": "cam_bay_01",
+      "frame_id": 64,
+      "capture_timestamp": 2.133,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 53.93,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.167,
+      "camera_id": "cam_bay_01",
+      "frame_id": 65,
+      "capture_timestamp": 2.167,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 55.53,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.2,
+      "camera_id": "cam_bay_01",
+      "frame_id": 66,
+      "capture_timestamp": 2.2,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 66.88,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.233,
+      "camera_id": "cam_bay_01",
+      "frame_id": 67,
+      "capture_timestamp": 2.233,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.71,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.267,
+      "camera_id": "cam_bay_01",
+      "frame_id": 68,
+      "capture_timestamp": 2.267,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.62,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.3,
+      "camera_id": "cam_bay_01",
+      "frame_id": 69,
+      "capture_timestamp": 2.3,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 67.17,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.333,
+      "camera_id": "cam_bay_01",
+      "frame_id": 70,
+      "capture_timestamp": 2.333,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 61.97,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.367,
+      "camera_id": "cam_bay_01",
+      "frame_id": 71,
+      "capture_timestamp": 2.367,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 66.99,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.4,
+      "camera_id": "cam_bay_01",
+      "frame_id": 72,
+      "capture_timestamp": 2.4,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.08,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.433,
+      "camera_id": "cam_bay_01",
+      "frame_id": 73,
+      "capture_timestamp": 2.433,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.58,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.467,
+      "camera_id": "cam_bay_01",
+      "frame_id": 74,
+      "capture_timestamp": 2.467,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 68.56,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.5,
+      "camera_id": "cam_bay_01",
+      "frame_id": 75,
+      "capture_timestamp": 2.5,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 78.93,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.533,
+      "camera_id": "cam_bay_01",
+      "frame_id": 76,
+      "capture_timestamp": 2.533,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 87.5,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.567,
+      "camera_id": "cam_bay_01",
+      "frame_id": 77,
+      "capture_timestamp": 2.567,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 69.79,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.6,
+      "camera_id": "cam_bay_01",
+      "frame_id": 78,
+      "capture_timestamp": 2.6,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 57.9,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.633,
+      "camera_id": "cam_bay_01",
+      "frame_id": 79,
+      "capture_timestamp": 2.633,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 69.11,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.667,
+      "camera_id": "cam_bay_01",
+      "frame_id": 80,
+      "capture_timestamp": 2.667,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.89,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.7,
+      "camera_id": "cam_bay_01",
+      "frame_id": 81,
+      "capture_timestamp": 2.7,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.24,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.733,
+      "camera_id": "cam_bay_01",
+      "frame_id": 82,
+      "capture_timestamp": 2.733,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 59.84,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.767,
+      "camera_id": "cam_bay_01",
+      "frame_id": 83,
+      "capture_timestamp": 2.767,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.44,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.8,
+      "camera_id": "cam_bay_01",
+      "frame_id": 84,
+      "capture_timestamp": 2.8,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 69.15,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.833,
+      "camera_id": "cam_bay_01",
+      "frame_id": 85,
+      "capture_timestamp": 2.833,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 57.47,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.867,
+      "camera_id": "cam_bay_01",
+      "frame_id": 86,
+      "capture_timestamp": 2.867,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.37,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.9,
+      "camera_id": "cam_bay_01",
+      "frame_id": 87,
+      "capture_timestamp": 2.9,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 61.17,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.933,
+      "camera_id": "cam_bay_01",
+      "frame_id": 88,
+      "capture_timestamp": 2.933,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.59,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 2.967,
+      "camera_id": "cam_bay_01",
+      "frame_id": 89,
+      "capture_timestamp": 2.967,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 67.47,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.0,
+      "camera_id": "cam_bay_01",
+      "frame_id": 90,
+      "capture_timestamp": 3.0,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 52.44,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.033,
+      "camera_id": "cam_bay_01",
+      "frame_id": 91,
+      "capture_timestamp": 3.033,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.49,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.067,
+      "camera_id": "cam_bay_01",
+      "frame_id": 92,
+      "capture_timestamp": 3.067,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 58.5,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.1,
+      "camera_id": "cam_bay_01",
+      "frame_id": 93,
+      "capture_timestamp": 3.1,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.84,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.133,
+      "camera_id": "cam_bay_01",
+      "frame_id": 94,
+      "capture_timestamp": 3.133,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 59.9,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.167,
+      "camera_id": "cam_bay_01",
+      "frame_id": 95,
+      "capture_timestamp": 3.167,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.56,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.2,
+      "camera_id": "cam_bay_01",
+      "frame_id": 96,
+      "capture_timestamp": 3.2,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 58.48,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.233,
+      "camera_id": "cam_bay_01",
+      "frame_id": 97,
+      "capture_timestamp": 3.233,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 79.88,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.267,
+      "camera_id": "cam_bay_01",
+      "frame_id": 98,
+      "capture_timestamp": 3.267,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.95,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.3,
+      "camera_id": "cam_bay_01",
+      "frame_id": 99,
+      "capture_timestamp": 3.3,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 59.67,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.333,
+      "camera_id": "cam_bay_01",
+      "frame_id": 100,
+      "capture_timestamp": 3.333,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.86,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.367,
+      "camera_id": "cam_bay_01",
+      "frame_id": 101,
+      "capture_timestamp": 3.367,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 49.61,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.4,
+      "camera_id": "cam_bay_01",
+      "frame_id": 102,
+      "capture_timestamp": 3.4,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.54,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.433,
+      "camera_id": "cam_bay_01",
+      "frame_id": 103,
+      "capture_timestamp": 3.433,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 67.35,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.467,
+      "camera_id": "cam_bay_01",
+      "frame_id": 104,
+      "capture_timestamp": 3.467,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.08,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.5,
+      "camera_id": "cam_bay_01",
+      "frame_id": 105,
+      "capture_timestamp": 3.5,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.2,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.533,
+      "camera_id": "cam_bay_01",
+      "frame_id": 106,
+      "capture_timestamp": 3.533,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 57.62,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.567,
+      "camera_id": "cam_bay_01",
+      "frame_id": 107,
+      "capture_timestamp": 3.567,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 66.24,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.6,
+      "camera_id": "cam_bay_01",
+      "frame_id": 108,
+      "capture_timestamp": 3.6,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 70.17,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.633,
+      "camera_id": "cam_bay_01",
+      "frame_id": 109,
+      "capture_timestamp": 3.633,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 67.19,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.667,
+      "camera_id": "cam_bay_01",
+      "frame_id": 110,
+      "capture_timestamp": 3.667,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.21,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.7,
+      "camera_id": "cam_bay_01",
+      "frame_id": 111,
+      "capture_timestamp": 3.7,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 54.19,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.733,
+      "camera_id": "cam_bay_01",
+      "frame_id": 112,
+      "capture_timestamp": 3.733,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.33,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.767,
+      "camera_id": "cam_bay_01",
+      "frame_id": 113,
+      "capture_timestamp": 3.767,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 49.85,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.8,
+      "camera_id": "cam_bay_01",
+      "frame_id": 114,
+      "capture_timestamp": 3.8,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 69.58,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.833,
+      "camera_id": "cam_bay_01",
+      "frame_id": 115,
+      "capture_timestamp": 3.833,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 51.71,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.867,
+      "camera_id": "cam_bay_01",
+      "frame_id": 116,
+      "capture_timestamp": 3.867,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 68.7,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.9,
+      "camera_id": "cam_bay_01",
+      "frame_id": 117,
+      "capture_timestamp": 3.9,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 53.29,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.933,
+      "camera_id": "cam_bay_01",
+      "frame_id": 118,
+      "capture_timestamp": 3.933,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.19,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 3.967,
+      "camera_id": "cam_bay_01",
+      "frame_id": 119,
+      "capture_timestamp": 3.967,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.69,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.0,
+      "camera_id": "cam_bay_01",
+      "frame_id": 120,
+      "capture_timestamp": 4.0,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.22,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.033,
+      "camera_id": "cam_bay_01",
+      "frame_id": 121,
+      "capture_timestamp": 4.033,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.49,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.067,
+      "camera_id": "cam_bay_01",
+      "frame_id": 122,
+      "capture_timestamp": 4.067,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 71.19,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.1,
+      "camera_id": "cam_bay_01",
+      "frame_id": 123,
+      "capture_timestamp": 4.1,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 58.9,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.133,
+      "camera_id": "cam_bay_01",
+      "frame_id": 124,
+      "capture_timestamp": 4.133,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.82,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.167,
+      "camera_id": "cam_bay_01",
+      "frame_id": 125,
+      "capture_timestamp": 4.167,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.57,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.2,
+      "camera_id": "cam_bay_01",
+      "frame_id": 126,
+      "capture_timestamp": 4.2,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 55.31,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.233,
+      "camera_id": "cam_bay_01",
+      "frame_id": 127,
+      "capture_timestamp": 4.233,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 69.37,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.267,
+      "camera_id": "cam_bay_01",
+      "frame_id": 128,
+      "capture_timestamp": 4.267,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 61.77,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.3,
+      "camera_id": "cam_bay_01",
+      "frame_id": 129,
+      "capture_timestamp": 4.3,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.81,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.333,
+      "camera_id": "cam_bay_01",
+      "frame_id": 130,
+      "capture_timestamp": 4.333,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.54,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.367,
+      "camera_id": "cam_bay_01",
+      "frame_id": 131,
+      "capture_timestamp": 4.367,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 69.03,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.4,
+      "camera_id": "cam_bay_01",
+      "frame_id": 132,
+      "capture_timestamp": 4.4,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.28,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.433,
+      "camera_id": "cam_bay_01",
+      "frame_id": 133,
+      "capture_timestamp": 4.433,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.54,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.467,
+      "camera_id": "cam_bay_01",
+      "frame_id": 134,
+      "capture_timestamp": 4.467,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 66.13,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.5,
+      "camera_id": "cam_bay_01",
+      "frame_id": 135,
+      "capture_timestamp": 4.5,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.59,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.533,
+      "camera_id": "cam_bay_01",
+      "frame_id": 136,
+      "capture_timestamp": 4.533,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 55.8,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.567,
+      "camera_id": "cam_bay_01",
+      "frame_id": 137,
+      "capture_timestamp": 4.567,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 57.33,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.6,
+      "camera_id": "cam_bay_01",
+      "frame_id": 138,
+      "capture_timestamp": 4.6,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 67.74,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.633,
+      "camera_id": "cam_bay_01",
+      "frame_id": 139,
+      "capture_timestamp": 4.633,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.95,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.667,
+      "camera_id": "cam_bay_01",
+      "frame_id": 140,
+      "capture_timestamp": 4.667,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.07,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.7,
+      "camera_id": "cam_bay_01",
+      "frame_id": 141,
+      "capture_timestamp": 4.7,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.77,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.733,
+      "camera_id": "cam_bay_01",
+      "frame_id": 142,
+      "capture_timestamp": 4.733,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.81,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.767,
+      "camera_id": "cam_bay_01",
+      "frame_id": 143,
+      "capture_timestamp": 4.767,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 46.93,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.8,
+      "camera_id": "cam_bay_01",
+      "frame_id": 144,
+      "capture_timestamp": 4.8,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 71.03,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.833,
+      "camera_id": "cam_bay_01",
+      "frame_id": 145,
+      "capture_timestamp": 4.833,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.72,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.867,
+      "camera_id": "cam_bay_01",
+      "frame_id": 146,
+      "capture_timestamp": 4.867,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 59.39,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.9,
+      "camera_id": "cam_bay_01",
+      "frame_id": 147,
+      "capture_timestamp": 4.9,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 65.99,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.933,
+      "camera_id": "cam_bay_01",
+      "frame_id": 148,
+      "capture_timestamp": 4.933,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 54.1,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 4.967,
+      "camera_id": "cam_bay_01",
+      "frame_id": 149,
+      "capture_timestamp": 4.967,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 76.28,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.0,
+      "camera_id": "cam_bay_01",
+      "frame_id": 150,
+      "capture_timestamp": 5.0,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 52.02,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.033,
+      "camera_id": "cam_bay_01",
+      "frame_id": 151,
+      "capture_timestamp": 5.033,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.26,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.067,
+      "camera_id": "cam_bay_01",
+      "frame_id": 152,
+      "capture_timestamp": 5.067,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 57.54,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.1,
+      "camera_id": "cam_bay_01",
+      "frame_id": 153,
+      "capture_timestamp": 5.1,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.51,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.133,
+      "camera_id": "cam_bay_01",
+      "frame_id": 154,
+      "capture_timestamp": 5.133,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 53.43,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.167,
+      "camera_id": "cam_bay_01",
+      "frame_id": 155,
+      "capture_timestamp": 5.167,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 63.33,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.2,
+      "camera_id": "cam_bay_01",
+      "frame_id": 156,
+      "capture_timestamp": 5.2,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 51.72,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.233,
+      "camera_id": "cam_bay_01",
+      "frame_id": 157,
+      "capture_timestamp": 5.233,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 57.28,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.267,
+      "camera_id": "cam_bay_01",
+      "frame_id": 158,
+      "capture_timestamp": 5.267,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.06,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.3,
+      "camera_id": "cam_bay_01",
+      "frame_id": 159,
+      "capture_timestamp": 5.3,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 51.24,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.333,
+      "camera_id": "cam_bay_01",
+      "frame_id": 160,
+      "capture_timestamp": 5.333,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 58.91,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.367,
+      "camera_id": "cam_bay_01",
+      "frame_id": 161,
+      "capture_timestamp": 5.367,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 51.36,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.4,
+      "camera_id": "cam_bay_01",
+      "frame_id": 162,
+      "capture_timestamp": 5.4,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 62.66,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.433,
+      "camera_id": "cam_bay_01",
+      "frame_id": 163,
+      "capture_timestamp": 5.433,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 52.87,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.467,
+      "camera_id": "cam_bay_01",
+      "frame_id": 164,
+      "capture_timestamp": 5.467,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 58.89,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.5,
+      "camera_id": "cam_bay_01",
+      "frame_id": 165,
+      "capture_timestamp": 5.5,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.58,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.533,
+      "camera_id": "cam_bay_01",
+      "frame_id": 166,
+      "capture_timestamp": 5.533,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 64.39,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.567,
+      "camera_id": "cam_bay_01",
+      "frame_id": 167,
+      "capture_timestamp": 5.567,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 56.75,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.6,
+      "camera_id": "cam_bay_01",
+      "frame_id": 168,
+      "capture_timestamp": 5.6,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.41,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.633,
+      "camera_id": "cam_bay_01",
+      "frame_id": 169,
+      "capture_timestamp": 5.633,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 58.1,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.667,
+      "camera_id": "cam_bay_01",
+      "frame_id": 170,
+      "capture_timestamp": 5.667,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 61.63,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.7,
+      "camera_id": "cam_bay_01",
+      "frame_id": 171,
+      "capture_timestamp": 5.7,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 60.63,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.733,
+      "camera_id": "cam_bay_01",
+      "frame_id": 172,
+      "capture_timestamp": 5.733,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 79.84,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.767,
+      "camera_id": "cam_bay_01",
+      "frame_id": 173,
+      "capture_timestamp": 5.767,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 57.73,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.8,
+      "camera_id": "cam_bay_01",
+      "frame_id": 174,
+      "capture_timestamp": 5.8,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 66.07,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.833,
+      "camera_id": "cam_bay_01",
+      "frame_id": 175,
+      "capture_timestamp": 5.833,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 66.24,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.867,
+      "camera_id": "cam_bay_01",
+      "frame_id": 176,
+      "capture_timestamp": 5.867,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 58.34,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.9,
+      "camera_id": "cam_bay_01",
+      "frame_id": 177,
+      "capture_timestamp": 5.9,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 52.99,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.933,
+      "camera_id": "cam_bay_01",
+      "frame_id": 178,
+      "capture_timestamp": 5.933,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 71.52,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    },
+    {
+      "timestamp": 5.967,
+      "camera_id": "cam_bay_01",
+      "frame_id": 179,
+      "capture_timestamp": 5.967,
+      "frame_age_ms": 0.0,
+      "measured_fps": 30.0,
+      "processing_latency_ms": 47.17,
+      "queue_depth": 0,
+      "dropped_frames": 0,
+      "frozen_frame_count": 0,
+      "health_state": "HEALTHY",
+      "health_reason": "Stream nominal; all subsystems verified",
+      "subsystems": {
+        "model": "AVAILABLE",
+        "calibration": "AVAILABLE",
+        "zone_config": "AVAILABLE"
+      },
+      "config_version_id": "v1.0.0-exp06"
+    }
+  ],
+  "all_events": [
+    {
+      "event_id": "EVT-000091-001-3034ba",
+      "timestamp": 3.033,
+      "frame_id": 91,
+      "track_id": 1,
+      "previous_state": "NORMAL",
+      "new_state": "WARNING",
+      "event_type": "WARNING_ENTERED",
+      "zone_id": "zone_machine_01_warning",
+      "position": [
+        1.435,
+        1.543
+      ],
+      "config_version_id": "v1.0.0-exp05",
+      "reason": "Confirmed WARNING intrusion after 3 frames"
+    },
+    {
+      "event_id": "EVT-000115-001-d0f1e1",
+      "timestamp": 3.833,
+      "frame_id": 115,
+      "track_id": 1,
+      "previous_state": "WARNING",
+      "new_state": "DANGER",
+      "event_type": "DANGER_ENTERED",
+      "zone_id": "zone_machine_01_danger",
+      "position": [
+        1.869,
+        2.056
+      ],
+      "config_version_id": "v1.0.0-exp05",
+      "reason": "Escalated from WARNING to DANGER after 3 frames"
+    },
+    {
+      "event_id": "EVT-000164-001-5e84c3",
+      "timestamp": 5.467,
+      "frame_id": 164,
+      "track_id": 1,
+      "previous_state": "DANGER",
+      "new_state": "RECOVERY",
+      "event_type": "RECOVERY_STARTED",
+      "zone_id": "zone_machine_01_warning",
+      "position": [
+        3.002,
+        3.478
+      ],
+      "config_version_id": "v1.0.0-exp05",
+      "reason": "Instantaneous DANGER cleared; initiated RECOVERY hold"
+    }
+  ]
+}

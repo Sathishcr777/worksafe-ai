@@ -1,0 +1,104 @@
+{
+  "experiment": "Experiment 05: Temporal Safety State Machine",
+  "model_name": "yolo11n.pt",
+  "tracker_name": "ByteTrack",
+  "calibration_file": "experiments\\exp03\\results\\calibration.json",
+  "zone_config_file": "experiments\\exp04\\configs\\safety_zones_config.json",
+  "temporal_config_file": "experiments\\exp05\\configs\\temporal_config.json",
+  "input_video": "experiments\\exp03\\videos\\calibrated_floor_walk.mp4",
+  "input_resolution": "1280x720",
+  "total_frames_measured": 180,
+  "power_profile": "Battery DC (Power Throttled Profile)",
+  "cpu_freq_current_mhz": 2100.0,
+  "benchmark_duration_sec": 14.2,
+  "pipeline_computational_fps": 14.64,
+  "processed_pipeline_fps": 12.67,
+  "detector_only_fps": 16.21,
+  "temporal_state_distribution_frames": {
+    "NORMAL": 83,
+    "WARNING": 24,
+    "DANGER": 36,
+    "RECOVERY": 12,
+    "UNKNOWN": 0
+  },
+  "events_summary": {
+    "total_events_emitted": 3,
+    "counts_by_type": {
+      "WARNING_ENTERED": 1,
+      "DANGER_ENTERED": 1,
+      "RECOVERY_STARTED": 1
+    }
+  },
+  "latencies_ms": {
+    "detector": {
+      "mean": 61.69,
+      "median": 59.86,
+      "p95": 78.9,
+      "p99": 107.59
+    },
+    "tracker": {
+      "mean": 1.52,
+      "median": 1.33,
+      "p95": 2.69,
+      "p99": 3.27
+    },
+    "homography_projection": {
+      "mean": 0.083,
+      "median": 0.085,
+      "p95": 0.142,
+      "p99": 0.224
+    },
+    "zone_geometry": {
+      "mean": 0.16,
+      "median": 0.174,
+      "p95": 0.239,
+      "p99": 0.322
+    },
+    "temporal_fsm": {
+      "mean": 0.014,
+      "median": 0.013,
+      "p95": 0.021,
+      "p99": 0.064
+    },
+    "total_frame": {
+      "mean": 68.33,
+      "median": 66.41,
+      "p95": 85.67,
+      "p99": 115.14
+    }
+  },
+  "environment": {
+    "system": {
+      "python_version": "3.14.2",
+      "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "os_name": "Windows",
+      "os_release": "11",
+      "os_version": "10.0.26200",
+      "platform_machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "cpu_physical_cores": 8,
+      "cpu_logical_cores": 12,
+      "ram_total_gb": 15.64,
+      "ram_available_gb": 3.56,
+      "ram_used_percent": 77.2,
+      "power_plugged": false,
+      "battery_percent": 57,
+      "power_profile": "Battery DC (Power Throttled Profile)",
+      "cpu_freq_current_mhz": 2100.0,
+      "torch_version": "2.14.0+cpu",
+      "cuda_available": false,
+      "gpu_name": "None (CPU Execution)",
+      "gpu_total_memory_gb": 0.0
+    },
+    "resources_start": {
+      "cpu_percent": 30.6,
+      "ram_used_percent": 77.2,
+      "ram_used_gb": 12.08
+    },
+    "resources_end": {
+      "cpu_percent": 78.3,
+      "ram_used_percent": 77.6,
+      "ram_used_gb": 12.13
+    }
+  }
+}

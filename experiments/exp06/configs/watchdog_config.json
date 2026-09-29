@@ -1,0 +1,16 @@
+{
+  "config_version_id": "v1.0.0-exp06",
+  "description": "Prototype watchdog configuration for Experiment 06 (Not certified safety parameters)",
+  "camera_id": "cam_bay_01",
+  "thresholds": {
+    "expected_fps": 30.0,
+    "degraded_fps_threshold": 15.0,
+    "unknown_fps_threshold": 5.0,
+    "frame_timeout_sec": 0.5,
+    "max_frame_age_ms": 200.0,
+    "degraded_frozen_threshold": 5,
+    "unknown_frozen_threshold": 15,
+    "max_queue_depth": 3,
+    "fps_window_size": 30
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0-exp09",
+  "enabled": true,
+  "head_ratio": 0.25,
+  "blur_kernel_size": 31,
+  "blur_sigma": 10.0,
+  "padding_ratio": 0.05,
+  "min_head_pixels": 8,
+  "obfuscation_method": "GAUSSIAN_BLUR"
+}

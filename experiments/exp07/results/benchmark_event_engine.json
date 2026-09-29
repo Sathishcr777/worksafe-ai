@@ -1,0 +1,233 @@
+{
+  "experiment": "Experiment 07: Real-Time Alert & Event Management",
+  "input_video": "experiments/exp03/videos/calibrated_floor_walk.mp4",
+  "input_resolution": "1280x720",
+  "total_frames_measured": 180,
+  "power_profile": "Battery DC (Power Throttled Profile)",
+  "cpu_freq_current_mhz": 2100.0,
+  "benchmark_duration_sec": 19.1,
+  "pipeline_computational_fps": 9.86,
+  "sustained_pipeline_fps": 9.43,
+  "micro_benchmarks": {
+    "iterations": 500,
+    "creation": {
+      "mean_ms": 0.0217,
+      "median_ms": 0.0201,
+      "p95_ms": 0.0284,
+      "p99_ms": 0.0625,
+      "min_ms": 0.0118,
+      "max_ms": 0.2776
+    },
+    "deduplication": {
+      "mean_ms": 0.002,
+      "median_ms": 0.0018,
+      "p95_ms": 0.0028,
+      "p99_ms": 0.0061,
+      "min_ms": 0.0012,
+      "max_ms": 0.0309
+    },
+    "sqlite_write": {
+      "mean_ms": 3.0129,
+      "median_ms": 2.7561,
+      "p95_ms": 4.5054,
+      "p99_ms": 6.4735,
+      "min_ms": 1.8772,
+      "max_ms": 8.0586
+    },
+    "sqlite_query": {
+      "mean_ms": 4.362,
+      "median_ms": 4.1784,
+      "p95_ms": 5.7625,
+      "p99_ms": 6.4435,
+      "min_ms": 3.1031,
+      "max_ms": 6.5969
+    },
+    "total_processing": {
+      "mean_ms": 3.1821,
+      "median_ms": 2.8869,
+      "p95_ms": 4.728,
+      "p99_ms": 7.3429,
+      "min_ms": 2.1895,
+      "max_ms": 10.801
+    }
+  },
+  "latencies_ms": {
+    "watchdog": {
+      "mean": 0.276,
+      "median": 0.262,
+      "p95": 0.452,
+      "p99": 0.588
+    },
+    "detector": {
+      "mean": 95.0,
+      "median": 94.79,
+      "p95": 142.19,
+      "p99": 162.68
+    },
+    "tracker": {
+      "mean": 2.54,
+      "median": 2.33,
+      "p95": 4.88,
+      "p99": 6.15
+    },
+    "homography_projection": {
+      "mean": 0.14,
+      "median": 0.137,
+      "p95": 0.29,
+      "p99": 0.461
+    },
+    "zone_geometry": {
+      "mean": 0.253,
+      "median": 0.258,
+      "p95": 0.512,
+      "p99": 0.573
+    },
+    "temporal_fsm": {
+      "mean": 0.027,
+      "median": 0.022,
+      "p95": 0.04,
+      "p99": 0.114
+    },
+    "event_engine": {
+      "mean": 0.1069,
+      "median": 0.0004,
+      "p95": 0.0007,
+      "p99": 5.419
+    },
+    "total_frame": {
+      "mean": 101.41,
+      "median": 102.05,
+      "p95": 154.56,
+      "p99": 170.16
+    }
+  },
+  "video_pipeline": {
+    "total_frame_latency": {
+      "mean_ms": 101.41,
+      "median_ms": 102.05,
+      "p95_ms": 154.56,
+      "p99_ms": 170.16
+    },
+    "event_engine_overhead": {
+      "mean_ms": 0.1069,
+      "median_ms": 0.0004,
+      "p95_ms": 0.0007,
+      "p99_ms": 5.419
+    },
+    "persisted_events_count": 3,
+    "emitted_events": [
+      {
+        "event_id": "EVT-19700101-000003-T001-5766D9",
+        "event_type": "WARNING_ENTERED",
+        "timestamp": 3.033,
+        "camera_id": "cam_bay_01",
+        "safety_state": "WARNING",
+        "severity": "WARNING",
+        "zone_id": "zone_machine_01_warning",
+        "track_id": 1,
+        "world_position": [
+          1.435,
+          1.543
+        ],
+        "source": "TEMPORAL_FSM",
+        "configuration_version": "v1.0.0-exp07",
+        "lifecycle_status": "OPEN",
+        "acknowledgement_status": "UNACKNOWLEDGED",
+        "acknowledged_at": null,
+        "acknowledged_by": null,
+        "acknowledgement_note": null,
+        "resolved_at": null,
+        "resolved_by": null,
+        "resolution_reason": null,
+        "parent_event_id": null,
+        "description": "Confirmed WARNING intrusion after 3 frames"
+      },
+      {
+        "event_id": "EVT-19700101-000003-T001-ED907E",
+        "event_type": "DANGER_ENTERED",
+        "timestamp": 3.833,
+        "camera_id": "cam_bay_01",
+        "safety_state": "DANGER",
+        "severity": "CRITICAL",
+        "zone_id": "zone_machine_01_danger",
+        "track_id": 1,
+        "world_position": [
+          1.869,
+          2.056
+        ],
+        "source": "TEMPORAL_FSM",
+        "configuration_version": "v1.0.0-exp07",
+        "lifecycle_status": "OPEN",
+        "acknowledgement_status": "UNACKNOWLEDGED",
+        "acknowledged_at": null,
+        "acknowledged_by": null,
+        "acknowledgement_note": null,
+        "resolved_at": null,
+        "resolved_by": null,
+        "resolution_reason": null,
+        "parent_event_id": null,
+        "description": "Escalated from WARNING to DANGER after 3 frames"
+      },
+      {
+        "event_id": "EVT-19700101-000005-T001-2BD1C5",
+        "event_type": "RECOVERY_STARTED",
+        "timestamp": 5.467,
+        "camera_id": "cam_bay_01",
+        "safety_state": "RECOVERY",
+        "severity": "INFO",
+        "zone_id": "zone_machine_01_warning",
+        "track_id": 1,
+        "world_position": [
+          3.002,
+          3.478
+        ],
+        "source": "TEMPORAL_FSM",
+        "configuration_version": "v1.0.0-exp07",
+        "lifecycle_status": "OPEN",
+        "acknowledgement_status": "UNACKNOWLEDGED",
+        "acknowledged_at": null,
+        "acknowledged_by": null,
+        "acknowledgement_note": null,
+        "resolved_at": null,
+        "resolved_by": null,
+        "resolution_reason": null,
+        "parent_event_id": null,
+        "description": "Instantaneous DANGER cleared; initiated RECOVERY hold"
+      }
+    ]
+  },
+  "environment": {
+    "system": {
+      "python_version": "3.14.2",
+      "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "os_name": "Windows",
+      "os_release": "11",
+      "os_version": "10.0.26200",
+      "platform_machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "cpu_physical_cores": 8,
+      "cpu_logical_cores": 12,
+      "ram_total_gb": 15.64,
+      "ram_available_gb": 3.47,
+      "ram_used_percent": 77.8,
+      "power_plugged": false,
+      "battery_percent": 54,
+      "power_profile": "Battery DC (Power Throttled Profile)",
+      "cpu_freq_current_mhz": 2100.0,
+      "torch_version": "2.14.0+cpu",
+      "cuda_available": false,
+      "gpu_name": "None (CPU Execution)",
+      "gpu_total_memory_gb": 0.0
+    },
+    "resources_start": {
+      "cpu_percent": 36.0,
+      "ram_used_percent": 77.8,
+      "ram_used_gb": 12.17
+    },
+    "resources_end": {
+      "cpu_percent": 80.0,
+      "ram_used_percent": 78.3,
+      "ram_used_gb": 12.24
+    }
+  }
+}

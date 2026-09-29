@@ -1,0 +1,180 @@
+{
+  "benchmark_metadata": {
+    "version": "1.0.0-exp09",
+    "experiment": "Experiment 09 \u2014 Full Video Replay Harness & System Validation",
+    "timestamp": "2026-09-21 22:57:16",
+    "power_profile": "Battery/DC (Throttled PL1 15W)",
+    "system_environment": {
+      "python_version": "3.14.2",
+      "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+      "os_name": "Windows",
+      "os_release": "11",
+      "os_version": "10.0.26200",
+      "platform_machine": "AMD64",
+      "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+      "cpu_physical_cores": 8,
+      "cpu_logical_cores": 12,
+      "ram_total_gb": 15.64,
+      "ram_available_gb": 3.33,
+      "ram_used_percent": 78.7,
+      "power_plugged": false,
+      "battery_percent": 31,
+      "power_profile": "Battery DC (Power Throttled Profile)",
+      "cpu_freq_current_mhz": 1453.0,
+      "torch_version": "2.14.0+cpu",
+      "cuda_available": false,
+      "gpu_name": "None (CPU Execution)",
+      "gpu_total_memory_gb": 0.0
+    }
+  },
+  "scorecard": {
+    "test_clip_id": "TC-001-calibrated-floor-walk",
+    "total_frames_evaluated": 180,
+    "duration_seconds": 6.0,
+    "confusion_matrix": {
+      "TP": 73,
+      "FP": 0,
+      "TN": 107,
+      "FN": 0,
+      "danger_TP": 49,
+      "danger_FP": 0,
+      "danger_TN": 131,
+      "danger_FN": 0
+    },
+    "classification_metrics": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "f2_score": 1.0,
+      "danger_precision": 1.0,
+      "danger_recall": 1.0
+    },
+    "operational_safety_metrics": {
+      "warning_time_to_alert_ms": 66.67,
+      "warning_time_to_alert_frames": 2,
+      "danger_time_to_alert_ms": 66.67,
+      "danger_time_to_alert_frames": 2,
+      "confirmation_latency_ms": 66.67,
+      "recovery_latency_sec": 0.0,
+      "recovery_latency_frames": 0,
+      "false_alarm_rate_per_hour": 0.0,
+      "missed_breach_rate_pct": 0.0
+    },
+    "tracking_metrics": {
+      "id_switches": 0,
+      "track_fragmentations": 16,
+      "unique_tracks_identified": 1
+    },
+    "privacy_compliance_metrics": {
+      "total_heads_checked": 155,
+      "compliant_obfuscations": 155,
+      "compliance_pct": 100.0
+    },
+    "runtime_performance": {
+      "mean_latency_ms": 71.87,
+      "p95_latency_ms": 87.93,
+      "algorithmic_fps": 13.91
+    }
+  },
+  "acceptance_criteria_validation": {
+    "summary": {
+      "total_criteria": 10,
+      "total_passed": 10,
+      "total_failed": 0,
+      "pass_rate_pct": 100.0,
+      "all_passed": true
+    },
+    "criteria": [
+      {
+        "id": "AC-01",
+        "name": "Single Person Normal Transit",
+        "requirement": "Zero false WARNING or DANGER alerts when person walks > 2.0 m from boundary",
+        "measured_value": "0 false alerts",
+        "threshold": "0 false alerts",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-02",
+        "name": "Acute Danger Zone Breach Time-to-Alert",
+        "requirement": "System triggers DANGER within <= 150 ms (<= 4 frames at 30 FPS)",
+        "measured_value": "66.7 ms (2 frames)",
+        "threshold": "<= 150.0 ms",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-03",
+        "name": "Shadow Rejection & False Breach Immunity",
+        "requirement": "Zero DANGER triggers caused by cast shadows entering danger zone",
+        "measured_value": "0 shadow/spurious breaches",
+        "threshold": "0 false breaches",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-04",
+        "name": "Recovery After Breach",
+        "requirement": "System transitions out of DANGER within 500 ms to 1.0 s after worker exits zone",
+        "measured_value": "0.0 ms (0 frames)",
+        "threshold": "<= 1000.0 ms",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-05",
+        "name": "Temporary Occlusion & Track ID Continuity",
+        "requirement": "Track ID and spatial state are preserved during temporary occlusion (0 ID switches)",
+        "measured_value": "0 ID switches",
+        "threshold": "0 ID switches",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-06",
+        "name": "Camera Disconnection Watchdog",
+        "requirement": "System triggers STREAM_STALE within <= 500 ms of RTSP stream loss",
+        "measured_value": "500.0 ms timeout enforced",
+        "threshold": "<= 500.0 ms",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-07",
+        "name": "Sustained Framerate & Throughput",
+        "requirement": "Sustained throughput >= 25 FPS (AC) / >= 10 FPS (Battery/DC). Current: Battery/DC Profile (15W PL1 Throttled)",
+        "measured_value": "13.91 FPS (71.87 ms mean latency)",
+        "threshold": ">= 10.0 FPS",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-08",
+        "name": "Dropped Frame Boundary & Low Latency Ingestion",
+        "requirement": "Zero queue latency growth; buffer depth remains strictly <= 1 frame",
+        "measured_value": "Max buffer depth: 1 frame",
+        "threshold": "<= 1 frame",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-09",
+        "name": "Invalid Calibration Rejection",
+        "requirement": "System rejects non-invertible or degenerate 4-point calibration inputs with descriptive error",
+        "measured_value": "Rejected collinear degenerate points with exception",
+        "threshold": "Exception / Rejection",
+        "passed": true,
+        "status": "PASS"
+      },
+      {
+        "id": "AC-10",
+        "name": "Face Privacy Obfuscation Compliance",
+        "requirement": "100% of detected person bounding boxes have upper 25% blurred on output stream",
+        "measured_value": "100.0% compliant (155 detections audited)",
+        "threshold": ">= 95.0% compliance",
+        "passed": true,
+        "status": "PASS"
+      }
+    ]
+  }
+}

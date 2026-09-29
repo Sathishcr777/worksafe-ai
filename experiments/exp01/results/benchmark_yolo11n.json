@@ -1,0 +1,67 @@
+{
+  "model_name": "yolo11n.pt",
+  "device": "cpu",
+  "confidence_threshold": 0.5,
+  "input_resolution": "1280x720",
+  "total_frames_measured": 150,
+  "benchmark_duration_sec": 11.62,
+  "processed_pipeline_fps": 12.91,
+  "inference_only_fps": 18.17,
+  "latencies_ms": {
+    "inference": {
+      "mean": 55.03,
+      "median": 53.45,
+      "p95": 67.56,
+      "p99": 90.06,
+      "min": 42.23,
+      "max": 93.48
+    },
+    "total_frame": {
+      "mean": 62.42,
+      "median": 61.03,
+      "p95": 76.03,
+      "p99": 99.13,
+      "min": 48.63,
+      "max": 106.51
+    },
+    "preprocessing_mean": 2.17,
+    "postprocessing_mean": 1.21
+  },
+  "detections_summary": {
+    "total_person_instances": 352,
+    "frames_with_person": 150,
+    "frames_empty": 0,
+    "max_people_in_single_frame": 4
+  },
+  "environment": {
+    "python_version": "3.14.2",
+    "python_executable": "C:\\Users\\Asus\\AppData\\Local\\Programs\\Python\\Python314\\python.exe",
+    "os_name": "Windows",
+    "os_release": "11",
+    "os_version": "10.0.26200",
+    "platform_machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel",
+    "cpu_physical_cores": 8,
+    "cpu_logical_cores": 12,
+    "ram_total_gb": 15.64,
+    "ram_available_gb": 3.61,
+    "ram_used_percent": 76.9,
+    "torch_version": "2.14.0+cpu",
+    "cuda_available": false,
+    "gpu_name": "None (CPU Execution)",
+    "gpu_total_memory_gb": 0.0
+  },
+  "resource_usage": {
+    "start": {
+      "cpu_percent": 28.0,
+      "ram_used_percent": 76.9,
+      "ram_used_gb": 12.03
+    },
+    "end": {
+      "cpu_percent": 76.3,
+      "ram_used_percent": 77.5,
+      "ram_used_gb": 12.13
+    }
+  },
+  "output_video_path": "experiments\\exp01\\videos\\annotated_yolo11n.mp4"
+}

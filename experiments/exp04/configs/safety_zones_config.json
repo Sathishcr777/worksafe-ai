@@ -1,0 +1,39 @@
+{
+  "config_version_id": "v1.0.0-exp04",
+  "unit": "meters",
+  "description": "Prototype safety zone configuration for Experiment 04 (Not certified safety parameters)",
+  "floor_boundary": [
+    [0.0, 0.0],
+    [4.0, 0.0],
+    [4.0, 5.0],
+    [0.0, 5.0]
+  ],
+  "zones": [
+    {
+      "zone_id": "zone_machine_01_warning",
+      "name": "Machine 01 Warning Perimeter",
+      "zone_type": "WARNING",
+      "priority": 10,
+      "enabled": true,
+      "polygon": [
+        [1.0, 1.5],
+        [3.5, 1.5],
+        [3.5, 4.5],
+        [1.0, 4.5]
+      ]
+    },
+    {
+      "zone_id": "zone_machine_01_danger",
+      "name": "Machine 01 Danger Zone",
+      "zone_type": "DANGER",
+      "priority": 20,
+      "enabled": true,
+      "polygon": [
+        [1.5, 2.0],
+        [3.0, 2.0],
+        [3.0, 4.0],
+        [1.5, 4.0]
+      ]
+    }
+  ]
+}
